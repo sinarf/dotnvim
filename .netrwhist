@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='D:/DG-FiP/topad'
+let g:netrw_dirhist_7='d:/Profiles/mblavin/AppData/Local/nvim'
+let g:netrw_dirhist_6='d:/Profiles/mblavin/AppData/Local'
+let g:netrw_dirhist_5='d:/Profiles/mblavin/AppData/Local/nvim'
+let g:netrw_dirhist_4='d:/Profiles/mblavin/AppData/Local/nvim/autoload'
+let g:netrw_dirhist_3='d:/Profiles/mblavin/AppData/Local/nvim'
+let g:netrw_dirhist_2='d:/DG-FiP/topad/topad/topad/ma'
+let g:netrw_dirhist_1='d:/DG-FiP/topad/topad/topad'
