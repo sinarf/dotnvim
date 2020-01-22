@@ -19,6 +19,9 @@ call plug#begin('~/.cache/nvim/plugged')
 " 
 Plug 'tpope/vim-sensible'
 
+" LifeHacks
+Plug 'https://gitlab.com/dbeniamine/todo.txt-vim.git'
+
 " SCM
 Plug 'mhinz/vim-signify'
 
