@@ -30,7 +30,7 @@ Plug 'PotatoesMaster/i3-vim-syntax'
 Plug 'thanethomson/vim-jenkinsfile' 
 
 " Developpement
-"Plug 'plasticboy/vim-markdown' 
+Plug 'neoclide/coc.nvim'
 Plug 'mikelue/vim-maven-plugin'
 
 " Eye candy
