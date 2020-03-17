@@ -16,11 +16,17 @@ set lbr
 " Set the directory where the plugin will be installed
 call plug#begin('~/.cache/nvim/plugged')
 
-" Sensible setting from tpope.
+" Sensible settings from tpope.
 Plug 'tpope/vim-sensible'
 
 " LifeHacks
 Plug 'https://gitlab.com/dbeniamine/todo.txt-vim.git'
+Plug 'scrooloose/nerdtree' 
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'                  
+
+
 
 " SCM
 Plug 'mhinz/vim-signify'
@@ -32,6 +38,10 @@ Plug 'thanethomson/vim-jenkinsfile'
 " Developpement
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Chiel92/vim-autoformat'
+Plug 'vim-syntastic/syntastic'
+" Python
+Plug 'vim-scripts/indentpython.vim'
+Plug 'nvie/vim-flake8' " PEP8 checking
 
 " Eye candy
 Plug 'morhetz/gruvbox'
@@ -47,7 +57,7 @@ if has('win32') || has('win64')
 	set guifont=Consolas:h12
 	"set guifont=Monaco:h10
 elseif has('unix')
-        "set guifont=Fantasque\ Sans\ Mono\ 20
+	"set guifont=Fantasque\ Sans\ Mono\ 20
 	set guifont=Noto\ Mono\ 20
 	"set guifont=OpenDyslexicMono\ 16
 	"set guifont=Monaco\ 14
@@ -55,6 +65,7 @@ endif
 
 source $VIMRUNTIME/mswin.vim
 behave mswin
+set encoding=utf-8
 
 " Windows navigation
 " open split on the right
@@ -65,7 +76,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 
-" keymaping to edit this file. 
+" keymaping to edit this file.
 nnoremap <leader>ev :exe 'edit '.stdpath('config').'/init.vim'<CR>
 
 "  markdown plugin :
@@ -77,3 +88,7 @@ augroup filetype_markdown
 	au FocusLost * silent! wa
 augroup END
 
+augroup filetype_python
+	autocmd!
+	let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+augroup END
