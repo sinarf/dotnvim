@@ -26,9 +26,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'                  
 
-
-
 " SCM
+Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 
 " syntax file
@@ -92,3 +91,40 @@ augroup filetype_python
 	autocmd!
 	let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 augroup END
+
+" autoformat on write
+augroup autoformat
+	autocmd!
+	" All files
+	"au BufWrite * :Autoformat
+	" Only certain files
+	au BufWrite *.md,*.ts,*.js,*.html,*.css,*.json :Autoformat<CR>
+augroup END
+
+" vim signify configuration
+let g:signify_vcs_list= ['git', 'svn']
+
+"  markdown plugin :
+let g:vim_markdown_folding_disabled = 1
+
+
+"
+" COC configuration
+"
+
+" Use tab for trigger completion with characters ahead and navigate.
+" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Use <c-space> to trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+
