@@ -37,7 +37,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Chiel92/vim-autoformat'
 Plug 'vim-syntastic/syntastic'
 " Python
-Plug 'klen/python-mode'
+Plug 'klen/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'vim-scripts/indentpython.vim'
 Plug 'nvie/vim-flake8' " PEP8 checking
 
@@ -129,3 +129,5 @@ endfunction
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
+" Python mode configuration
+let g:pymode_python = 'python3'
