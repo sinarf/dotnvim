@@ -1,4 +1,4 @@
 # dotneovim
 
-My neovim dot files
+My neovim dot files.
 

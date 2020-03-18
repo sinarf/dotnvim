@@ -1,5 +1,3 @@
-" init.vim file
-" @author Michel Blavin
 "
 " change the leader keys
 let mapleader = ","
@@ -78,12 +76,15 @@ nnoremap <C-H> <C-W><C-H>
 " keymaping to edit this file.
 nnoremap <leader>ev :exe 'edit '.stdpath('config').'/init.vim'<CR>
 
+" switch to the directory of the current file
+nnoremap <leader>cd :cd %:p:h<CR>
+
 "  markdown plugin :
 let g:vim_markdown_folding_disabled = 1
 augroup filetype_markdown
 	autocmd!
-	autocmd BufNewFile,BufRead *.md setf=markdown
-	autocmd FileType markdown setlocal spell spelllang=fr
+	autocmd BufNewFile,BufRead *.md,*.markdown setf=markdown
+	autocmd FileType markdown setlocal spelllang=en_us
 	au FocusLost * silent! wa
 augroup END
 
