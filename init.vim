@@ -37,6 +37,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Chiel92/vim-autoformat'
 Plug 'vim-syntastic/syntastic'
 " Python
+Plug 'klen/python-mode'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'nvie/vim-flake8' " PEP8 checking
 
@@ -112,7 +113,6 @@ let g:vim_markdown_folding_disabled = 1
 "
 " COC configuration
 "
-
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
 inoremap <silent><expr> <TAB>
