@@ -19,10 +19,10 @@ Plug 'tpope/vim-sensible'
 
 " LifeHacks
 Plug 'https://gitlab.com/dbeniamine/todo.txt-vim.git'
-Plug 'scrooloose/nerdtree' 
+Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'ryanoasis/vim-devicons'                  
+Plug 'ryanoasis/vim-devicons'
 Plug 'kien/ctrlp.vim'
 
 " SCM
@@ -83,6 +83,8 @@ nnoremap <leader>n :NERDTree<CR>
 
 " switch to the directory of the current file
 nnoremap <leader>cd :cd %:p:h<CR>
+" Autoformat access everywhere
+nnoremap <leader>a :Autoformat<CR>
 
 "  markdown plugin :
 let g:vim_markdown_folding_disabled = 1
@@ -96,6 +98,10 @@ augroup END
 augroup filetype_python
 	autocmd!
 	let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+augroup END
+augroup filetype_shell
+	autocmd!
+	nnoremap <leader>r :Bash<CR>
 augroup END
 
 " autoformat on write
@@ -120,14 +126,14 @@ let g:vim_markdown_folding_disabled = 1
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
 inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
+			\ pumvisible() ? "\<C-n>" :
+			\ <SID>check_back_space() ? "\<TAB>" :
+			\ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
+	let col = col('.') - 1
+	return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
 " Use <c-space> to trigger completion.
