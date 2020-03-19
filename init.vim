@@ -23,6 +23,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'                  
+Plug 'kien/ctrlp.vim'
 
 " SCM
 Plug 'tpope/vim-fugitive'
@@ -40,6 +41,8 @@ Plug 'vim-syntastic/syntastic'
 Plug 'klen/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'vim-scripts/indentpython.vim'
 Plug 'nvie/vim-flake8' " PEP8 checking
+" Bash
+Plug 'WolfgangMehner/bash-support'
 
 " Eye candy
 Plug 'morhetz/gruvbox'
@@ -76,6 +79,7 @@ nnoremap <C-H> <C-W><C-H>
 
 " keymaping to edit this file.
 nnoremap <leader>ev :exe 'edit '.stdpath('config').'/init.vim'<CR>
+nnoremap <leader>n :NERDTree<CR>
 
 " switch to the directory of the current file
 nnoremap <leader>cd :cd %:p:h<CR>
@@ -129,5 +133,27 @@ endfunction
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
-" Python mode configuration
-let g:pymode_python = 'python3'
+" Bash IDE
+let g:BASH_AuthorName   = 'Michel Blavin AKA sinarf'
+let g:BASH_Email        = 'sinarf@sinarf.org'
+
+" ctrlp configuration
+" Use <leader>t to open ctrlp
+let g:ctrlp_map = '<leader>t'
+" Ignore these directories
+let g:ctrlp_cmd = 'CtrlP'
+
+" shortcut for mru
+nnoremap <leader>m :CtrlPMRUFiles<CR>
+
+let g:ctrlp_working_path_mode = 'ra'
+set wildignore+=*/build/**
+set wildignore+=*/target/**
+set wildignore+=*/bin/**
+set wildignore+=*/tmp/*
+set wildignore+=*so
+set wildignore+=**.swp
+set wildignore+=*.zip
+set wildignore+=*/node_modules/*
+set wildignore+=**/dist/*
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|^.git$\|_site|target|bin|build'
