@@ -83,6 +83,8 @@ nnoremap <leader>n :NERDTree<CR>
 
 " switch to the directory of the current file
 nnoremap <leader>cd :cd %:p:h<CR>
+" Autoformat access everywhere
+nnoremap <leader>a :Autoformat<CR>
 
 "  markdown plugin :
 let g:vim_markdown_folding_disabled = 1
@@ -96,6 +98,10 @@ augroup END
 augroup filetype_python
 	autocmd!
 	let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+augroup END
+augroup filetype_shell
+	autocmd!
+	nnoremap <leader>r :Bash<CR>
 augroup END
 
 " autoformat on write
