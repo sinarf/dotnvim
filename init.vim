@@ -3,6 +3,9 @@
 let mapleader = ","
 let maplocalleader = ";"
 
+" enable this for debug
+"set verbose=9
+
 set hidden
 set relativenumber
 set number
@@ -38,9 +41,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Chiel92/vim-autoformat'
 Plug 'vim-syntastic/syntastic'
 " Python
-Plug 'klen/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'vim-scripts/indentpython.vim'
 Plug 'nvie/vim-flake8' " PEP8 checking
+Plug 'python-rope/ropevim' " refactoring
+
 " Bash
 Plug 'WolfgangMehner/bash-support'
 
@@ -98,6 +102,7 @@ augroup END
 augroup filetype_python
 	autocmd!
 	let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+	autocmd FileType python  nnoremap <leader>f :PymodeLintAuto<CR>
 augroup END
 augroup filetype_shell
 	autocmd!
@@ -163,3 +168,8 @@ set wildignore+=*.zip
 set wildignore+=*/node_modules/*
 set wildignore+=**/dist/*
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|^.git$\|_site|target|bin|build'
+
+"Python configuration 
+"Rope
+let ropevim_vim_completion=1
+let ropevim_extended_complete=1
