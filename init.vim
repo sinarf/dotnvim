@@ -1,5 +1,6 @@
 "
 " change the leader keys
+"
 let mapleader = ","
 let maplocalleader = ";"
 
@@ -83,7 +84,10 @@ nnoremap <C-H> <C-W><C-H>
 
 " keymaping to edit this file.
 nnoremap <leader>ev :exe 'edit '.stdpath('config').'/init.vim'<CR>
+
+" NERDTree
 nnoremap <leader>n :NERDTree<CR>
+let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
 " switch to the directory of the current file
 nnoremap <leader>cd :cd %:p:h<CR>
@@ -101,8 +105,7 @@ augroup END
 
 augroup filetype_python
 	autocmd!
-	let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
-	autocmd FileType python  nnoremap <leader>f :PymodeLintAuto<CR>
+	autocmd BufWritePost *.py call flake8#Flake8()
 augroup END
 augroup filetype_shell
 	autocmd!
@@ -115,7 +118,7 @@ augroup autoformat
 	" All files
 	"au BufWrite * :Autoformat
 	" Only certain files
-	au BufWrite *.md,*.ts,*.js,*.html,*.css,*.json :Autoformat<CR>
+	au BufWrite *.ts,*.js,*.html,*.css,*.json :Autoformat<CR>
 augroup END
 
 " vim signify configuration
@@ -169,7 +172,11 @@ set wildignore+=*/node_modules/*
 set wildignore+=**/dist/*
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|^.git$\|_site|target|bin|build'
 
-"Python configuration 
+"Python configuration
 "Rope
 let ropevim_vim_completion=1
 let ropevim_extended_complete=1
+"flake8
+let g:flake8_show_in_gutter=1
+let g:flake8_show_in_file=1
+
