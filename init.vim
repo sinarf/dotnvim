@@ -40,11 +40,13 @@ Plug 'thanethomson/vim-jenkinsfile'
 " Developpement
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Chiel92/vim-autoformat'
-Plug 'vim-syntastic/syntastic'
+"Plug 'vim-syntastic/syntastic'
 " Python
 Plug 'vim-scripts/indentpython.vim'
 Plug 'nvie/vim-flake8' " PEP8 checking
 Plug 'python-rope/ropevim' " refactoring
+"Plug 'davidhalter/jedi-vim'
+"Plug 'nvie/vim-pyunit'
 
 " Bash
 Plug 'WolfgangMehner/bash-support'
@@ -178,5 +180,5 @@ let ropevim_vim_completion=1
 let ropevim_extended_complete=1
 "flake8
 let g:flake8_show_in_gutter=1
-let g:flake8_show_in_file=1
+"let g:flake8_show_in_file=1
 
