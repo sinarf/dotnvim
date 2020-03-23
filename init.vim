@@ -45,8 +45,7 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'nvie/vim-flake8' " PEP8 checking
 Plug 'python-rope/ropevim' " refactoring
-"Plug 'davidhalter/jedi-vim'
-"Plug 'nvie/vim-pyunit'
+Plug 'nvie/vim-pyunit'
 
 " Bash
 Plug 'WolfgangMehner/bash-support'
@@ -66,7 +65,7 @@ if has('win32') || has('win64')
 	"set guifont=Monaco:h10
 elseif has('unix')
 	"set guifont=Fantasque\ Sans\ Mono\ 20
-	set guifont=Noto\ Mono\ 20
+	set guifont=DejaVu\ Sans\ Mono:h14
 	"set guifont=OpenDyslexicMono\ 16
 	"set guifont=Monaco\ 14
 endif
@@ -155,7 +154,7 @@ let g:BASH_Email        = 'sinarf@sinarf.org'
 
 " ctrlp configuration
 " Use <leader>t to open ctrlp
-let g:ctrlp_map = '<leader>t'
+let g:ctrlp_map = '<leader>p'
 " Ignore these directories
 let g:ctrlp_cmd = 'CtrlP'
 
