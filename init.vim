@@ -10,6 +10,10 @@ let maplocalleader = ";"
 set hidden
 set relativenumber
 set number
+set cursorline
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 " wrapping not cutting words in the middle: source : http://stackoverflow.com/questions/744159/word-wrap-in-gvim
 set formatoptions=l
@@ -46,7 +50,6 @@ Plug 'preservim/nerdcommenter'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'nvie/vim-flake8' " PEP8 checking
 Plug 'python-rope/ropevim' " refactoring
-Plug 'nvie/vim-pyunit'
 
 " Bash
 Plug 'WolfgangMehner/bash-support'
@@ -78,10 +81,10 @@ set encoding=utf-8
 " Windows navigation
 " open split on the right
 set splitright
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+nnoremap <leader>j <C-W><C-J>
+nnoremap <leader>k <C-W><C-K>
+nnoremap <leader>l <C-W><C-L>
+nnoremap <leader>h <C-W><C-H>
 nnoremap ww <C-w>
 
 " keymaping to edit this file.
@@ -96,7 +99,7 @@ nnoremap <leader>cd :cd %:p:h<CR>
 " Autoformat access everywhere
 nnoremap <leader>a :Autoformat<CR>
 "Simple scripts runner 
-nnoremap <leader>r :w<CR>:! %<CR>
+nnoremap <leader>r :w<CR>:terminal %<CR>
 
 "  markdown plugin :
 let g:vim_markdown_folding_disabled = 1
