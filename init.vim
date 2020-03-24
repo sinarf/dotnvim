@@ -40,7 +40,8 @@ Plug 'thanethomson/vim-jenkinsfile'
 " Developpement
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Chiel92/vim-autoformat'
-"Plug 'vim-syntastic/syntastic'
+Plug 'preservim/nerdcommenter'
+
 " Python
 Plug 'vim-scripts/indentpython.vim'
 Plug 'nvie/vim-flake8' " PEP8 checking
@@ -81,7 +82,7 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
+nnoremap ww <C-w>
 
 " keymaping to edit this file.
 nnoremap <leader>ev :exe 'edit '.stdpath('config').'/init.vim'<CR>
@@ -94,6 +95,8 @@ let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 nnoremap <leader>cd :cd %:p:h<CR>
 " Autoformat access everywhere
 nnoremap <leader>a :Autoformat<CR>
+"Simple scripts runner 
+nnoremap <leader>r :w<CR>:! %<CR>
 
 "  markdown plugin :
 let g:vim_markdown_folding_disabled = 1
@@ -107,10 +110,6 @@ augroup END
 augroup filetype_python
 	autocmd!
 	autocmd BufWritePost *.py call flake8#Flake8()
-augroup END
-augroup filetype_shell
-	autocmd!
-	nnoremap <leader>r :Bash<CR>
 augroup END
 
 " autoformat on write
