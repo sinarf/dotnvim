@@ -31,7 +31,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
-Plug 'kien/ctrlp.vim'
+Plug 'junegunn/fzf.vim'
 
 " SCM
 Plug 'tpope/vim-fugitive'
@@ -101,6 +101,8 @@ nnoremap <leader>a :Autoformat<CR>
 "Simple scripts runner 
 nnoremap <leader>r :w<CR>:terminal %<CR>
 
+nnoremap <leader>m :FZFMru<CR>
+nnoremap <leader>p :FZF<CR>
 "  markdown plugin :
 let g:vim_markdown_folding_disabled = 1
 augroup filetype_markdown
@@ -154,32 +156,23 @@ inoremap <silent><expr> <c-space> coc#refresh()
 let g:BASH_AuthorName   = 'Michel Blavin AKA sinarf'
 let g:BASH_Email        = 'sinarf@sinarf.org'
 
-" ctrlp configuration
-" Use <leader>t to open ctrlp
-let g:ctrlp_map = '<leader>p'
-" Ignore these directories
-let g:ctrlp_cmd = 'CtrlP'
-
-" shortcut for mru
-nnoremap <leader>m :CtrlPMRUFiles<CR>
-
-let g:ctrlp_working_path_mode = 'ra'
-set wildignore+=*/build/**
-set wildignore+=*/target/**
-set wildignore+=*/bin/**
-set wildignore+=*/tmp/*
-set wildignore+=*so
-set wildignore+=**.swp
-set wildignore+=*.zip
-set wildignore+=*/node_modules/*
-set wildignore+=**/dist/*
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|^.git$\|_site|target|bin|build'
-
-"Python configuration
 "Rope
 let ropevim_vim_completion=1
 let ropevim_extended_complete=1
 "flake8
 let g:flake8_show_in_gutter=1
 "let g:flake8_show_in_file=1
-
+"
+" FZF Most recent files
+"
+command! FZFMru call fzf#run({
+\ 'source':  reverse(s:all_files()),
+\ 'sink':    'edit',
+\ 'options': '-m -x +s',
+\ 'down':    '40%' })
+function! s:all_files()
+  return extend(
+  \ filter(copy(v:oldfiles),
+  \        "v:val !~ 'fugitive:\\|NERD_tree\\|^/tmp/\\|.git/'"),
+  \ map(filter(range(1, bufnr('$')), 'buflisted(v:val)'), 'bufname(v:val)'))
+endfunction
