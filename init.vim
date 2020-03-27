@@ -36,6 +36,8 @@ Plug 'junegunn/fzf.vim'
 " SCM
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
+Plug 'mattn/vim-gist'
+Plug 'mattn/webapi-vim' " needed for vim-gist
 
 " syntax file
 Plug 'PotatoesMaster/i3-vim-syntax'
@@ -65,13 +67,13 @@ call plug#end()
 colorscheme gruvbox
 
 if has('win32') || has('win64')
-	set guifont=Consolas:h12
-	"set guifont=Monaco:h10
+    set guifont=Consolas:h12
+    "set guifont=Monaco:h10
 elseif has('unix')
-	"set guifont=Fantasque\ Sans\ Mono\ 20
-	set guifont=DejaVu\ Sans\ Mono:h14
-	"set guifont=OpenDyslexicMono\ 16
-	"set guifont=Monaco\ 14
+    "set guifont=Fantasque\ Sans\ Mono\ 20
+    set guifont=DejaVu\ Sans\ Mono:h14
+    "set guifont=OpenDyslexicMono\ 16
+    "set guifont=Monaco\ 14
 endif
 
 source $VIMRUNTIME/mswin.vim
@@ -98,7 +100,7 @@ let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 nnoremap <leader>cd :cd %:p:h<CR>
 " Autoformat access everywhere
 nnoremap <leader>a :Autoformat<CR>
-"Simple scripts runner 
+"Simple scripts runner
 nnoremap <leader>r :w<CR>:terminal %<CR>
 
 nnoremap <leader>m :FZFMru<CR>
@@ -106,24 +108,24 @@ nnoremap <leader>p :FZF<CR>
 "  markdown plugin :
 let g:vim_markdown_folding_disabled = 1
 augroup filetype_markdown
-	autocmd!
-	autocmd BufNewFile,BufRead *.md,*.markdown setf=markdown
-	autocmd FileType markdown setlocal spelllang=en_us
-	au FocusLost * silent! wa
+    autocmd!
+    autocmd BufNewFile,BufRead *.md,*.markdown setf=markdown
+    autocmd FileType markdown setlocal spelllang=en_us
+    au FocusLost * silent! wa
 augroup END
 
 augroup filetype_python
-	autocmd!
-	autocmd BufWritePost *.py call flake8#Flake8()
+    autocmd!
+    autocmd BufWritePost *.py call flake8#Flake8()
 augroup END
 
 " autoformat on write
 augroup autoformat
-	autocmd!
-	" All files
-	"au BufWrite * :Autoformat
-	" Only certain files
-	au BufWrite *.ts,*.js,*.html,*.css,*.json :Autoformat<CR>
+    autocmd!
+    " All files
+    "au BufWrite * :Autoformat
+    " Only certain files
+    au BufWrite *.ts,*.js,*.html,*.css,*.json :Autoformat<CR>
 augroup END
 
 " vim signify configuration
@@ -139,14 +141,14 @@ let g:vim_markdown_folding_disabled = 1
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
 inoremap <silent><expr> <TAB>
-			\ pumvisible() ? "\<C-n>" :
-			\ <SID>check_back_space() ? "\<TAB>" :
-			\ coc#refresh()
+            \ pumvisible() ? "\<C-n>" :
+            \ <SID>check_back_space() ? "\<TAB>" :
+            \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
-	let col = col('.') - 1
-	return !col || getline('.')[col - 1]  =~# '\s'
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
 " Use <c-space> to trigger completion.
@@ -166,13 +168,15 @@ let g:flake8_show_in_gutter=1
 " FZF Most recent files
 "
 command! FZFMru call fzf#run({
-\ 'source':  reverse(s:all_files()),
-\ 'sink':    'edit',
-\ 'options': '-m -x +s',
-\ 'down':    '40%' })
+            \ 'source':  reverse(s:all_files()),
+            \ 'sink':    'edit',
+            \ 'options': '-m -x +s',
+            \ 'down':    '40%' })
+
 function! s:all_files()
-  return extend(
-  \ filter(copy(v:oldfiles),
-  \        "v:val !~ 'fugitive:\\|NERD_tree\\|^/tmp/\\|.git/'"),
-  \ map(filter(range(1, bufnr('$')), 'buflisted(v:val)'), 'bufname(v:val)'))
+    return extend(
+                \ filter(copy(v:oldfiles),
+                \        "v:val !~ 'fugitive:\\|NERD_tree\\|^/tmp/\\|.git/'"),
+                \ map(filter(range(1, bufnr('$')), 'buflisted(v:val)'), 'bufname(v:val)'))
 endfunction
+
