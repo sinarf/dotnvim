@@ -38,6 +38,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 Plug 'mattn/vim-gist'
 Plug 'mattn/webapi-vim' " needed for vim-gist
+Plug 'jaxbot/github-issues.vim'
 
 " syntax file
 Plug 'PotatoesMaster/i3-vim-syntax'
