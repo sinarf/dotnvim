@@ -32,6 +32,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/fzf.vim'
+Plug 'mhinz/vim-startify'
 
 " SCM
 Plug 'tpope/vim-fugitive'
@@ -65,7 +66,7 @@ Plug 'flazz/vim-colorschemes'
 
 call plug#end()
 
-colorscheme gruvbox
+colorscheme liquidcarbon
 
 if has('win32') || has('win64')
     set guifont=Consolas:h12
@@ -80,6 +81,9 @@ endif
 source $VIMRUNTIME/mswin.vim
 behave mswin
 set encoding=utf-8
+
+" some stuff are not publicly availlable
+source ~/Sync/config/vim/secretsauce.vim
 
 " Windows navigation
 " open split on the right
