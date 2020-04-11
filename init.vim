@@ -66,7 +66,7 @@ Plug 'flazz/vim-colorschemes'
 
 call plug#end()
 
-colorscheme liquidcarbon
+colorscheme iceberg
 
 if has('win32') || has('win64')
     set guifont=Consolas:h12
@@ -98,7 +98,7 @@ nnoremap ww <C-w>
 nnoremap <leader>ev :exe 'edit '.stdpath('config').'/init.vim'<CR>
 
 " NERDTree
-nnoremap <leader>n :NERDTree<CR>
+nnoremap <leader>n :NERDTreeToggle<CR>
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
 " switch to the directory of the current file
@@ -110,6 +110,10 @@ nnoremap <leader>r :w<CR>:terminal %<CR>
 
 nnoremap <leader>m :FZFMru<CR>
 nnoremap <leader>p :FZF<CR>
+
+" Swich spelllang 
+nnoremap <leader>se :set spelllang=en
+nnoremap <leader>sf :set spelllang=fr
 "  markdown plugin :
 let g:vim_markdown_folding_disabled = 1
 augroup filetype_markdown
