@@ -72,10 +72,6 @@ Plug 'vim-scripts/ScrollColors'
 
 call plug#end()
 
-colorscheme gruvbox
-"navigate colorschemes
-map <silent><F3> :NEXTCOLOR<cr>
-map <silent><F2> :PREVCOLOR<cr>
 
 if has('win32') || has('win64')
     set guifont=Consolas:h12
@@ -93,6 +89,19 @@ set encoding=utf-8
 
 " some stuff are not publicly availlable
 source ~/Sync/config/vim/secretsauce.vim
+
+" {{{ Eyes candy stuff
+
+colorscheme gruvbox
+set background=dark
+" Changing light or dark backgroung
+nnoremap <leader>bgl :set background=light<CR>
+nnoremap <leader>bgd :set background=dark<CR>
+"navigate colorschemes
+map <silent><F3> :NEXTCOLOR<cr>
+map <silent><F2> :PREVCOLOR<cr>
+
+" }}}
 
 " Windows navigation
 set splitright splitbelow
