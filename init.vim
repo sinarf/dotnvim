@@ -56,9 +56,6 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'nvie/vim-flake8' " PEP8 checking
 Plug 'python-rope/ropevim' " refactoring
 
-" Bash
-Plug 'WolfgangMehner/bash-support'
-
 " Eye candy
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
