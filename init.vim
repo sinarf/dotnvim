@@ -1,8 +1,8 @@
 "
 " change the leader keys
 "
-let mapleader = ","
-let maplocalleader = ";"
+let mapleader = " "
+let maplocalleader = ","
 
 " enable this for debug
 "set verbose=9
@@ -118,6 +118,7 @@ nnoremap <leader>p :FZF<CR>
 " Swich spelllang
 nnoremap <leader>se :set spelllang=en<CR>
 nnoremap <leader>sf :set spelllang=fr<CR>
+
 "  markdown plugin :
 let g:vim_markdown_folding_disabled = 1
 augroup filetype_markdown
