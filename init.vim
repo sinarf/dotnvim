@@ -1,4 +1,8 @@
 "
+" @author Michel (sinarf) Blavin
+"
+" TODO set the correct CC licence sharealike non commercial
+
 " change the leader keys
 "
 let mapleader = " "
@@ -15,6 +19,9 @@ set shiftwidth=4
 set expandtab
 set mouse=a
 set encoding=utf-8
+" searching
+set incsearch
+set smartcase
 
 " wrapping not cutting words in the middle: source : http://stackoverflow.com/questions/744159/word-wrap-in-gvim
 set formatoptions=l
