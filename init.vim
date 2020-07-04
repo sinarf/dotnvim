@@ -8,12 +8,13 @@ let maplocalleader = ";"
 "set verbose=9
 
 set hidden
-set relativenumber
-set number
+set number relativenumber
 set cursorline
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set mouse=a
+set encoding=utf-8
 
 " wrapping not cutting words in the middle: source : http://stackoverflow.com/questions/744159/word-wrap-in-gvim
 set formatoptions=l
@@ -63,10 +64,14 @@ Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'flazz/vim-colorschemes'
+Plug 'vim-scripts/ScrollColors'
 
 call plug#end()
 
-colorscheme iceberg
+colorscheme gruvbox
+"navigate colorschemes
+map <silent><F3> :NEXTCOLOR<cr>
+map <silent><F2> :PREVCOLOR<cr>
 
 if has('win32') || has('win64')
     set guifont=Consolas:h12
@@ -86,8 +91,7 @@ set encoding=utf-8
 source ~/Sync/config/vim/secretsauce.vim
 
 " Windows navigation
-" open split on the right
-set splitright
+set splitright splitbelow
 nnoremap <leader>j <C-W><C-J>
 nnoremap <leader>k <C-W><C-K>
 nnoremap <leader>l <C-W><C-L>
@@ -111,9 +115,9 @@ nnoremap <leader>r :w<CR>:terminal %<CR>
 nnoremap <leader>m :FZFMru<CR>
 nnoremap <leader>p :FZF<CR>
 
-" Swich spelllang 
-nnoremap <leader>se :set spelllang=en
-nnoremap <leader>sf :set spelllang=fr
+" Swich spelllang
+nnoremap <leader>se :set spelllang=en<CR>
+nnoremap <leader>sf :set spelllang=fr<CR>
 "  markdown plugin :
 let g:vim_markdown_folding_disabled = 1
 augroup filetype_markdown
