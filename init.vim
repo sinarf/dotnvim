@@ -74,13 +74,9 @@ call plug#end()
 
 
 if has('win32') || has('win64')
-    set guifont=Consolas:h12
-    "set guifont=Monaco:h10
+    set guifont=DejaVu\ Sans\ Mono:h12
 elseif has('unix')
-    "set guifont=Fantasque\ Sans\ Mono\ 20
     set guifont=DejaVu\ Sans\ Mono:h14
-    "set guifont=OpenDyslexicMono\ 16
-    "set guifont=Monaco\ 14
 endif
 
 source $VIMRUNTIME/mswin.vim
