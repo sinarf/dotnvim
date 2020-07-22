@@ -34,13 +34,13 @@ call plug#begin('~/.cache/nvim/plugged')
 Plug 'tpope/vim-sensible'
 
 " LifeHacks
-Plug 'https://gitlab.com/dbeniamine/todo.txt-vim.git'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-startify'
+Plug 'xolox/vim-session'
 
 " SCM
 Plug 'tpope/vim-fugitive'
@@ -64,39 +64,29 @@ Plug 'nvie/vim-flake8' " PEP8 checking
 Plug 'python-rope/ropevim' " refactoring
 
 " Eye candy
-Plug 'morhetz/gruvbox'
+Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'flazz/vim-colorschemes'
-Plug 'vim-scripts/ScrollColors'
 
 call plug#end()
 
 
 if has('win32') || has('win64')
-    set guifont=DejaVu\ Sans\ Mono:h12
+    set guifont=Cascadia\ Code:h12
 elseif has('unix')
-    set guifont=DejaVu\ Sans\ Mono:h14
+    set guifont=Cascadia\ Code:h14
 endif
 
 source $VIMRUNTIME/mswin.vim
 behave mswin
 set encoding=utf-8
 
-" some stuff are not publicly availlable
-source ~/Sync/config/vim/secretsauce.vim
+" some stuff are not publicly availlabli
+" source ~/Sync/config/vim/secretsauce.vim
 
 " {{{ Eyes candy stuff
 
-colorscheme gruvbox
-set background=dark
-" Changing light or dark backgroung
-nnoremap <leader>bgl :set background=light<CR>
-nnoremap <leader>bgd :set background=dark<CR>
-"navigate colorschemes
-map <silent><F3> :NEXTCOLOR<cr>
-map <silent><F2> :PREVCOLOR<cr>
-
+colorscheme onedark
 " }}}
 
 " Windows navigation
@@ -202,4 +192,12 @@ function! s:all_files()
                 \        "v:val !~ 'fugitive:\\|NERD_tree\\|^/tmp/\\|.git/'"),
                 \ map(filter(range(1, bufnr('$')), 'buflisted(v:val)'), 'bufname(v:val)'))
 endfunction
+
+" Better help navigation from : https://vim.fandom.com/wiki/Learn_to_use_help
+nnoremap <buffer> <CR> <C-]>
+nnoremap <buffer> <BS> <C-T>
+nnoremap <buffer> o /'\l\{2,\}'<CR>
+nnoremap <buffer> O ?'\l\{2,\}'<CR>
+nnoremap <buffer> s /\|\zs\S\+\ze\|<CR>
+nnoremap <buffer> S ?\|\zs\S\+\ze\|<CR>
 
