@@ -34,20 +34,15 @@ call plug#begin('~/.cache/nvim/plugged')
 Plug 'tpope/vim-sensible'
 
 " LifeHacks
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/fzf.vim'
-Plug 'mhinz/vim-startify'
+
+"" session
+Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 
 " SCM
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
-Plug 'mattn/vim-gist'
-Plug 'mattn/webapi-vim' " needed for vim-gist
-Plug 'jaxbot/github-issues.vim'
 
 " syntax file
 Plug 'PotatoesMaster/i3-vim-syntax'
@@ -58,21 +53,14 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Chiel92/vim-autoformat'
 Plug 'preservim/nerdcommenter'
 
-" Python
-Plug 'vim-scripts/indentpython.vim'
-Plug 'nvie/vim-flake8' " PEP8 checking
-Plug 'python-rope/ropevim' " refactoring
-
-" Eye candy
-Plug 'joshdick/onedark.vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+"" FireNvim
+Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
 call plug#end()
 
 
 if has('win32') || has('win64')
-    set guifont=Cascadia\ Code:h12
+    set guifont=Cascadia\ Code:h10
 elseif has('unix')
     set guifont=Cascadia\ Code:h14
 endif
@@ -86,7 +74,7 @@ set encoding=utf-8
 
 " {{{ Eyes candy stuff
 
-colorscheme onedark
+colorscheme evening
 " }}}
 
 " Windows navigation
@@ -100,11 +88,6 @@ nnoremap ww <C-w>
 " keymaping to edit this file.
 nnoremap <leader>ev :exe 'edit '.stdpath('config').'/init.vim'<CR>
 
-" NERDTree
-nnoremap <leader>n :NERDTreeToggle<CR>
-let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
-
-" switch to the directory of the current file
 nnoremap <leader>cd :cd %:p:h<CR>
 " Autoformat access everywhere
 nnoremap <leader>a :Autoformat<CR>
@@ -193,11 +176,14 @@ function! s:all_files()
                 \ map(filter(range(1, bufnr('$')), 'buflisted(v:val)'), 'bufname(v:val)'))
 endfunction
 
-" Better help navigation from : https://vim.fandom.com/wiki/Learn_to_use_help
-nnoremap <buffer> <CR> <C-]>
-nnoremap <buffer> <BS> <C-T>
-nnoremap <buffer> o /'\l\{2,\}'<CR>
-nnoremap <buffer> O ?'\l\{2,\}'<CR>
-nnoremap <buffer> s /\|\zs\S\+\ze\|<CR>
-nnoremap <buffer> S ?\|\zs\S\+\ze\|<CR>
+set laststatus=0
 
+if exists('g:started_by_firenvim')
+  set laststatus=0
+else
+  set laststatus=2
+endif
+
+"" The code above doesn't seem to work so, as a workaround I setup thie
+"" mapping
+nnoremap <leader>sl set laststatus=0<CR>
