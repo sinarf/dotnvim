@@ -19,5 +19,5 @@ source $HOME/.config/nvim/vimrc.conf.d/scm.vim
 source ~/Sync/config/vim/secretsauce.vim
 
 " automaticaly source vimrc on edition
-autocmd! BufWritePost .vimrc,vimrc,$HOME/.vim/* source $MYVIMRC
+autocmd! BufWritePost .vimrc,vimrc,$HOME/.config/nvim/* source $MYVIMRC
 
