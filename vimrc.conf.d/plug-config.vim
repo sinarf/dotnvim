@@ -1,4 +1,4 @@
-" Plug configuration 
+" Plug configuration
 " Set the directory where the plugin will be installed
 call plug#begin('~/.cache/nvim/plugged')
 
