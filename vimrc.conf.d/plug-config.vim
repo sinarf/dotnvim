@@ -1,6 +1,6 @@
 " Plug configuration 
 " Set the directory where the plugin will be installed
-call plug#begin('~/.cache/vim/plugged')
+call plug#begin('~/.cache/nvim/plugged')
 
 " Sensible settings from tpope.
 Plug 'tpope/vim-sensible'
