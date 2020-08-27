@@ -1,12 +1,10 @@
-if exists('g:GuiLoaded')
 
-    colorscheme gruvbox
-    set background=dark
+colorscheme gruvbox
+set background=dark
 
-    source $VIMRUNTIME/mswin.vim
-    behave mswin
+source $VIMRUNTIME/mswin.vim
+behave mswin
 
-    set guifont=Cascadia\ Code:h12
+set guifont=Cascadia\ Code:h12
 
-endif
 
