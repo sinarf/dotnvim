@@ -1,8 +1,6 @@
 TODO
 ====
 
-Legend of the list below: 
-
 * [ ] Thing I want to be able to do with vim. 
 * [o] IN PROGRESS
 * [X] 2020-08-25 This is a feature ;)
@@ -18,6 +16,7 @@ Legend of the list below:
   - [ ] Document Pre requisites
 
 * Add an OpenUrl function
+* Add and configure firenvim plugin
 
 * [o] setup Python dev
   
