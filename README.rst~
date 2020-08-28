@@ -33,7 +33,3 @@ Installation
 
 5. [Windows spécific] make a link to vimfiles from .vim ``mklink .vim vimfiles`` 
 
-6. Run ``:checkhealth`` and solve issues.
-
-7. Run ``:CocInfo``
-
