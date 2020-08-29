@@ -14,5 +14,6 @@ nnoremap <leader>ch :History:<CR>
 nnoremap <leader>bl :Buffers<CR>
 nnoremap <leader>wl :Windows<CR>
 
+
 " Empty value to disable preview window altogether
 let g:fzf_preview_window = ''
