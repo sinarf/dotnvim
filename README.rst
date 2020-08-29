@@ -27,3 +27,6 @@ Installation
 7. Run ``:CocInfo``
 
 8. Run ``:CocList marketplace`` to install Coc extensions
+
+9. Run ``mkdir -p ~/.local/share/vim/{swap,backup,undo}``
+
