@@ -42,6 +42,7 @@ Plug 'alfredodeza/pytest.vim' " test
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'liuchengxu/vim-which-key'
 
 call plug#end()
 
