@@ -1,7 +1,7 @@
 " configuration for the browser plugin firenvim
 " see plugin doc : https://github.com/glacambre/firenvim
 "
-" To enable the plugin: run the  command :firenvim#install(0) 
+" I had to manually run the  command :firenvim#install(0)
 function! s:IsFirenvimActive(event) abort
     if !exists('*nvim_get_chan_info')
         return 0
@@ -14,11 +14,25 @@ endfunction
 function! OnUIEnter(event) abort
     if s:IsFirenvimActive(a:event)
         " Put firenvim specific configuration HERE
-        " don't want status to take space 
+        " don't want status to take space
         set laststatus=0
-        "enable markdown filetype for github
-        au BufEnter github.com_*.txt set filetype=markdown
         set guifont=Cascadia\ Code:h8
+        let g:firenvim_config = {
+                    \ 'globalSettings': {
+                    \ 'alt': 'all',
+                    \  },
+                    \ 'localSettings': {
+                    \ '.*': {
+                    \ 'cmdline': 'firenvim',
+                    \ 'priority': 0,
+                    \ 'selector': 'textarea',
+                    \ 'takeover': 'once',
+                    \ },
+                    \ }
+                    \ }
+        "Site specific configuration
+        "enable markdown filetype for github
+        "au BufEnter github.com_*.txt set filetype=markdown
     endif
 endfunction
 autocmd UIEnter * call OnUIEnter(deepcopy(v:event))
