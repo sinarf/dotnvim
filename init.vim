@@ -20,4 +20,3 @@ source $HOME/.config/nvim/vimrc.conf.d/firenvim.vim
 
 " automaticaly source vimrc on edition
 autocmd! BufWritePost .vimrc,vimrc,$HOME/.config/nvim/* source $MYVIMRC
-autocmd! BufReadPost init.vim :cd %:p:h<CR>

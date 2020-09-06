@@ -1,5 +1,7 @@
 " configuration for the browser plugin firenvim
 " see plugin doc : https://github.com/glacambre/firenvim
+"
+" To enable the plugin: run the  command :firenvim#install(0) 
 function! s:IsFirenvimActive(event) abort
     if !exists('*nvim_get_chan_info')
         return 0
