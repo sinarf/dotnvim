@@ -17,3 +17,6 @@ au FocusLost *.rst,*.md :w
 
 " Autoformat
 nnoremap <leader>f :Autoformat<CR>
+
+" when you can't escape
+inoremap jj <Esc>
