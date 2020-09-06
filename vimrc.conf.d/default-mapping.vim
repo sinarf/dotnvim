@@ -11,7 +11,7 @@ nnoremap <leader>ev :e $MYVIMRC<CR>
 
 
 " switch to the directory of the current file
-nnoremap <leader>cd :cd %:p:h<CR>
+nnoremap <leader>. :cd %:p:h<CR>
 
 au FocusLost *.rst,*.md :w
 
