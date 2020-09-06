@@ -4,7 +4,7 @@ nnoremap <leader>j <C-W><C-J>
 nnoremap <leader>k <C-W><C-K>
 nnoremap <leader>l <C-W><C-L>
 nnoremap <leader>h <C-W><C-H>
-nnoremap ww <C-w>
+nnoremap w <C-w>
 
 " keymaping to edit this file.
 nnoremap <leader>ev :e $MYVIMRC<CR>

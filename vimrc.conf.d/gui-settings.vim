@@ -5,6 +5,6 @@ set background=dark
 source $VIMRUNTIME/mswin.vim
 behave mswin
 
-set guifont=Cascadia\ Code:h12
+set guifont=Cascadia\ Code:h8
 
 
