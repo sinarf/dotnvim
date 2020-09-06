@@ -1,27 +1,24 @@
 # TODO
 
-* [o] Documentation
-  
+* [ ] Documentation
   * [X] 2020-08-25 Installation of this dot files
     * [X] 2020-08-25 Linux Installation
     * [X] 2020-08-25 Windows Installation
-
   * [X] 2020-08-25 Add feature list (this file)
   * [ ] Document Pre requisites
-
 * [ ] Add an OpenUrl function
 * [X] Add and configure firenvim plugin
-* [o] setup Python dev
+* [ ] setup Python dev
   * [X] 2020-08-25 Lint
   * [X] 2020-08-25 Code completion
   * [X] 2020-08-25 Test
 * Setup bash dev
-  * [o] Lint
-  * [o] Code completion
+  * [ ] Lint
+  * [ ] Code completion
   * [ ] Test
 * note taking
   * markdown
-    * [X] link
+    * [X] lint
     * [X] markdown preview
   * reStructuredText using Riv
     * [ ] Disable folding (rant: folding is a useless feature, if you need folding it's because your file are too big)
