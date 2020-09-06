@@ -16,9 +16,6 @@ source $HOME/.config/nvim/vimrc.conf.d/fzf.vim
 source $HOME/.config/nvim/vimrc.conf.d/python-dev.vim
 source $HOME/.config/nvim/vimrc.conf.d/scm.vim
 
-" some stuff are not publicly availlable (like api keys)
-source ~/Sync/config/vim/secretsauce.vim
-
 " automaticaly source vimrc on edition
 autocmd! BufWritePost .vimrc,vimrc,$HOME/.config/nvim/* source $MYVIMRC
 
