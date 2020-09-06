@@ -8,7 +8,7 @@
 # Introduction
 
  This is my third reboot of my dotvim configuration. I had a bunch of stuff randomly pasted from various place, a big clean up.
- To know what's been implemented and what I'd like to do, see ./TODO.rst
+ To know what's been implemented and what I'd like to do, see [TODO.md](./TODO.md)
 
 # Installation
 
