@@ -1,4 +1,3 @@
-" 
 "         ___(_) _ _   __ _  _ _  / _|       __ __(_) _ __
 "        (_-/| || ' \ / _` || '_||  _|  _    \ V /| || '  \
 "        /__/|_||_||_|\__/_||_|  |_|   (_)    \_/ |_||_|_|_|
@@ -16,6 +15,9 @@ source $HOME/.config/nvim/vimrc.conf.d/fzf.vim
 source $HOME/.config/nvim/vimrc.conf.d/python-dev.vim
 source $HOME/.config/nvim/vimrc.conf.d/scm.vim
 
+" this one should be last so it overrides others
+source $HOME/.config/nvim/vimrc.conf.d/firenvim.vim
+
 " automaticaly source vimrc on edition
 autocmd! BufWritePost .vimrc,vimrc,$HOME/.config/nvim/* source $MYVIMRC
-
+autocmd! BufReadPost init.vim :cd %:p:h<CR>

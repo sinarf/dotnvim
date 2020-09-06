@@ -10,6 +10,7 @@ Plug 'mhinz/vim-startify'
 Plug 'wayhome/riv.vim'
 Plug 'aklt/plantuml-syntax'
 Plug 'scrooloose/vim-slumlord'
+Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
 " fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
