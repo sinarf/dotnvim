@@ -8,6 +8,6 @@ hi NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 source $VIMRUNTIME/mswin.vim
 behave mswin
 
-set guifont=Cascadia\ Code:h8
+set guifont=Cascadia\ Code:h11
 
 
