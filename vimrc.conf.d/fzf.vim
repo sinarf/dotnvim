@@ -6,9 +6,10 @@ nnoremap <leader>fi :Rg<CR>
 
 " find file in git
 nnoremap <leader>fgf :GFiles<CR>
+" in git status 
 nnoremap <leader>fgs :GFiles?<CR>
+" git log
 nnoremap <leader>fgc :Commits<CR>
-
 
 nnoremap <leader>fl :Lines<CR>
 " current buffer
