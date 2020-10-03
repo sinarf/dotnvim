@@ -1,20 +1,30 @@
 " fzf mapping
 " find files
 nnoremap <leader>ff :Files<CR>
-" find file in git
-nnoremap <leader>fg :GFiles<CR>
-" MRU
-nnoremap <leader>fm :History<CR>
 " Find in files
 nnoremap <leader>fi :Rg<CR>
 
-" Historique des commandes
-nnoremap <leader>fh :History:<CR>
+" find file in git
+nnoremap <leader>fgf :GFiles<CR>
+nnoremap <leader>fgs :GFiles?<CR>
+nnoremap <leader>fgc :Commits<CR>
 
-nnoremap <leader>fb :Buffers<CR>
+
+nnoremap <leader>fl :Lines<CR>
+" current buffer
+nnoremap <leader>fbc :BCommits<CR>
+nnoremap <leader>fbl :BLines<CR>
+nnoremap <leader>fbo :Buffers<CR>
+
+" History 
+" commands 
+nnoremap <leader>fhc :History:<CR>
+" files
+nnoremap <leader>fhf :History<CR>
+"search 
+nnoremap <leader>fhs :History/<CR>
+
 nnoremap <leader>fw :Windows<CR>
-
-nnoremap <leader>fh :Helptags<CR>
 
 " Empty value to disable preiew window altogether
 let g:fzf_preview_window = ''
