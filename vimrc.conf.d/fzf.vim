@@ -9,10 +9,10 @@ nnoremap <leader>fm :History<CR>
 nnoremap <leader>fi :Rg<CR>
 
 " Historique des commandes
-nnoremap <leader>ch :History:<CR>
+nnoremap <leader>fh :History:<CR>
 
-nnoremap <leader>bl :Buffers<CR>
-nnoremap <leader>wl :Windows<CR
+nnoremap <leader>fb :Buffers<CR>
+nnoremap <leader>fw :Windows<CR>
 
 nnoremap <leader>fh :Helptags<CR>
 

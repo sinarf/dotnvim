@@ -13,10 +13,7 @@ nnoremap <leader>ev :e $MYVIMRC<CR>
 " switch to the directory of the current file
 nnoremap <leader>. :cd %:p:h<CR>
 
-au FocusLost *.rst,*.md :w
-
-" Autoformat
-nnoremap <leader>f :Autoformat<CR>
+au FocusLost *.rst,*.md :update
 
 " when you can't escape
 inoremap jj <Esc>
