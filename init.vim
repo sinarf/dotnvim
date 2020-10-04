@@ -13,6 +13,7 @@ source $HOME/AppData/Local/nvim/vimrc.conf.d/coc.vim
 source $HOME/AppData/Local/nvim/vimrc.conf.d/fzf.vim
 source $HOME/AppData/Local/nvim/vimrc.conf.d/python-dev.vim
 source $HOME/AppData/Local/nvim/vimrc.conf.d/scm.vim
+source $HOME/AppData/Local/nvim/vimrc.conf.d/markdown.vim
 
 " this one should be last so it overrides others
 source $HOME/AppData/Local/nvim/vimrc.conf.d/firenvim.vim

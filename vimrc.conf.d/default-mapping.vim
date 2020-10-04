@@ -9,7 +9,6 @@ nnoremap w <C-w>
 " keymaping to edit this file.
 nnoremap <leader>ev :e $MYVIMRC<CR>
 
-
 " switch to the directory of the current file
 nnoremap <leader>. :cd %:p:h<CR>
 
