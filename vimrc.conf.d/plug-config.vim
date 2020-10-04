@@ -33,6 +33,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'honza/vim-snippets'
 Plug 'preservim/nerdcommenter'
 Plug 'Chiel92/vim-autoformat'
+Plug 'tpope/vim-surround'
 
 " Python
 Plug 'vim-scripts/indentpython.vim'

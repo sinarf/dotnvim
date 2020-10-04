@@ -10,10 +10,11 @@ source $HOME/.config/nvim/vimrc.conf.d/gui-settings.vim
 source $HOME/.config/nvim/vimrc.conf.d/default-mapping.vim
 source $HOME/.config/nvim/vimrc.conf.d/functions.vim
 source $HOME/.config/nvim/vimrc.conf.d/coc.vim
-source $HOME/.config/nvim/vimrc.conf.d/keys.vim
 source $HOME/.config/nvim/vimrc.conf.d/fzf.vim
+source $HOME/.config/nvim/vimrc.conf.d/keys.vim
 source $HOME/.config/nvim/vimrc.conf.d/python-dev.vim
 source $HOME/.config/nvim/vimrc.conf.d/scm.vim
+source $HOME/.config/nvim/vimrc.conf.d/markdown.vim
 
 " this one should be last so it overrides others
 source $HOME/.config/nvim/vimrc.conf.d/firenvim.vim
