@@ -1,4 +1,4 @@
-"This file contains global config for vim 
+"This file contains global config for vim
 
 " change the leader keys
 let mapleader = " "
@@ -29,7 +29,7 @@ set lbr
 
 " keep a backup of edited files
 set backup
-" make undos persistent 
+" make undos persistent
 set undofile
 
 set spell
@@ -37,13 +37,27 @@ set spelllang=fr,en
 
 let s:dir = '~/.local/share/vim'
 if isdirectory(expand(s:dir))
-	if &directory =~# '^\.,'
-		let &directory = expand(s:dir) . '/swap//,' . &directory
-	endif
-	if &backupdir =~# '^\.,'
-		let &backupdir = expand(s:dir) . '/backup//,' . &backupdir
-	endif
-	if exists('+undodir') && &undodir =~# '^\.\%(,\|$\)'
-		let &undodir = expand(s:dir) . '/undo//,' . &undodir
-	endif
+    if &directory =~# '^\.,'
+        let &directory = expand(s:dir) . '/swap//,' . &directory
+    endif
+    if &backupdir =~# '^\.,'
+        let &backupdir = expand(s:dir) . '/backup//,' . &backupdir
+    endif
+    if exists('+undodir') && &undodir =~# '^\.\%(,\|$\)'
+        let &undodir = expand(s:dir) . '/undo//,' . &undodir
+    endif
 endif
+
+" set invisible characters
+set listchars=tab:▶\
+set listchars+=eol:↲
+set listchars+=trail:∙
+set listchars+=extends:❯
+set listchars+=precedes:❮
+set listchars+=space:·
+
+"vertical splits less gap between bars
+set fillchars+=vert:│
+
+" display the stuff
+set list
