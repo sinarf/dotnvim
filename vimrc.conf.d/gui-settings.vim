@@ -1,6 +1,9 @@
 
 colorscheme gruvbox
 set background=dark
+" transparency
+hi Normal ctermbg=NONE guibg=NONE
+hi NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 
 if has("unix")
     " transparency only on unix
@@ -17,5 +20,3 @@ source $VIMRUNTIME/mswin.vim
 behave mswin
 
 set guifont=Cascadia\ Code:h12
-
-
