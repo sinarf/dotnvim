@@ -46,6 +46,8 @@ Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'liuchengxu/vim-which-key'
+Plug 'camspiers/animate.vim'
+Plug 'camspiers/lens.vim'
 
 call plug#end()
 
