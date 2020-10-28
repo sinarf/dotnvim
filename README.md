@@ -16,7 +16,7 @@ Clone this repo in `$HOME/.config/nvim` on Linux or `$HOME/AppData/Local/nvim` o
 
 - Run `:PlugClean`
 - Run `:PlugInstall`
-- Run `:CocInstall coc-explorer coc-vimlsp coc-marketplace coc-snippets`
+- Run `:CocInstall coc-explorer coc-vimlsp coc-marketplace coc-snippets coc-java coc-xml`
 - Run `:checkhealth` and solve issues.
 - Run `:CocInfo`
 - Run `:CocList marketplace` to install Coc extensions
