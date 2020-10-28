@@ -1,6 +1,28 @@
 "
 " COC configuration
 "
+" make startup very slow 
+"let g:coc_global_extensions = [
+      "\'coc-marketplace',
+      "\'coc-markdownlint',
+      "\'coc-highlight',
+      "\'coc-python',
+      "\'coc-explorer',
+      "\'coc-json', 
+      "\'coc-java',
+      "\'coc-java-debug',
+      "\'coc-ultisnips',
+      "\'coc-prettier',
+      "\'coc-github',
+      "\'coc-actions',
+      "\'coc-yaml',
+      "\'coc-sh',
+      "\'coc-powershell',
+      "\'coc-html',
+      "\'coc-css',
+      "\'coc-xml'
+      "\]
+
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
@@ -46,5 +68,4 @@ function! s:check_back_space() abort
 endfunction
 
 let g:coc_snippet_next = '<tab>'
-
 
