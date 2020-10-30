@@ -28,7 +28,8 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> ga <Plug>(coc-codeaction)
-nmap <silent> gn <Plug>(coc-action-rename)
+
+nmap <leader>rn <Plug>(coc-rename)
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  COMPLETION
