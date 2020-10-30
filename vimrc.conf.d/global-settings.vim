@@ -49,7 +49,7 @@ if isdirectory(expand(s:dir))
 endif
 
 " set invisible characters
-set listchars=tab:▶\
+set listchars=tab:▶▷
 set listchars+=eol:↲
 set listchars+=trail:∙
 set listchars+=extends:❯
