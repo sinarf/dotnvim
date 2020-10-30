@@ -13,6 +13,10 @@ Plug 'scrooloose/vim-slumlord'
 Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
+" Gesttion des sessions
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-session'
+
 " fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'

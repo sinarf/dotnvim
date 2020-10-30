@@ -17,6 +17,7 @@ if has("win64")
     source $HOME/AppData/Local/nvim/vimrc.conf.d/python-dev.vim
     source $HOME/AppData/Local/nvim/vimrc.conf.d/scm.vim
     source $HOME/AppData/Local/nvim/vimrc.conf.d/markdown.vim
+    source $HOME/AppData/Local/nvim/vimrc.conf.d/sessions.vim
 
     " this one should be last so it overrides others
     source $HOME/AppData/Local/nvim/vimrc.conf.d/firenvim.vim
@@ -32,6 +33,7 @@ else
     source $HOME/.config/nvim/vimrc.conf.d/python-dev.vim
     source $HOME/.config/nvim/vimrc.conf.d/scm.vim
     source $HOME/.config/nvim/vimrc.conf.d/markdown.vim
+    source $HOME/.config/nvim/vimrc.conf.d/session.vim
 
     " this one should be last so it overrides others
     source $HOME/.config/nvim/vimrc.conf.d/firenvim.vim
