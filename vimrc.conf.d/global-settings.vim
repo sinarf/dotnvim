@@ -17,6 +17,7 @@ set mouse=a
 set encoding=utf-8
 " searching
 set incsearch
+set ignorecase
 set smartcase
 
 " Make the clipboard work
