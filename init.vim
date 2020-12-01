@@ -33,7 +33,7 @@ else
     source $HOME/.config/nvim/vimrc.conf.d/python-dev.vim
     source $HOME/.config/nvim/vimrc.conf.d/scm.vim
     source $HOME/.config/nvim/vimrc.conf.d/markdown.vim
-    source $HOME/.config/nvim/vimrc.conf.d/session.vim
+    source $HOME/.config/nvim/vimrc.conf.d/sessions.vim
 
     " this one should be last so it overrides others
     source $HOME/.config/nvim/vimrc.conf.d/firenvim.vim
