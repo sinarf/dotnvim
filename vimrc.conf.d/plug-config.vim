@@ -7,7 +7,6 @@ Plug 'tpope/vim-sensible'
 
 " LifeHacks
 Plug 'mhinz/vim-startify'
-Plug 'wayhome/riv.vim'
 Plug 'aklt/plantuml-syntax'
 Plug 'scrooloose/vim-slumlord'
 Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
