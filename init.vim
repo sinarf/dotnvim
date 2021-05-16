@@ -46,5 +46,5 @@ if filereadable($SECRET_FILE)
     source $SECRET_FILE
 endif
 
-" automaticaly source vimrc on edition
+" automatically source vimrc on edition
 autocmd! BufWritePost .vimrc,vimrc,$HOME/.config/nvim/* source $MYVIMRC
