@@ -38,6 +38,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'Chiel92/vim-autoformat'
 Plug 'tpope/vim-surround'
 Plug 'erietz/vim-terminator'
+Plug 'airblade/vim-rooter'
 
 " Python
 Plug 'vim-scripts/indentpython.vim'
