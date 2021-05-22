@@ -31,11 +31,11 @@ This configuration needs the following software to be installed:
 
 Clone this repo in `$HOME/.config/nvim` on Linux or `$HOME/AppData/Local/nvim` on Windows directory
 
+* Run `./mkdir_vim_dirs.sh`. To create directories used in configuration.
 * Run `:PlugClean`
 * Run `:PlugInstall`
 * Run `:CocInstall coc-explorer coc-vimlsp coc-marketplace coc-snippets coc-java coc-xml`
 * Run `:checkhealth` and solve issues.
 * Run `:CocInfo`
 * Run `:CocList marketplace` to install Coc extensions
-* Run `mkdir -p ~/.local/share/vim/{swap,backup,undo}`
 
