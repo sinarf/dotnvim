@@ -1,33 +1,36 @@
 "
 " COC configuration
 "
-" make startup very slow 
-"let g:coc_global_extensions = [
-      "\'coc-marketplace',
-      "\'coc-markdownlint',
-      "\'coc-highlight',
-      "\'coc-python',
-      "\'coc-explorer',
-      "\'coc-json', 
-      "\'coc-java',
-      "\'coc-java-debug',
-      "\'coc-ultisnips',
-      "\'coc-prettier',
-      "\'coc-github',
-      "\'coc-actions',
-      "\'coc-yaml',
-      "\'coc-sh',
-      "\'coc-powershell',
-      "\'coc-html',
-      "\'coc-css',
-      "\'coc-xml'
-      "\]
+"Coc Extensions to install automaticaly
+let g:coc_global_extensions = [
+      \'coc-actions',
+      \'coc-css',
+      \'coc-explorer',
+      \'coc-json', 
+      \'coc-java',
+      \'coc-java-debug',
+      \'coc-github',
+      \'coc-groovy',
+      \'coc-highlight',
+      \'coc-html',
+      \'coc-marketplace',
+      \'coc-markdownlint',
+      \'coc-powershell',
+      \'coc-prettier',
+      \'coc-python',
+      \'coc-sql',
+      \'coc-sh',
+      \'coc-ultisnips',
+      \'coc-xml',
+      \'coc-yaml',
+      \]
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> ga <Plug>(coc-codeaction)
+nmap <silent> gn <Plug>(coc-diagnostic-next)
 
 nmap <leader>rn <Plug>(coc-rename)
 

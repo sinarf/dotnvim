@@ -40,7 +40,6 @@ else
 
 endif
 
-" some stuff are not publicly availlable (like api keys)
 let SECRET_FILE = $HOME . "/Sync/config/vim/secretsauce.vim"
 if filereadable($SECRET_FILE)
     source $SECRET_FILE

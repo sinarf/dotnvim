@@ -20,3 +20,7 @@ source $VIMRUNTIME/mswin.vim
 behave mswin
 
 set guifont=Cascadia\ Code:h12
+
+" Neovide configuration options
+"
+let g:neovide_transparency=0.8
