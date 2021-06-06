@@ -62,3 +62,7 @@ set fillchars+=vert:│
 
 " display the stuff
 set list
+
+" Enable the colorizer plugin
+set termguicolors
+lua require'colorizer'.setup()

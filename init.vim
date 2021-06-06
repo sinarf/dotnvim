@@ -21,7 +21,7 @@ source $HOME/.config/nvim/vimrc.conf.d/sessions.vim
 " this one should be last so it overrides others
 source $HOME/.config/nvim/vimrc.conf.d/firenvim.vim
 
-" some stuff are not publicly available, like API keys
+" some stuff are not publicly available
 let SECRET_FILE = $HOME . "/Sync/config/vim/secretsauce.vim"
 if filereadable($SECRET_FILE)
     source $SECRET_FILE

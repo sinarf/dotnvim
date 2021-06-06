@@ -53,6 +53,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'liuchengxu/vim-which-key'
 Plug 'camspiers/animate.vim'
 Plug 'camspiers/lens.vim'
+Plug 'norcalli/nvim-colorizer.lua'
 
 call plug#end()
 
