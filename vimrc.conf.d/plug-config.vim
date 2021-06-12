@@ -7,8 +7,11 @@ Plug 'tpope/vim-sensible'
 
 " LifeHacks
 Plug 'mhinz/vim-startify'
+" Plantuml
 Plug 'aklt/plantuml-syntax'
-Plug 'scrooloose/vim-slumlord'
+
+Plug 'scrooloose/vim-slumlord' 
+" nvim in the browser
 Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
@@ -19,6 +22,15 @@ Plug 'xolox/vim-session'
 " fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+
+" Telescope 
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+"Telescope optional dependencies
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+"Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
 
 " SCM
 Plug 'tpope/vim-fugitive'
