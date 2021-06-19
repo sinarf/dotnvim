@@ -34,9 +34,12 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 " SCM
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+
 Plug 'mhinz/vim-signify'
+
 Plug 'mattn/vim-gist'
-Plug 'mattn/webapi-vim' " needed for vim-gist
+Plug 'mattn/webapi-vim' 
 
 " syntax file
 Plug 'PotatoesMaster/i3-vim-syntax'
