@@ -9,7 +9,7 @@ let g:coc_global_extensions = [
       \'coc-json', 
       \'coc-java',
       \'coc-java-debug',
-      \'coc-github',
+      \'coc-git',
       \'coc-groovy',
       \'coc-highlight',
       \'coc-html',

@@ -34,7 +34,7 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 " SCM
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
+"Plug 'tpope/vim-rhubarb'
 
 Plug 'mhinz/vim-signify'
 
