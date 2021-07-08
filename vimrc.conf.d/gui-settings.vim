@@ -1,5 +1,5 @@
 
-colorscheme gruvbox
+colorscheme dracula
 set background=dark
 " transparency
 hi Normal ctermbg=NONE guibg=NONE
