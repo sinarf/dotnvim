@@ -1,14 +1,28 @@
-# My neovim configuration 
+# sinarf nvim configuration
 
-```text
-                 _                      ___ _     
- ___ ___ ___ _ _|_|_____    ___ ___ ___|  _|_|___ 
-|   | -_| . | | | |     |  |  _| . |   |  _| | . |
-|_|_|___|___|\_/|_|_|_|_|  |___|___|_|_|_| |_|_  |
-
-
+```shell
+      _                    __              _
+  ___(_) _ _   __ _  _ _  / _|       __ __(_) _ __
+ (_-/| || ' \ / _` || '_||  _|  _    \ V /| || '  \
+ /__/|_||_||_|\__/_||_|  |_|   (_)    \_/ |_||_|_|_|
 ```
 
-## DISCLAIMER
+## Dependencies
 
-You should not use this config, but make your own.
+This configuration needs the following software to be installed:
+
+- nodejs
+- yarn
+- python3
+- ripgrep
+
+## Installation
+
+Clone this repo in `$HOME/.config/nvim` on Linux or `$HOME/AppData/Local/nvim` on Windows directory
+
+- Run `./mkdir_vim_dirs.sh`. To create directories used in configuration.
+- Run `:PlugClean`
+- Run `:PlugInstall`
+- Run `:checkhealth` and solve issues.
+- Run `:CocInforodfdf
+- Run `./mkdir_vim_dirs.sh` to create directories for vim uses.
