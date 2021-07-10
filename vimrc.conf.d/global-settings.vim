@@ -32,8 +32,11 @@ set lbr
 set backup
 " make undos persistent
 set undofile
-
+" no spell checking by default, it can be enable manually
+ 
+" SPELL CONFIGURATION | English and French
 set spelllang=fr,en
+
 
 let s:dir = '~/.local/share/vim'
 if isdirectory(expand(s:dir))

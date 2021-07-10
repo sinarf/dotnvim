@@ -2,8 +2,8 @@
 
 augroup filetype_markdown
     autocmd!
-    set spell
     autocmd BufNewFile,BufRead *.md,*.markdown setf=markdown
+    autocmd FileType markdown set spell
     " autosave on lost focus.
     au FocusLost * silent! wa
     set autowrite
