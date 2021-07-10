@@ -11,10 +11,18 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 return require('packer').startup(function()
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
 
-  use {'dracula/vim', as = 'dracula'}
+    -- Packer can manage itself
+    use 'wbthomason/packer.nvim'
+
+    -- fuzzy find 
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
+    }
+
+    -- colorscheme
+    use {'dracula/vim', as = 'dracula'}
 
 end)
 
