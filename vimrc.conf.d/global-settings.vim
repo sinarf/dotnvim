@@ -33,7 +33,6 @@ set backup
 " make undos persistent
 set undofile
 
-set spell
 set spelllang=fr,en
 
 let s:dir = '~/.local/share/vim'
