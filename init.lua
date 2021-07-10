@@ -1,6 +1,7 @@
 require('settings')
 require('plugins')
-require('lsp-config') 
+require('lsp-config')
 require('compe-config')
+require('telescope-config')
 require('keymappings')
 require('gui')

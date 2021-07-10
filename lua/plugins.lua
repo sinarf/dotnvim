@@ -10,25 +10,26 @@ if fn.empty(fn.glob(install_path)) > 0 then
   execute 'packadd packer.nvim'
 end
 
-return require('packer').startup(function()
+return require('packer').startup(function(use)
 
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
-    -- fuzzy find 
+    -- fuzzy find
     use {
         'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
     }
-    -- File explorer 
+    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+
+    -- File explorer
     use {
-        'kyazdani42/nvim-tree.lua', 
+        'kyazdani42/nvim-tree.lua',
         require = {
             'kyazdani42/nvim-web-devicons'
         }
     }
 
-    
     -- Source controls plugins
     use 'tpope/vim-fugitive'
     use {
@@ -41,7 +42,7 @@ return require('packer').startup(function()
     end
     }
 
-    -- LSP 
+    -- LSP
     use 'neovim/nvim-lspconfig'
     use 'kabouzeid/nvim-lspinstall'
     use 'hrsh7th/nvim-compe'
