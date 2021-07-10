@@ -23,6 +23,16 @@ return require('packer').startup(function()
     
     -- Source controls plugins
     use 'tpope/vim-fugitive'
+    use {
+        'lewis6991/gitsigns.nvim',
+        requires = {
+        'nvim-lua/plenary.nvim'
+        },
+        config = function()
+        require('gitsigns').setup()
+    end
+    }
+
 
     -- colorscheme
     use {'dracula/vim', as = 'dracula'}
