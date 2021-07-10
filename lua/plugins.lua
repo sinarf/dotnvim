@@ -20,6 +20,14 @@ return require('packer').startup(function()
         'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
     }
+    -- File explorer 
+    use {
+        'kyazdani42/nvim-tree.lua', 
+        require = {
+            'kyazdani42/nvim-web-devicons'
+        }
+    }
+
     
     -- Source controls plugins
     use 'tpope/vim-fugitive'

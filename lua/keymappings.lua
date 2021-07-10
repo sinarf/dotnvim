@@ -17,5 +17,8 @@ map('n', '<leader>fb', ':Telescope buffers<CR>', options)
 map('n', '<leader>fh', ':Telescope help_tags<CR>', options)
 
 -- fugitive
-
 map('n', '<leader>gg', ':Git<CR>', options)
+
+-- Toggle file explorer
+map('n', '<leader>e', ':NvimTreeToggle<CR>', options)
+
