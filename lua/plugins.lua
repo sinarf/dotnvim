@@ -41,6 +41,10 @@ return require('packer').startup(function()
     end
     }
 
+    -- LSP 
+    use 'neovim/nvim-lspconfig'
+    use 'kabouzeid/nvim-lspinstall'
+    use 'hrsh7th/nvim-compe'
 
     -- colorscheme
     use {'dracula/vim', as = 'dracula'}
