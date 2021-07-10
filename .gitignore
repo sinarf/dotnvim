@@ -3,4 +3,5 @@
 # don't want to commit dictionaries
 spell
 .netrwhist
+plugin/packer_compiled.lua
 
