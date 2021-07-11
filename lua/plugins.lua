@@ -42,11 +42,17 @@ return require('packer').startup(function(use)
     end
     }
 
+    -- note taking
+    use 'godlygeek/tabular'
+    use 'plasticboy/vim-markdown'
+
     -- LSP
     use 'neovim/nvim-lspconfig'
     use 'kabouzeid/nvim-lspinstall'
     use 'hrsh7th/nvim-compe'
 
+    -- rooter
+    use 'airblade/vim-rooter'
     -- colorscheme
     use {'dracula/vim', as = 'dracula'}
 
