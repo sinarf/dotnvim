@@ -4,25 +4,29 @@ local map = vim.api.nvim_set_keymap
 map('n', '<Space>', '', {})
 vim.g.mapleader = ' '  -- 'vim.g' sets global variables
 
-options = { noremap = true }
+Options = { noremap = true }
 
--- mouvment 
-map('n', '<leader>n', ':bnext<cr>', options)
-map('n', '<leader>p', ':bprev<cr>', options)
-map('n', '<leader>h', '<C-W><C-H>', options)
-map('n', '<leader>j', '<C-W><C-J>', options)
-map('n', '<leader>k', '<C-W><C-K>', options)
-map('n', '<leader>l', '<C-W><C-L>', options)
+-- mouvements
+map('n', '<leader>n', ':bnext<cr>', Options)
+map('n', '<leader>p', ':bprev<cr>', Options)
+map('n', '<leader>h', '<C-W><C-H>', Options)
+map('n', '<leader>j', '<C-W><C-J>', Options)
+map('n', '<leader>k', '<C-W><C-K>', Options)
+map('n', '<leader>l', '<C-W><C-L>', Options)
+
 
 -- telescope mapping
-map('n', '<leader>ft', ':Telescope<CR>', options)
-map('n', '<leader>ff', ':Telescope find_files<CR>', options)
-map('n', '<leader>fb', ':Telescope buffers<CR>', options)
-map('n', '<leader>fh', ':Telescope help_tags<CR>', options)
+map('n', '<leader>ft', ':Telescope<CR>', Options)
+map('n', '<leader>ff', ':Telescope find_files<CR>', Options)
+map('n', '<leader>fb', ':Telescope buffers<CR>', Options)
+map('n', '<leader>fh', ':Telescope help_tags<CR>', Options)
+-- edit nvim configuration
+-- TODO instead of openning te root config file it would be nice to run telescope on the config directory
+map('n', '<leader>ev', ':e $MYVIMRC<CR>', Options)
 
 -- fugitive
-map('n', '<leader>gg', ':Git<CR>', options)
+map('n', '<leader>gg', ':Git<CR>', Options)
 
 -- Toggle file explorer
-map('n', '<leader>e', ':NvimTreeToggle<CR>', options)
+map('n', '<leader>ee', ':NvimTreeToggle<CR>', Options)
 
