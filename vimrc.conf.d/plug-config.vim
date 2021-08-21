@@ -13,11 +13,12 @@ Plug 'aklt/plantuml-syntax'
 Plug 'scrooloose/vim-slumlord' 
 " nvim in the browser
 Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
-" Gesttion des sessions
-Plug 'xolox/vim-misc'
-Plug 'xolox/vim-session'
+
+" PKG / Notes taking
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'vimwiki/vimwiki'
+Plug 'mattn/calendar-vim'
 
 " fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }

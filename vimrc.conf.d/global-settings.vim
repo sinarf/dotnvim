@@ -33,8 +33,6 @@ set backup
 " make undos persistent
 set undofile
 
-set spelllang=fr,en
-
 let s:dir = '~/.local/share/vim'
 if isdirectory(expand(s:dir))
     if &directory =~# '^\.,'
