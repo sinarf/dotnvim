@@ -24,5 +24,5 @@ Clone this repo in `$HOME/.config/nvim` on Linux or `$HOME/AppData/Local/nvim` o
 - Run `:PlugClean`
 - Run `:PlugInstall`
 - Run `:checkhealth` and solve issues.
-- Run `:CocInforodfdf
+- Run `:CocInfo`
 - Run `./mkdir_vim_dirs.sh` to create directories for vim uses.
