@@ -19,7 +19,7 @@ endif
 source $VIMRUNTIME/mswin.vim
 behave mswin
 
-set guifont=Cascadia\ Code:h12
+set guifont=Fira\ Code:h12
 
 " Neovide configuration options
 "
