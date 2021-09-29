@@ -8,4 +8,11 @@ augroup vimwikigroup
         autocmd!
         " automatically update links on read diary
          autocmd BufRead,BufNewFile diary.md VimwikiDiaryGenerateLinks
- augroup end
+         autocmd FileType vimwiki :setlocal spelllang=en,fr
+         " change the working directory
+         autocmd FileType vimwiki :cd ~/Sync/pkb/main/
+augroup end
+
+" setup calendar
+let g:calendar_monday = 1
+let g:calendar_diary=$HOME.'/Sync/pkb/main/diary'
