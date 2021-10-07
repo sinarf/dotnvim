@@ -14,7 +14,6 @@ Plug 'scrooloose/vim-slumlord'
 " nvim in the browser
 Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
-
 " PKG / Notes taking
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'vimwiki/vimwiki'
@@ -35,7 +34,7 @@ Plug 'nvim-telescope/telescope.nvim'
 "Telescope optional dependencies
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-"Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " SCM
 Plug 'tpope/vim-fugitive'
@@ -59,6 +58,8 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'tpope/vim-surround'
 Plug 'erietz/vim-terminator'
 Plug 'airblade/vim-rooter'
+Plug 'itspriddle/vim-shellcheck'
+Plug 'editorconfig/editorconfig-vim'
 
 " Python
 Plug 'vim-scripts/indentpython.vim'
