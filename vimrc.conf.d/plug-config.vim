@@ -8,7 +8,7 @@ Plug 'tpope/vim-sensible'
 " LifeHacks
 Plug 'mhinz/vim-startify'
 " Plantuml
-iPlug 'aklt/plantuml-syntax'
+Plug 'aklt/plantuml-syntax'
 
 Plug 'scrooloose/vim-slumlord' 
 " nvim in the browser
