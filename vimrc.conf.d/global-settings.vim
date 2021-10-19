@@ -19,6 +19,7 @@ set encoding=utf-8
 set incsearch
 set ignorecase
 set smartcase
+set scrolloff=8
 
 " Make the clipboard work
 set pastetoggle=<F2>
@@ -63,3 +64,5 @@ set list
 " Enable the colorizer plugin
 set termguicolors
 lua require'colorizer'.setup()
+
+set nospell
