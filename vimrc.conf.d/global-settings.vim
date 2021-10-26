@@ -20,6 +20,7 @@ set incsearch
 set ignorecase
 set smartcase
 set scrolloff=8
+set colorcolumn=120
 
 " Make the clipboard work
 set pastetoggle=<F2>
