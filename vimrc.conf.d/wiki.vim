@@ -1,6 +1,6 @@
 " vimwiki configuration
 "
-let g:vimwiki_list = [{'path': '~/Sync/pkb/main/', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path': '~/Sync/pkb/main/', 'syntax': 'markdown', 'ext': '.wiki'}]
 
 au FileType vimwiki setlocal spell
 
@@ -11,7 +11,7 @@ augroup vimwikigroup
          autocmd FileType vimwiki setlocal spell
          autocmd FileType vimwiki setlocal spelllang=en,fr
          " change the working directory
-         autocmd FileType vimwiki :cwd ~/Sync/pkb/main/
+         autocmd FileType vimwiki :cd ~/Sync/pkb/main/
 augroup end
 
 " setup calendar
