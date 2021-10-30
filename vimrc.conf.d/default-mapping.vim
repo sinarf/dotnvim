@@ -16,3 +16,8 @@ au FocusLost *.rst,*.md :update
 
 " when you can't escape
 inoremap jj <Esc>
+
+" Tabs
+nnoremap  <C-t> :tabnew<CR>
+nnoremap  <C-Tab> :tabnext<CR>
+nnoremap  <C-S-Tab> :tabprevious<CR>
