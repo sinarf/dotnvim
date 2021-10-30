@@ -10,7 +10,6 @@ let g:coc_global_extensions = [
       \'coc-java',
       \'coc-java-debug',
       \'coc-git',
-      \'coc-groovy',
       \'coc-highlight',
       \'coc-html',
       \'coc-marketplace',
