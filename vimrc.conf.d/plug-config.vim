@@ -16,9 +16,6 @@ Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
 " PKG / doc / Notes taking
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-Plug 'vimwiki/vimwiki'
-Plug 'mattn/calendar-vim'
-Plug 'tools-life/taskwiki'
 Plug 'powerman/vim-plugin-AnsiEsc'
 Plug 'majutsushi/tagbar'
 Plug 'blindFS/vim-taskwarrior'
@@ -57,16 +54,9 @@ Plug 'honza/vim-snippets'
 Plug 'preservim/nerdcommenter'
 Plug 'Chiel92/vim-autoformat'
 Plug 'tpope/vim-surround'
-Plug 'erietz/vim-terminator'
 Plug 'airblade/vim-rooter'
 Plug 'itspriddle/vim-shellcheck'
 Plug 'editorconfig/editorconfig-vim'
-
-" Python
-Plug 'vim-scripts/indentpython.vim'
-Plug 'nvie/vim-flake8' " PEP8 checking
-Plug 'python-rope/ropevim' " refactoring
-Plug 'alfredodeza/pytest.vim' " test
 
 " Eye candy
 Plug 'morhetz/gruvbox'
