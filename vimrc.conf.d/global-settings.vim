@@ -59,8 +59,6 @@ set listchars+=space:·
 "vertical splits less gap between bars
 set fillchars+=vert:│
 
-" display the stuff
-set list
 
 " Enable the colorizer plugin
 set termguicolors
