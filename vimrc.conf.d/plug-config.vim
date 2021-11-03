@@ -20,6 +20,7 @@ Plug 'powerman/vim-plugin-AnsiEsc'
 Plug 'majutsushi/tagbar'
 Plug 'blindFS/vim-taskwarrior'
 Plug 'habamax/vim-asciidoctor'
+Plug 'marioortizmanero/adoc-pdf-live.nvim'
 
 " fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }

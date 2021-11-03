@@ -17,6 +17,7 @@ source $HOME/.config/nvim/vimrc.conf.d/python-dev.vim
 source $HOME/.config/nvim/vimrc.conf.d/scm.vim
 source $HOME/.config/nvim/vimrc.conf.d/wiki.vim
 source $HOME/.config/nvim/vimrc.conf.d/markdown.vim
+source $HOME/.config/nvim/vimrc.conf.d/asciidoc.vim
 source $HOME/.config/nvim/vimrc.conf.d/groovy.vim
 
 " this one should be last so it overrides others

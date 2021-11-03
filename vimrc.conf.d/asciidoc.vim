@@ -1,3 +1,7 @@
+lua << EOS
+require('adoc_pdf_live').setup()
+EOS
+
 augroup filetype_asciidoctor
     autocmd!
     autocmd FileType asciidoctor setlocal spell
@@ -8,3 +12,4 @@ augroup filetype_asciidoctor
     " Shadowing the gf command so it will create the file
     nnoremap gf :e <cfile><cr>
 augroup END
+
