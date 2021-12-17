@@ -22,6 +22,7 @@ set smartcase
 set scrolloff=8
 set colorcolumn=120
 
+set autoread
 " Make the clipboard work
 set pastetoggle=<F2>
 set clipboard=unnamed
@@ -34,6 +35,7 @@ set lbr
 set backup
 " make undos persistent
 set undofile
+
 
 let s:dir = '~/.local/share/vim'
 if isdirectory(expand(s:dir))

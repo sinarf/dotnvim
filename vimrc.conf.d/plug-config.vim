@@ -7,6 +7,8 @@ Plug 'tpope/vim-sensible'
 
 " LifeHacks
 Plug 'mhinz/vim-startify'
+Plug 'dhruvasagar/vim-open-url'
+
 " Plantuml
 Plug 'aklt/plantuml-syntax'
 
@@ -35,6 +37,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
+Plug 'akinsho/bufferline.nvim'
 " SCM
 Plug 'tpope/vim-fugitive'
 "Plug 'tpope/vim-rhubarb'
@@ -55,8 +58,12 @@ Plug 'honza/vim-snippets'
 Plug 'preservim/nerdcommenter'
 Plug 'Chiel92/vim-autoformat'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 Plug 'airblade/vim-rooter'
+Plug 'ironcamel/vim-script-runner'
+
 Plug 'itspriddle/vim-shellcheck'
+Plug 'z0mbix/vim-shfmt', { 'for': 'sh' }
 Plug 'editorconfig/editorconfig-vim'
 
 " Eye candy
