@@ -31,8 +31,7 @@ set clipboard=unnamed
 set formatoptions=l
 set lbr
 
-" keep a backup of edited files
-set backup
+set nobackup
 " make undos persistent
 set undofile
 
