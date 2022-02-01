@@ -10,7 +10,6 @@ source $HOME/.config/nvim/vimrc.conf.d/global-settings.vim
 source $HOME/.config/nvim/vimrc.conf.d/bufferline.vim
 source $HOME/.config/nvim/vimrc.conf.d/gui-settings.vim
 source $HOME/.config/nvim/vimrc.conf.d/default-mapping.vim
-source $HOME/.config/nvim/vimrc.conf.d/functions.vim
 source $HOME/.config/nvim/vimrc.conf.d/coc.vim
 source $HOME/.config/nvim/vimrc.conf.d/fzf.vim
 source $HOME/.config/nvim/vimrc.conf.d/keys.vim
