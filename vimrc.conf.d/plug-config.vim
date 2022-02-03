@@ -73,6 +73,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'liuchengxu/vim-which-key'
 Plug 'norcalli/nvim-colorizer.lua'
+Plug 'tribela/vim-transparent'
 
 call plug#end()
 
