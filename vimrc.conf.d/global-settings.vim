@@ -66,3 +66,7 @@ set termguicolors
 lua require'colorizer'.setup()
 
 set nospell
+
+" autosave on lost focus.
+au FocusLost * silent! wa
+set autowrite
