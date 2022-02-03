@@ -16,7 +16,7 @@ let g:coc_global_extensions = [
       \'coc-markdownlint',
       \'coc-powershell',
       \'coc-prettier',
-      \'coc-python',
+      \'coc-jedi',
       \'coc-sql',
       \'coc-sh',
       \'coc-ultisnips',
