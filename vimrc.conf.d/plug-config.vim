@@ -66,6 +66,7 @@ Plug 'itspriddle/vim-shellcheck'
 Plug 'z0mbix/vim-shfmt', { 'for': 'sh' }
 Plug 'editorconfig/editorconfig-vim'
 
+Plug 'alfredodeza/pytest.vim'
 " Eye candy
 Plug 'morhetz/gruvbox'
 Plug 'dracula/vim'
