@@ -37,3 +37,7 @@ nnoremap  <C-S-Tab> :tabprevious<CR>
 
 " Disable Ex mode mapping
 nnoremap Q <Nop>
+
+" run current file
+
+nnoremap  <leader>r :! ./%<CR>
