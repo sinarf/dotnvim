@@ -42,6 +42,7 @@ Plug 'akinsho/bufferline.nvim'
 Plug 'tpope/vim-fugitive'
 "Plug 'tpope/vim-rhubarb'
 
+Plug 'vim-scripts/vim-auto-save'
 Plug 'mhinz/vim-signify'
 
 Plug 'mattn/vim-gist'
@@ -60,7 +61,6 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'airblade/vim-rooter'
-Plug 'ironcamel/vim-script-runner'
 
 Plug 'itspriddle/vim-shellcheck'
 Plug 'z0mbix/vim-shfmt', { 'for': 'sh' }

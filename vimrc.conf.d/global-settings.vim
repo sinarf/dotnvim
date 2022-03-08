@@ -8,7 +8,7 @@ let maplocalleader = ","
 "set verbose=9
 
 set hidden
-set number relativenumber
+set number
 set cursorline
 set tabstop=4
 set shiftwidth=4
@@ -67,6 +67,5 @@ lua require'colorizer'.setup()
 
 set nospell
 
-" autosave on lost focus.
-au FocusLost * silent! wa
-set autowrite
+" Enable auto save
+let g:auto_save = 1
