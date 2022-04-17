@@ -1,0 +1,2 @@
+-- config of the rooter plugin
+-- TODO add the correct root for Personal knowlegde base

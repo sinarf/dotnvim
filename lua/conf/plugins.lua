@@ -16,6 +16,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
+-- FIXME use the new lua syntax for autocmd
 vim.cmd [[
   augroup packer_user_config
     autocmd!
@@ -29,7 +30,6 @@ if not status_ok then
   return
 end
 
--- Have packer use a popup window
 packer.init {
   display = {
     open_fn = function()
@@ -38,12 +38,15 @@ packer.init {
   },
 }
 
--- Install your plugins here
 return packer.startup(function(use)
-  -- My plugins here
-  use "wbthomason/packer.nvim" -- Have packer manage itself
-  use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+  -- Global plugins
+  use "wbthomason/packer.nvim"
+  use "nvim-lua/popup.nvim"
+  use "nvim-lua/plenary.nvim"
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+
+  -- Development
+  use "airblade/vim-rooter"
 
   -- eye candy
   use {'dracula/vim', as = 'dracula'}
