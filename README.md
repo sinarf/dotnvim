@@ -6,23 +6,17 @@
  (_-/| || ' \ / _` || '_||  _|  _    \ V /| || '  \
  /__/|_||_||_|\__/_||_|  |_|   (_)    \_/ |_||_|_|_|
 ```
+## Dislaimer
 
-## Dependencies
+This is my personnal configuration, it is not meant ot be used by anybody else,  but it is not forbiden.
 
-This configuration needs the following software to be installed:
-
-- nodejs
-- yarn
-- python3
-- ripgrep
+If you need something more complete you should look at what @ChristianChiarulli work, especially the [Neovim from scratch repo](https://github.com/LunarVim/Neovim-from-scratch).
+I took a lot of inspiration from that repository. 
 
 ## Installation
 
-Clone this repo in `$HOME/.config/nvim` on Linux or `$HOME/AppData/Local/nvim` on Windows directory
+Clone the repo : 
 
-- Run `./mkdir_vim_dirs.sh`. To create directories used in configuration.
-- Run `:PlugClean`
-- Run `:PlugInstall`
-- Run `:checkhealth` and solve issues.
-- Run `:CocInfo`
-- Run `./mkdir_vim_dirs.sh` to create directories for vim uses.
+```shell
+git clone git@github.com:sinarf/dotnvim.git .config/nvim
+```
