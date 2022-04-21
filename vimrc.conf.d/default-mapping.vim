@@ -39,5 +39,7 @@ nnoremap  <C-S-Tab> :tabprevious<CR>
 nnoremap Q <Nop>
 
 " run current file
-
 nnoremap  <leader>r :! ./%<CR>
+
+" Autofomat the currenct buffer
+nnoremap  <leader>af :Autoformat<CR>
