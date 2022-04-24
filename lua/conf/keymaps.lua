@@ -41,7 +41,6 @@ keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Edit vim configuration
-
 keymap("n", "<leader>ev", ":e $MYVIMRC<CR>", opts)
 
 -- telescope

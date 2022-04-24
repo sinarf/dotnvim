@@ -45,6 +45,13 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim"
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
+  -- It's all fuzzy and fun
+  use {
+    "nvim-telescope/telescope.nvim",
+    requires = { {"nvim-lua/plenary.nvim"} }
+  }
+  use "nvim-telescope/telescope-media-files.nvim"
+
   -- Development
   use "airblade/vim-rooter"
   use "tpope/vim-fugitive"
