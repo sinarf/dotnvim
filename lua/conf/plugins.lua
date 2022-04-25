@@ -76,6 +76,7 @@ return packer.startup(function(use)
 
   -- eye candy
   use {'dracula/vim', as = 'dracula'}
+  use 'tribela/vim-transparent'
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
