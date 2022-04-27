@@ -76,6 +76,10 @@ return packer.startup(function(use)
 
   -- eye candy
   use {'dracula/vim', as = 'dracula'}
+  use {
+    'goolord/alpha-nvim',
+    requires = { 'kyazdani42/nvim-web-devicons' }
+   }
   use 'tribela/vim-transparent'
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

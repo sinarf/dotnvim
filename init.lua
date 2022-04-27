@@ -6,6 +6,7 @@ require "conf.telescope"
 require "conf.cmp"
 require "conf.lsp"
 require "conf.colorscheme"
+require "conf.alpha"
 
 -- TODO add the secret file
 
