@@ -48,6 +48,7 @@ keymap("n", "<leader>ff", "<cmd>lua require'telescope.builtin'.find_files(requir
 keymap("n", "<leader>fi", "<cmd>Telescope live_grep<cr>", opts)
 keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts)
 keymap("n", "<leader>fd", "<cmd>Telescope diagnostics<cr>", opts)
+keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
 
 -- fugitive
 keymap("n", "<leader>gg", "Git<CR>", opts)
