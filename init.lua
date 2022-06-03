@@ -8,6 +8,7 @@ require "conf.lsp"
 require "conf.colorscheme"
 require "conf.alpha"
 require "conf.nvim-tree"
+require "conf.notes"
 
 -- TODO add the secret file
 
