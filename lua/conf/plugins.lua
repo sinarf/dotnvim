@@ -58,6 +58,7 @@ return packer.startup(function(use)
     -- Development
     use "airblade/vim-rooter"
     use "tpope/vim-fugitive"
+    use "tpope/vim-commentary"
 
     -- cmp plugins
     use "hrsh7th/nvim-cmp" -- The completion plugin
