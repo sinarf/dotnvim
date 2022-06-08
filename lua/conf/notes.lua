@@ -1,11 +1,10 @@
 -- note taking and documentation
---
 
 -- Markdown Preview
 vim.cmd [[
     let g:mkdp_theme = 'light'
     let g:mkdp_auto_start = 0
-    let g:mkdp_page_title = '${name}'
+    let g:mkdp_page_title = 'MarkdownPreview of ${name}'
 ]]
 
 local opts = { noremap = true, silent = true }
