@@ -1,4 +1,4 @@
-# sinarf nvim configuration
+# sinarf Neovim configuration
 
 ```shell
       _                    __              _
@@ -7,28 +7,28 @@
  /__/|_||_||_|\__/_||_|  |_|   (_)    \_/ |_||_|_|_|
 ```
 
-## Dislaimer
+## Disclaimer
 
-This is my personnal configuration, it is not meant ot be used by anybody else,  but it is not forbiden.
+This is my personal configuration, it is not meant be used by anybody else. It is not forbidden but probably very stupid.
 
 If you need something more complete you should look at what @ChristianChiarulli work, especially the [Neovim from scratch repo](https://github.com/LunarVim/Neovim-from-scratch).
 I took a lot of inspiration from that repository. 
 
 ## This configuration should have the following feature
 
-- [ ] PDE (Personnal Developement Environment)
-  - [ ] Python
-    - [ ] LSP
-    - [ ] Format
-  - [ ] Bash
+- [ ] PDE (personal Development Environment)
+  - [X] Python
+    - [X] LSP (pylsp)
+    - [X] Format. Working but should use black thru the null LSP plugin
+  - [X] Bash
     - [ ] LSP
     - [ ] Format
   - [ ] Groovy - Jenkins Pipeline
     - [ ] LSP
     - [ ] Format
-  - [ ] Lua
-    - [ ] LSP
-    - [ ] Format
+  - [X] Lua
+    - [X] LSP
+    - [X] Format
 - [ ] Note taking / Doc
   - [ ] Markdown
     - [ ] LSP
