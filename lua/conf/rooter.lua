@@ -1,2 +1,5 @@
 -- config of the rooter plugin
--- TODO add the correct root for Personal knowlegde base
+
+vim.cmd [[
+  let g:rooter_change_directory_for_non_project_files = 'current'  
+]]
