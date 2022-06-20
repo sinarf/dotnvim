@@ -11,6 +11,9 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
+-- open the file even if it does not exists, very handy in markdown. 
+keymap("n", "gf", ":e <cfile><CR>", opts)
+
 -- buffer keymaps
 keymap("n", "<leader>bn", ":bnext<CR>", opts)
 keymap("n", "<leader>bp", ":bprevious<CR>", opts)
