@@ -10,9 +10,10 @@ require "conf.colorscheme"
 require "conf.alpha"
 require "conf.nvim-tree"
 require "conf.notes"
+require "conf.shell"
+require "conf.groovy"
 
 require "conf.neovide"
-
 
 -- TODO add the secret file
 
