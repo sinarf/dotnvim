@@ -16,3 +16,11 @@ keymap("n", "<leader>np", "<Plug>MarkdownPreview", opts)
 keymap("n", "<leader>nt", ":e $TODAY_NOTE<CR>", opts)
 keymap("n", "<leader>nw", ":e $WIP_NOTE<CR>", opts)
 
+
+local notes_group = vim.api.nvim_create_augroup("notes", { clear = true })
+-- autocmd BufRead today.md !archive_dailynote.py
+vim.api.nvim_create_autocmd("BufRead", {
+    group = notes_group,
+    pattern = "today.md",
+    command = ":!archive_dailynote.py<CR>",
+})
