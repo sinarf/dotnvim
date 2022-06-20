@@ -60,6 +60,7 @@ return packer.startup(function(use)
     use "airblade/vim-rooter"
     use "tpope/vim-fugitive"
     use "tpope/vim-commentary"
+    use { "akinsho/toggleterm.nvim", tag = 'v1.*'}
 
     -- cmp plugins
     use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -99,5 +100,3 @@ return packer.startup(function(use)
         require("packer").sync()
     end
 end)
-
-
