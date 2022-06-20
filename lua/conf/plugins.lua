@@ -60,7 +60,6 @@ return packer.startup(function(use)
     use "airblade/vim-rooter"
     use "tpope/vim-fugitive"
     use "tpope/vim-commentary"
-    use "itspriddle/vim-shellcheck"
 
     -- cmp plugins
     use "hrsh7th/nvim-cmp" -- The completion plugin
