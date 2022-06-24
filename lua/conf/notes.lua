@@ -15,6 +15,7 @@ keymap("n", "<leader>np", "<Plug>MarkdownPreview", opts)
 -- note taking
 keymap("n", "<leader>nt", ":e $TODAY_NOTE<CR>", opts)
 keymap("n", "<leader>nw", ":e $WIP_NOTE<CR>", opts)
+keymap("n", "<leader>ns", ":e ~/Sync/shop<CR>", opts)
 
 
 local notes_group = vim.api.nvim_create_augroup("notes", { clear = true })
