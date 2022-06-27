@@ -55,6 +55,7 @@ keymap("n", "<leader>fd", "<cmd>Telescope diagnostics<cr>", opts)
 keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
 keymap("n", "<leader>fp", "<cmd>Telescope project<cr>", opts)
 keymap("n", "<leader>fm", "<cmd>Telescope oldfiles<cr>", opts)
+keymap("n", "<leader>fg", "<cmd>Telescope git_files<cr>", opts)
 
 -- fugitive
 keymap("n", "<leader>gg", "Git<CR>", opts)
