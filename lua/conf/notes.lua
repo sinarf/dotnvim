@@ -25,3 +25,8 @@ vim.api.nvim_create_autocmd("BufRead", {
     pattern = "today.md",
     command = ":!archive_dailynote.py<CR>",
 })
+vim.api.nvim_create_autocmd( "FileType", {
+    group = notes_group,
+    pattern = "markdown",
+    command = "setlocal spell",
+})
