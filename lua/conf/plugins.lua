@@ -88,6 +88,7 @@ return packer.startup(function(use)
 
     -- eye candy
     use { 'dracula/vim', as = 'dracula' }
+    use "morhetz/gruvbox"
     use {
         'goolord/alpha-nvim',
         requires = { 'kyazdani42/nvim-web-devicons' }
