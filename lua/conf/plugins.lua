@@ -59,7 +59,7 @@ return packer.startup(function(use)
     -- Development
     use "airblade/vim-rooter"
     use "tpope/vim-fugitive"
-    use "mhinz/vim-signify"
+    use "lewis6991/gitsigns.nvim"
     use "tpope/vim-commentary"
     use { "akinsho/toggleterm.nvim", tag = 'v1.*'}
 
