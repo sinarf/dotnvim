@@ -1,6 +1,7 @@
 require "conf.options"
 require "conf.keymaps"
 require "conf.plugins"
+require "conf.bufferline"
 require "conf.rooter"
 require "conf.git"
 require "conf.telescope"
