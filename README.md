@@ -1,4 +1,4 @@
-# sinarf nvim configuration
+# sinarf Neovim configuration
 
 ```shell
       _                    __              _
@@ -7,22 +7,39 @@
  /__/|_||_||_|\__/_||_|  |_|   (_)    \_/ |_||_|_|_|
 ```
 
-## Dependencies
+## Disclaimer
 
-This configuration needs the following software to be installed:
+This is my personal configuration, it is not meant be used by anybody else.
+It is not forbidden, you are allowed, see the [licence](./LICENSE) for details, anyhow it would be probably very stupid to use it.
 
-- nodejs
-- yarn
-- python3
-- ripgrep
+If you need something more complete you should look at what @ChristianChiarulli work, especially the [Neovim from scratch repo](https://github.com/LunarVim/Neovim-from-scratch).
+I took a lot of inspiration from that repository. 
+
+## This configuration should have the following feature
+
+- [ ] PDE (personal Development Environment)
+  - [X] Python
+    - [X] LSP (pylsp)
+    - [X] Format. Working but should use black thru the null LSP plugin
+  - [X] Bash
+    - [X] LSP
+    - [ ] ~~Format~~ Could use `shfmt` but does stuff I don't want/like and I didn't any obvious configuration flag that I could use. 
+  - [ ] Groovy - Jenkins Pipeline
+    - [X] LSP - Easy to install but not very useful. Might want to use `npm-groovy-lint` with `null-ls`
+    - [ ] Format
+  - [X] Lua
+    - [X] LSP
+    - [X] Format
+- [ ] Note taking / Doc
+  - [X] Markdown
+    - [X] LSP
+    - [X] Format
+    - [X] Live Preview, ideally in terminal
 
 ## Installation
 
-Clone this repo in `$HOME/.config/nvim` on Linux or `$HOME/AppData/Local/nvim` on Windows directory
+Clone the repo : 
 
-- Run `./mkdir_vim_dirs.sh`. To create directories used in configuration.
-- Run `:PlugClean`
-- Run `:PlugInstall`
-- Run `:checkhealth` and solve issues.
-- Run `:CocInfo`
-- Run `./mkdir_vim_dirs.sh` to create directories for vim uses.
+```shell
+git clone git@github.com:sinarf/dotnvim.git .config/nvim
+```
