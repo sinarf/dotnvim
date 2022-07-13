@@ -12,12 +12,11 @@ null_ls.setup {
   debug = false,
   sources = {
     formatting.prettier.with { extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } },
-    -- experimental-string-processing to split lines that are to long (will be default some day
-    formatting.black.with { extra_args = { "--verbose --experimental-string-processing" } },
-    diagnostics.flake8,
-    -- shell formatting? Find a way to not split
-    -- formatting.shfmt,
+    -- preview to split lines that are to long (will be default some day)
+    formatting.black.with { extra_args = { "--preview" } },
+
     diagnostics.gitlint,
-    diagnostics.markdownlint,
+    -- disable warning line length warning
+    diagnostics.markdownlint.with { extra_args = {"--disable MD013"} },
   },
 }
