@@ -9,6 +9,7 @@ keymap("n", "<leader>gg", ":Git<CR>", opts)
 keymap("n", "<leader>gf", ":Git fetch<CR>", opts)
 keymap("n", "<leader>gst", ":Git stash<CR>", opts)
 keymap("n", "<leader>gsp", ":Git stash pop<CR>", opts)
+keymap("n", "<leader>gl", ":Git log<CR>", opts)
 
 -- git signs
 require('gitsigns').setup()
