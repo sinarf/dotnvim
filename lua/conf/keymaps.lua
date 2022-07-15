@@ -53,3 +53,11 @@ keymap("n", "<leader>ft", "<cmd>Telescope <cr>", opts)
 -- fugitive
 keymap("n", "<leader>gg", "Git<CR>", opts)
 keymap("n", "<leader>gl", "Gclog<CR>", opts)
+
+-- trouble
+keymap("n", "<leader>lt", "<cmd>Trouble<cr>", opts)
+keymap("n", "<leader>lw", "<cmd>Trouble workspace_diagnostics<cr>", opts)
+keymap("n", "<leader>ld", "<cmd>Trouble document_diagnostics<cr>", opts)
+keymap("n", "<leader>ll", "<cmd>Trouble loclist<cr>", opts)
+keymap("n", "<leader>lq", "<cmd>Trouble quickfix<cr>", opts)
+keymap("n", "gR", "<cmd>Trouble lsp_references<cr>", opts)

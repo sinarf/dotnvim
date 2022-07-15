@@ -83,6 +83,7 @@ return packer.startup(function(use)
     use "neovim/nvim-lspconfig"
     use "williamboman/nvim-lsp-installer"
     use "jose-elias-alvarez/null-ls.nvim"
+    use "folke/trouble.nvim"
 
     -- Documentation and Notes taking
     use({
