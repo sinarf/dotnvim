@@ -51,33 +51,37 @@ return packer.startup(function(use)
     use "kyazdani42/nvim-tree.lua"
 
     -- It's all fuzzy and fun
-    use {
-        "nvim-telescope/telescope.nvim",
-        requires = { { "nvim-lua/plenary.nvim" } }
-    }
+    use "nvim-telescope/telescope.nvim"
+    
     use "nvim-telescope/telescope-media-files.nvim"
     use "nvim-telescope/telescope-project.nvim"
     use "nvim-telescope/telescope-file-browser.nvim"
+
     -- Development
     use "airblade/vim-rooter"
     use "tpope/vim-fugitive"
     use "lewis6991/gitsigns.nvim"
     use "tpope/vim-commentary"
-    use { "akinsho/toggleterm.nvim", tag = 'v1.*'}
+    use { "akinsho/toggleterm.nvim", tag = 'v1.*' }
 
     -- cmp plugins
-    use "hrsh7th/nvim-cmp" -- The completion plugin
-    use "hrsh7th/cmp-buffer" -- buffer completions
-    use "hrsh7th/cmp-path" -- path completions
-    use "hrsh7th/cmp-cmdline" -- cmdline completions
-    use "saadparwaiz1/cmp_luasnip" -- snippet completions
+    use "hrsh7th/nvim-cmp"
+    use "hrsh7th/cmp-buffer"
+    use "hrsh7th/cmp-path"
+    use "hrsh7th/cmp-cmdline"
+    use "saadparwaiz1/cmp_luasnip"
     use "hrsh7th/cmp-nvim-lsp"
     use "hrsh7th/cmp-nvim-lua"
     use "f3fora/cmp-spell"
+    use "hrsh7th/cmp-nvim-lsp-signature-help"
+    use "dmitmel/cmp-digraphs"
+    use "hrsh7th/cmp-emoji"
+    use "KadoBOT/cmp-plugins"
+    use "jc-doyle/cmp-pandoc-references"
 
     -- snippets
-    use "L3MON4D3/LuaSnip" --snippet engine
-    use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+    use "L3MON4D3/LuaSnip"
+    use "rafamadriz/friendly-snippets"
 
     -- LSP
     use "neovim/nvim-lspconfig"
@@ -92,18 +96,16 @@ return packer.startup(function(use)
     })
 
     -- eye candy
-    use {
-      'nvim-lualine/lualine.nvim',
-      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-    }
-    use { 'dracula/vim', as = 'dracula' }
-    use "morhetz/gruvbox"
-    use {
-        'goolord/alpha-nvim',
-        requires = { 'kyazdani42/nvim-web-devicons' }
-    }
+    use 'kyazdani42/nvim-web-devicons'
+    use 'nvim-lualine/lualine.nvim'
+    use 'goolord/alpha-nvim'
     use 'tribela/vim-transparent'
     use 'norcalli/nvim-colorizer.lua'
+
+    -- colorscheme
+    use { 'dracula/vim', as = 'dracula' }
+    use "morhetz/gruvbox"
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then

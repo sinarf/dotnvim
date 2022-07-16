@@ -20,4 +20,3 @@ require "conf.groovy"
 require "conf.neovide"
 
 -- TODO add the secret file
-

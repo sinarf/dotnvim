@@ -2,7 +2,6 @@ local cmp_status_ok, cmp = pcall(require, "cmp")
 if not cmp_status_ok then
     return
 end
-
 local snip_status_ok, luasnip = pcall(require, "luasnip")
 if not snip_status_ok then
     return
@@ -113,6 +112,11 @@ cmp.setup {
         { name = "nvim_lsp" },
         { name = "buffer" },
         { name = "path" },
+        { name = "nvim_lsp_signature_help" },
+        { name = "digraphs" },
+        { name = "plugins" },
+        { name = "emoji" },
+        { name = "pandoc_references" },
         { name = "spell" },
     },
     confirm_opts = {

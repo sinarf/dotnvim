@@ -19,7 +19,7 @@ I took a lot of inspiration from that repository.
 
 - [ ] PDE (personal Development Environment)
   - [X] Python
-    - [X] LSP (pylsp)
+    - [X] LSP
     - [X] Format. Working but should use black thru the null LSP plugin
   - [X] Bash
     - [X] LSP
@@ -43,3 +43,5 @@ Clone the repo :
 ```shell
 git clone git@github.com:sinarf/dotnvim.git .config/nvim
 ```
+
+:warning: 
