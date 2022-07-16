@@ -1,6 +1,7 @@
 -- global neovim options
 vim.o.clipboard = "unnamedplus"
 vim.o.backup = false
+vim.o.undofile = true
 vim.o.fileencoding = "utf-8"
 
 -- search
