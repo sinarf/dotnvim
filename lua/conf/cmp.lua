@@ -110,7 +110,7 @@ cmp.setup {
     sources = {
         { name = "luasnip" },
         { name = "nvim_lsp" },
-        { name = "buffer" },
+        { name = "buffer", keyword_lenght = 5 },
         { name = "path" },
         { name = "nvim_lsp_signature_help" },
         { name = "digraphs" },
@@ -124,7 +124,7 @@ cmp.setup {
         select = false,
     },
     experimental = {
-        ghost_text = false,
+        ghost_text = true,
         native_menu = false,
     },
 }
