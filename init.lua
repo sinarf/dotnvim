@@ -16,7 +16,9 @@ require "conf.notes"
 require "conf.shell"
 require "conf.toggleterm"
 require "conf.groovy"
+require "conf.autoformat"
 
 require "conf.neovide"
+
 
 -- TODO add the secret file
