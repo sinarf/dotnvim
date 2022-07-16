@@ -17,6 +17,7 @@ require "conf.shell"
 require "conf.toggleterm"
 require "conf.groovy"
 require "conf.autoformat"
+require "conf.autopairs"
 
 require "conf.neovide"
 

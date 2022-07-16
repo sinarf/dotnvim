@@ -52,7 +52,6 @@ return packer.startup(function(use)
 
     -- It's all fuzzy and fun
     use "nvim-telescope/telescope.nvim"
-    
     use "nvim-telescope/telescope-media-files.nvim"
     use "nvim-telescope/telescope-project.nvim"
     use "nvim-telescope/telescope-file-browser.nvim"
@@ -62,6 +61,7 @@ return packer.startup(function(use)
     use "tpope/vim-fugitive"
     use "lewis6991/gitsigns.nvim"
     use "tpope/vim-commentary"
+    use({ "windwp/nvim-autopairs" })
     use { "akinsho/toggleterm.nvim", tag = 'v1.*' }
 
     -- cmp plugins
