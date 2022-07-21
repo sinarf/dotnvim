@@ -10,10 +10,7 @@
 ## Disclaimer
 
 This is my personal configuration, it is not meant be used by anybody else.
-It is not forbidden, you are allowed, see the [licence](./LICENSE) for details, anyhow it would be probably very stupid to use it.
-
-If you need something more complete you should look at what @ChristianChiarulli work, especially the [Neovim from scratch repo](https://github.com/LunarVim/Neovim-from-scratch).
-I took a lot of inspiration from that repository. 
+It is not forbidden, you are allowed, see the [licence](./LICENSE) for details, anyhow it would be probably very stupid to do it.
 
 ## This configuration should have the following feature
 
@@ -34,7 +31,8 @@ I took a lot of inspiration from that repository.
   - [X] Markdown
     - [X] LSP
     - [X] Format
-    - [X] Live Preview, ideally in terminal
+    - [X] Live Preview
+    - [X] keymap to run `mdcat` in a terminal for the current markdown file
 
 ## Installation
 
@@ -44,4 +42,3 @@ Clone the repo :
 git clone git@github.com:sinarf/dotnvim.git .config/nvim
 ```
 
-:warning: 

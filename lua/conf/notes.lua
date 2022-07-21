@@ -16,6 +16,8 @@ keymap("n", "<leader>np", "<Plug>MarkdownPreview", opts)
 keymap("n", "<leader>nt", ":e $TODAY_NOTE<CR>", opts)
 keymap("n", "<leader>nw", ":e $WIP_NOTE<CR>", opts)
 keymap("n", "<leader>ns", ":e ~/Sync/shop<CR>", opts)
+keymap("n", "<localleader>l", ":MarkdownPreview<CR>", opts)
+keymap("n", "<localleader>p", ":term mdcat %<CR>", opts)
 
 
 local notes_group = vim.api.nvim_create_augroup("notes", { clear = true })
@@ -25,7 +27,7 @@ vim.api.nvim_create_autocmd("BufRead", {
     pattern = "today.md",
     command = ":!archive_dailynote.py<CR>",
 })
-vim.api.nvim_create_autocmd( "FileType", {
+vim.api.nvim_create_autocmd("FileType", {
     group = notes_group,
     pattern = "markdown",
     command = "setlocal spell",
