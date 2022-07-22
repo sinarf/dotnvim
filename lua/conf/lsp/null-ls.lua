@@ -18,5 +18,6 @@ null_ls.setup {
         diagnostics.gitlint,
         -- disable warning line length warning
         diagnostics.markdownlint.with { extra_args = { "--disable MD013" } },
+        null_ls.builtins.code_actions.gitsigns,
     },
 }
