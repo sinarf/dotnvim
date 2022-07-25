@@ -61,7 +61,7 @@ return packer.startup(function(use)
     use "tpope/vim-fugitive"
     use "lewis6991/gitsigns.nvim"
     use "tpope/vim-commentary"
-    use({ "windwp/nvim-autopairs" })
+    use "windwp/nvim-autopairs"
     use { "akinsho/toggleterm.nvim", tag = 'v1.*' }
 
     -- cmp plugins
@@ -94,6 +94,8 @@ return packer.startup(function(use)
         "iamcco/markdown-preview.nvim",
         run = function() vim.fn["mkdp#util#install"]() end,
     })
+    use "godlygeek/tabular"
+    use "preservim/vim-markdown"
 
     -- eye candy
     use 'kyazdani42/nvim-web-devicons'

@@ -2,9 +2,14 @@
 
 -- Markdown Preview
 vim.cmd [[
+    " MarkdownPreview configuration "
     let g:mkdp_theme = 'light'
     let g:mkdp_auto_start = 0
     let g:mkdp_page_title = 'MarkdownPreview of ${name}'
+    " vim-markdown configuration "
+    let g:vim_markdown_folding_disabled = 1
+    let g:vim_markdown_frontmatter = 1
+    let g:vim_markdown_strikethrough = 1
 ]]
 
 local opts = { noremap = true, silent = true }
