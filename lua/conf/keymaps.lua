@@ -50,9 +50,7 @@ keymap("n", "<leader>fm", "<cmd>Telescope oldfiles<cr>", opts)
 keymap("n", "<leader>fp", "<cmd>Telescope project<cr>", opts)
 keymap("n", "<leader>ft", "<cmd>Telescope <cr>", opts)
 
--- fugitive
-keymap("n", "<leader>gg", "Git<CR>", opts)
-keymap("n", "<leader>gl", "Gclog<CR>", opts)
+
 
 -- trouble
 keymap("n", "<leader>lt", "<cmd>Trouble<cr>", opts)
