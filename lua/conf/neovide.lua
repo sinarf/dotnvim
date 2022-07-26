@@ -9,8 +9,7 @@ vim.cmd [[
 -- Handle the zoom, sourced from: https://github.com/neovide/neovide/issues/1301#issuecomment-1119370546
 vim.g.gui_font_default_size = 14
 vim.g.gui_font_size = vim.g.gui_font_default_size
-vim.g.gui_font_face = "Fira Code"
-
+vim.g.gui_font_face = "FiraCode Nerd Font"
 RefreshGuiFont = function()
     vim.opt.guifont = string.format("%s:h%s", vim.g.gui_font_face, vim.g.gui_font_size)
 end
