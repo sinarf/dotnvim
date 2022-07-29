@@ -47,8 +47,6 @@ return packer.startup(function(use)
     use { "akinsho/bufferline.nvim", tag = "v2.*" }
     use "Pocco81/AutoSave.nvim"
 
-    use "kyazdani42/nvim-tree.lua"
-
     -- It's all fuzzy and fun
     use "nvim-telescope/telescope.nvim"
     use "nvim-telescope/telescope-media-files.nvim"
