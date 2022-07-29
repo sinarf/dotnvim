@@ -36,15 +36,15 @@ keymap("n", "<leader>ev", ":e $MYVIMRC<CR>", opts)
 -- telescope
 keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
 keymap("n", "<leader>fd", "<cmd>Telescope diagnostics<cr>", opts)
-keymap("n", "<leader>fe", "<cmd>Telescope file_browser<cr>", opts)
 keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>fi", "<cmd>Telescope live_grep<cr>", opts)
 keymap("n", "<leader>fj", "<cmd>Telescope jumplist<cr>", opts)
 keymap("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", opts)
 keymap("n", "<leader>fg", "<cmd>Telescope git_files<cr>", opts)
 keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts)
-keymap("n", "<leader>fm", "<cmd>Telescope oldfiles<cr>", opts)
+keymap("n", "<leader>fm", "<cmd>Telescope file_browser<cr>", opts)
 keymap("n", "<leader>fp", "<cmd>Telescope project<cr>", opts)
+keymap("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", opts)
 keymap("n", "<leader>ft", "<cmd>Telescope <cr>", opts)
 
 -- trouble
