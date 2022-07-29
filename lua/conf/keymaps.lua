@@ -1,5 +1,4 @@
 -- keymaps
-
 local opts = { noremap = true, silent = true }
 
 -- Shorten function name
@@ -26,12 +25,10 @@ keymap("n", "<leader>wk", "<C-w>k", opts)
 keymap("n", "<leader>wl", "<C-w>l", opts)
 keymap("n", "<leader>wo", "<C-w>o", opts)
 
-
 -- Move text up and down
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dP', opts)
-
 
 -- Edit vim configuration
 keymap("n", "<leader>ev", ":e $MYVIMRC<CR>", opts)
@@ -50,11 +47,21 @@ keymap("n", "<leader>fm", "<cmd>Telescope oldfiles<cr>", opts)
 keymap("n", "<leader>fp", "<cmd>Telescope project<cr>", opts)
 keymap("n", "<leader>ft", "<cmd>Telescope <cr>", opts)
 
-
-
 -- trouble
-keymap("n", "<leader>lt", "<cmd>Trouble<cr>", opts)
-keymap("n", "<leader>lw", "<cmd>Trouble workspace_diagnostics<cr>", opts)
-keymap("n", "<leader>ld", "<cmd>Trouble document_diagnostics<cr>", opts)
-keymap("n", "<leader>ll", "<cmd>Trouble loclist<cr>", opts)
-keymap("n", "<leader>lq", "<cmd>Trouble quickfix<cr>", opts)
+keymap("n", "<leader>lt", "<cmd>TroubleToggle<cr>", opts)
+keymap("n", "<leader>lw", "<cmd>TroubleToggle workspace_diagnostics<cr>", opts)
+keymap("n", "<leader>ld", "<cmd>TroubleToggle document_diagnostics<cr>", opts)
+keymap("n", "<leader>lq", "<cmd>TroubleToggle quickfix<cr>", opts)
+keymap("n", "gR", "<cmd>TroubleToggle lsp_references<cr>", opts)
+keymap("n", "gt", "<cmd>TroubleToggle lsp_type_definitions<cr>", opts)
+
+-- Git
+keymap("n", "<leader>gg", ":Git<CR>", opts)
+keymap("n", "<leader>gf", ":Git fetch<CR>", opts)
+keymap("n", "<leader>gl", ":Git log<CR>", opts)
+keymap("n", "<leader>gb", ":Git blame<CR>", opts)
+
+-- note taking
+keymap("n", "<leader>nt", ":e $TODAY_NOTE<CR>", opts)
+keymap("n", "<leader>nw", ":e $WIP_NOTE<CR>", opts)
+keymap("n", "<leader>ns", ":e ~/Sync/shop<CR>", opts)

@@ -12,18 +12,6 @@ vim.cmd [[
     let g:vim_markdown_strikethrough = 1
 ]]
 
-local opts = { noremap = true, silent = true }
-local keymap = vim.api.nvim_set_keymap
-
-keymap("n", "<leader>np", "<Plug>MarkdownPreview", opts)
-
--- note taking
-keymap("n", "<leader>nt", ":e $TODAY_NOTE<CR>", opts)
-keymap("n", "<leader>nw", ":e $WIP_NOTE<CR>", opts)
-keymap("n", "<leader>ns", ":e ~/Sync/shop<CR>", opts)
-keymap("n", "<localleader>l", ":MarkdownPreview<CR>", opts)
-keymap("n", "<localleader>p", ":term mdcat %<CR>", opts)
-
 
 local notes_group = vim.api.nvim_create_augroup("notes", { clear = true })
 -- autocmd BufRead today.md !archive_dailynote.py
@@ -37,3 +25,9 @@ vim.api.nvim_create_autocmd("FileType", {
     pattern = "markdown",
     command = "setlocal spell",
 })
+
+-- FIXME: only activate this on Markdown files
+local opts = { noremap = true, silent = true }
+local keymap = vim.api.nvim_set_keymap
+keymap("n", "<localleader>l", ":MarkdownPreview<CR>", opts)
+keymap("n", "<localleader>p", ":term mdcat %<CR>", opts)
