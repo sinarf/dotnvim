@@ -13,13 +13,14 @@ require "conf.alpha"
 require "conf.line"
 require "conf.nvim-tree"
 require "conf.notes"
+require "conf.todo"
 require "conf.shell"
 require "conf.toggleterm"
 require "conf.groovy"
 require "conf.autoformat"
 require "conf.autopairs"
 
-require "conf.neovide"
+require "conf.gui"
 
 
 -- TODO add the secret file
