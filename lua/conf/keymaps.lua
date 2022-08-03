@@ -12,10 +12,7 @@ vim.g.maplocalleader = ","
 -- open the file even if it does not exists, very handy in markdown.
 keymap("n", "gf", ":e <cfile><CR>", opts)
 
--- buffer keymaps
-keymap("n", "<leader>bn", ":bnext<CR>", opts)
-keymap("n", "<leader>bp", ":bprevious<CR>", opts)
-keymap("n", "<leader>bd", ":bdelete<CR>", opts)
+-- buffers
 keymap("n", "<leader>bda", ":%bdelete<CR>", opts)
 
 -- window keymaps
@@ -46,6 +43,10 @@ keymap("n", "<leader>fm", "<cmd>Telescope file_browser<cr>", opts)
 keymap("n", "<leader>fp", "<cmd>Telescope project<cr>", opts)
 keymap("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", opts)
 keymap("n", "<leader>ft", "<cmd>Telescope <cr>", opts)
+
+-- NvimTree
+keymap("n", "<leader>ee", "<cmd>NvimTreeFindFile<cr>", opts)
+keymap("n", "<leader>et", "<cmd>NvimTreeToggle<cr>", opts)
 
 -- trouble
 keymap("n", "<leader>lt", "<cmd>TroubleToggle<cr>", opts)
