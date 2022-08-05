@@ -100,6 +100,7 @@ return packer.startup(function(use)
     use 'goolord/alpha-nvim'
     use 'tribela/vim-transparent'
     use 'norcalli/nvim-colorizer.lua'
+    use "folke/which-key.nvim"
 
     -- colorscheme
     use { 'dracula/vim', as = 'dracula' }

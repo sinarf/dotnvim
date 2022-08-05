@@ -66,3 +66,6 @@ keymap("n", "<leader>ns", ":e ~/Sync/shop<CR>", opts)
 
 -- make hlsearch useful and not persistent AKA annoying
 keymap("n", "<esc>", "<esc>:nohlsearch<CR><esc>", opts)
+
+
+require('which-key').setup()
