@@ -63,3 +63,6 @@ keymap("n", "<leader>gb", ":Git blame<CR>", opts)
 keymap("n", "<leader>nt", ":e $TODAY_NOTE<CR>", opts)
 keymap("n", "<leader>nw", ":e $WIP_NOTE<CR>", opts)
 keymap("n", "<leader>ns", ":e ~/Sync/shop<CR>", opts)
+
+-- make hlsearch useful and not persistent AKA annoying
+keymap("n", "<esc>", "<esc>:nohlsearch<CR><esc>", opts)
