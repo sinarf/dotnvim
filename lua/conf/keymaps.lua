@@ -44,9 +44,6 @@ keymap("n", "<leader>fp", "<cmd>Telescope project<cr>", opts)
 keymap("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", opts)
 keymap("n", "<leader>ft", "<cmd>Telescope <cr>", opts)
 
--- NvimTree
-keymap("n", "<leader>ee", "<cmd>NvimTreeFindFile<cr>", opts)
-keymap("n", "<leader>et", "<cmd>NvimTreeToggle<cr>", opts)
 
 -- trouble
 keymap("n", "<leader>lt", "<cmd>TroubleToggle<cr>", opts)

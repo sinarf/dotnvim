@@ -1,7 +1,6 @@
 require "conf.options"
 require "conf.keymaps"
 require "conf.plugins"
-require "conf.nvim-tree"
 require "conf.autosave"
 require "conf.bufferline"
 require "conf.rooter"

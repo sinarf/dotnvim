@@ -45,8 +45,6 @@ return packer.startup(function(use)
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use "lukas-reineke/indent-blankline.nvim"
     use { "akinsho/bufferline.nvim", tag = "v2.*" }
-    use "Pocco81/AutoSave.nvim"
-    use "kyazdani42/nvim-tree.lua"
 
     -- It's all fuzzy and fun
     use "nvim-telescope/telescope.nvim"
