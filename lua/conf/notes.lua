@@ -18,7 +18,7 @@ local notes_group = vim.api.nvim_create_augroup("notes", { clear = true })
 vim.api.nvim_create_autocmd("BufRead", {
     group = notes_group,
     pattern = "today.md",
-    command = ":!archive_dailynote.py<CR>",
+    command = "!archive_dailynote.py -q",
 })
 vim.api.nvim_create_autocmd("FileType", {
     group = notes_group,
@@ -26,7 +26,6 @@ vim.api.nvim_create_autocmd("FileType", {
     command = "setlocal spell",
 })
 
--- FIXME: only activate this on Markdown files
 local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 keymap("n", "<localleader>l", ":MarkdownPreview<CR>", opts)

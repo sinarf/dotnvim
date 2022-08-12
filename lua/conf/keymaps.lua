@@ -13,7 +13,7 @@ vim.g.maplocalleader = ","
 keymap("n", "gf", ":e <cfile><CR>", opts)
 
 -- buffers
-keymap("n", "<leader>bda", ":%bdelete<CR>", opts)
+keymap("n", "<leader>bda", ":%bdelete<CR>", opts) -- close all buffers
 
 -- window keymaps
 keymap("n", "<leader>wh", "<C-w>h", opts)
@@ -50,7 +50,7 @@ keymap("n", "<leader>lt", "<cmd>TroubleToggle<cr>", opts)
 keymap("n", "<leader>lw", "<cmd>TroubleToggle workspace_diagnostics<cr>", opts)
 keymap("n", "<leader>ld", "<cmd>TroubleToggle document_diagnostics<cr>", opts)
 keymap("n", "<leader>lq", "<cmd>TroubleToggle quickfix<cr>", opts)
-keymap("n", "<leader>lf", "<cmd>Format<cr>", opts)
+keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.formatting_sync()<cr>", opts)
 keymap("n", "gR", "<cmd>TroubleToggle lsp_references<cr>", opts)
 keymap("n", "gt", "<cmd>TroubleToggle lsp_type_definitions<cr>", opts)
 
