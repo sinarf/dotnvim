@@ -45,6 +45,7 @@ return packer.startup(function(use)
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use "lukas-reineke/indent-blankline.nvim"
     use { "akinsho/bufferline.nvim", tag = "v2.*" }
+    use "pocco81/auto-save.nvim"
 
     -- It's all fuzzy and fun
     use "nvim-telescope/telescope.nvim"
@@ -70,7 +71,6 @@ return packer.startup(function(use)
     use "hrsh7th/cmp-nvim-lua"
     use "f3fora/cmp-spell"
     use "hrsh7th/cmp-nvim-lsp-signature-help"
-    use "dmitmel/cmp-digraphs"
     use "hrsh7th/cmp-emoji"
     use "KadoBOT/cmp-plugins"
     use "jc-doyle/cmp-pandoc-references"
@@ -82,6 +82,7 @@ return packer.startup(function(use)
     -- LSP
     use "neovim/nvim-lspconfig"
     use "williamboman/nvim-lsp-installer"
+    -- use "HallerPatrick/py_lsp.nvim"
     use "jose-elias-alvarez/null-ls.nvim"
     use "folke/trouble.nvim"
     use "folke/todo-comments.nvim"
