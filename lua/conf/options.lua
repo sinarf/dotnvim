@@ -16,7 +16,6 @@ vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
 
 vim.o.termguicolors = true
-vim.o.guifont = "FiraCode Nerd Font:h14"
 vim.o.mouse = "a"
 vim.o.colorcolumn = 120
 
