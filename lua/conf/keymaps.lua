@@ -13,7 +13,7 @@ vim.g.maplocalleader = ","
 keymap("n", "gf", ":e <cfile><CR>", opts)
 
 -- buffers
-keymap("n", "<leader>bda", ":%bdelete<CR>", opts) -- close all buffers
+keymap("n", "<leader>bda", ":%bdelete<CR>:Alpha<CR>", opts) -- close all buffers
 
 -- window keymaps
 keymap("n", "<leader>wh", "<C-w>h", opts)
@@ -44,7 +44,6 @@ keymap("n", "<leader>fp", "<cmd>Telescope project<cr>", opts)
 keymap("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", opts)
 keymap("n", "<leader>ft", "<cmd>Telescope <cr>", opts)
 
-
 -- trouble
 keymap("n", "<leader>lt", "<cmd>TroubleToggle<cr>", opts)
 keymap("n", "<leader>lw", "<cmd>TroubleToggle workspace_diagnostics<cr>", opts)
@@ -54,11 +53,13 @@ keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.formatting_sync()<cr>", opts)
 keymap("n", "gR", "<cmd>TroubleToggle lsp_references<cr>", opts)
 keymap("n", "gt", "<cmd>TroubleToggle lsp_type_definitions<cr>", opts)
 
--- Git
+-- fugitive
 keymap("n", "<leader>gg", ":Git<CR>", opts)
 keymap("n", "<leader>gf", ":Git fetch<CR>", opts)
 keymap("n", "<leader>gl", ":Git log<CR>", opts)
 keymap("n", "<leader>gb", ":Git blame<CR>", opts)
+-- Gitsigns
+keymap("n", "<leader>gw", ":Gitsigns blame_line<CR>", opts)
 keymap("n", "<leader>gd", ":Gitsigns preview_hunk<CR>", opts)
 keymap("n", "<leader>gr", ":Gitsigns reset_hunk<CR>", opts)
 keymap("n", "<leader>gs", ":Gitsigns stage_hunk<CR>", opts)
@@ -70,8 +71,10 @@ keymap("n", "<leader>nt", ":e $TODAY_NOTE<CR>", opts)
 keymap("n", "<leader>nw", ":e $WIP_NOTE<CR>", opts)
 keymap("n", "<leader>ns", ":e ~/Sync/shop<CR>", opts)
 
--- make hlsearch useful and not persistent AKA annoying
+-- make hlsearch useful and not persistent
 keymap("n", "<esc>", "<esc>:nohlsearch<CR><esc>", opts)
 
+
+keymap("n", "<leader>a", ":Alpha<CR>", opts)
 
 require('which-key').setup()
