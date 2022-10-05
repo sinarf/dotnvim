@@ -16,6 +16,9 @@ null_ls.setup {
         formatting.black.with { extra_args = { "--experimental-string-processing" } },
         formatting.shfmt,
         formatting.npm_groovy_lint,
+        formatting.deno_fmt.with({
+            filetypes = { "javascript", "javascriptreact", "json", "jsonc", "typescript", "typescriptreact" }
+        }),
         diagnostics.gitlint,
         -- disable warning line length warning
         diagnostics.markdownlint.with { extra_args = { "--disable MD013" } },
