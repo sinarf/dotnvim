@@ -15,7 +15,8 @@ require "conf.line"
 require "conf.notes"
 require "conf.todo"
 require "conf.shell"
-require "conf.toggleterm"
+-- broken in nvim 0.8
+-- require "conf.toggleterm"
 require "conf.groovy"
 require "conf.autopairs"
 
