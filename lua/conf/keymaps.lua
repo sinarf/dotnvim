@@ -43,6 +43,8 @@ keymap("n", "<leader>fm", "<cmd>Telescope file_browser<cr>", opts)
 keymap("n", "<leader>fp", "<cmd>Telescope project<cr>", opts)
 keymap("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", opts)
 keymap("n", "<leader>ft", "<cmd>Telescope <cr>", opts)
+-- search for the current word in the current project
+keymap("n", "<leader>fs", "<cmd>Telescope grep_string<cr>", opts)
 
 -- trouble
 keymap("n", "<leader>lt", "<cmd>TroubleToggle<cr>", opts)
@@ -56,10 +58,11 @@ keymap("n", "gt", "<cmd>TroubleToggle lsp_type_definitions<cr>", opts)
 -- fugitive
 keymap("n", "<leader>gg", ":Git<CR>", opts)
 keymap("n", "<leader>gf", ":Git fetch<CR>", opts)
+keymap("n", "<leader>gfp", ":Git fetch -p<CR>", opts)
 keymap("n", "<leader>gl", ":Git log<CR>", opts)
-keymap("n", "<leader>gb", ":Git blame<CR>", opts)
+keymap("n", "<leader>gbf", ":Git blame<CR>", opts)
 -- Gitsigns
-keymap("n", "<leader>gw", ":Gitsigns blame_line<CR>", opts)
+keymap("n", "<leader>gbl", ":Gitsigns blame_line<CR>", opts)
 keymap("n", "<leader>gd", ":Gitsigns preview_hunk<CR>", opts)
 keymap("n", "<leader>gr", ":Gitsigns reset_hunk<CR>", opts)
 keymap("n", "<leader>gs", ":Gitsigns stage_hunk<CR>", opts)
