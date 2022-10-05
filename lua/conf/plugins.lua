@@ -46,6 +46,7 @@ return packer.startup(function(use)
     use "lukas-reineke/indent-blankline.nvim"
     use { "akinsho/bufferline.nvim", tag = "v2.*" }
     use "pocco81/auto-save.nvim"
+    use "rcarriga/nvim-notify"
 
     -- It's all fuzzy and fun
     use "nvim-telescope/telescope.nvim"

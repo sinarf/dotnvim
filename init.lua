@@ -1,6 +1,7 @@
 require "conf.options"
 require "conf.keymaps"
 require "conf.plugins"
+require "conf.notify"
 require "conf.autosave"
 require "conf.bufferline"
 require "conf.rooter"
@@ -21,5 +22,5 @@ require "conf.autopairs"
 
 require "conf.gui"
 
-
+vim.notify("Neovim is love ❤️", "info")
 -- TODO add the secret file
