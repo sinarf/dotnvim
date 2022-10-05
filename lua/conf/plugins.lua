@@ -47,6 +47,7 @@ return packer.startup(function(use)
     use { "akinsho/bufferline.nvim", tag = "v2.*" }
     use "pocco81/auto-save.nvim"
     use "rcarriga/nvim-notify"
+    use "fgheng/winbar.nvim"
 
     -- It's all fuzzy and fun
     use "nvim-telescope/telescope.nvim"
@@ -100,7 +101,7 @@ return packer.startup(function(use)
     use 'kyazdani42/nvim-web-devicons'
     use 'nvim-lualine/lualine.nvim'
     use 'goolord/alpha-nvim'
-    use 'tribela/vim-transparent'
+    -- use 'tribela/vim-transparent'
     use 'norcalli/nvim-colorizer.lua'
     use "folke/which-key.nvim"
 
