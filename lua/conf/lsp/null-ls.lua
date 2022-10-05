@@ -14,10 +14,10 @@ null_ls.setup {
         formatting.prettier.with { extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } },
         -- preview to split lines that are to long (will be default some day)
         formatting.black.with { extra_args = { "--experimental-string-processing" } },
-
+        formatting.shfmt,
+        formatting.npm_groovy_lint,
         diagnostics.gitlint,
         -- disable warning line length warning
         diagnostics.markdownlint.with { extra_args = { "--disable MD013" } },
-        null_ls.builtins.code_actions.gitsigns,
     },
 }
