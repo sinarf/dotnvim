@@ -48,6 +48,7 @@ return packer.startup(function(use)
     use "pocco81/auto-save.nvim"
     use "rcarriga/nvim-notify"
     use "fgheng/winbar.nvim"
+    use "tpope/vim-eunuch"
 
     -- It's all fuzzy and fun
     use "nvim-telescope/telescope.nvim"
