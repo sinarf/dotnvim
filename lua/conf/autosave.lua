@@ -23,9 +23,8 @@ autosave.setup(
         condition = function(buf)
             local fn = vim.fn
             local utils = require("auto-save.utils.data")
-
             if fn.getbufvar(buf, "&modifiable") == 1 and
-                utils.not_in(fn.getbufvar(buf, "&filetype"), {}) then
+                utils.not_in(fn.getbufvar(buf, "&filetype"), {'lua'}) then
                 return true -- met condition(s), can save
             end
             return false -- can't save
@@ -40,22 +39,4 @@ autosave.setup(
             after_saving = nil -- ran after doing the actual save
         }
     }
--- {
---     enabled = true,
---     execution_message = "AutoSave: saved at " .. vim.fn.strftime("%H:%M:%S"),
---     events = {
---         "InsertLeave",
---         "TextChanged"
---     },
---     conditions = {
---         exists = true,
---         filename_is_not = { 'plugins.lua' },
---         filetype_is_not = { 'gitcommit' },
---         modifiable = true
---     },
---     write_all_buffers = false,
---     on_off_commands = true,
---     clean_command_line_interval = 0,
---     debounce_delay = 1000 -- value in miliseconds
--- }
 )
