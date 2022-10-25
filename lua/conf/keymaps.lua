@@ -13,7 +13,7 @@ vim.g.maplocalleader = ","
 keymap("n", "gf", ":e <cfile><CR>", opts)
 
 -- buffers
-keymap("n", "<leader>bda", ":%bdelete<CR>:Alpha<CR>", opts) -- close all buffers
+keymap("n", "<leader>bda", ":%bdelete<CR>:Alpha<CR>", opts) -- close all buffers and open Alpha
 
 -- window keymaps
 keymap("n", "<leader>wh", "<C-w>h", opts)
@@ -21,6 +21,8 @@ keymap("n", "<leader>wj", "<C-w>j", opts)
 keymap("n", "<leader>wk", "<C-w>k", opts)
 keymap("n", "<leader>wl", "<C-w>l", opts)
 keymap("n", "<leader>wo", "<C-w>o", opts)
+keymap("n", "<leader>w=", "<C-w>=", opts)
+keymap("n", "<leader>ww", "<C-w>", opts)
 
 -- Move text up and down
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
@@ -36,30 +38,35 @@ keymap("n", "<leader>fd", "<cmd>Telescope diagnostics<cr>", opts)
 keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>fi", "<cmd>Telescope live_grep<cr>", opts)
 keymap("n", "<leader>fj", "<cmd>Telescope jumplist<cr>", opts)
-keymap("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", opts)
 keymap("n", "<leader>fg", "<cmd>Telescope git_files<cr>", opts)
 keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts)
 keymap("n", "<leader>fm", "<cmd>Telescope file_browser<cr>", opts)
 keymap("n", "<leader>fp", "<cmd>Telescope project<cr>", opts)
 keymap("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", opts)
-keymap("n", "<leader>ft", "<cmd>Telescope <cr>", opts)
+keymap("n", "<leader>ftd", "<cmd>TodoTelescope<cr>", opts)
+keymap("n", "<leader>ftl", "<cmd>Telescope<cr>", opts)
 -- search for the current word in the current project
 keymap("n", "<leader>fs", "<cmd>Telescope grep_string<cr>", opts)
 
+-- LSP
+keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format({async = true})<cr>", opts)
+
 -- trouble
-keymap("n", "<leader>lt", "<cmd>TroubleToggle<cr>", opts)
-keymap("n", "<leader>lw", "<cmd>TroubleToggle workspace_diagnostics<cr>", opts)
-keymap("n", "<leader>ld", "<cmd>TroubleToggle document_diagnostics<cr>", opts)
-keymap("n", "<leader>lq", "<cmd>TroubleToggle quickfix<cr>", opts)
-keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format()<cr>", opts)
+keymap("n", "<leader>tt", "<cmd>TroubleToggle<cr>", opts)
+keymap("n", "<leader>tdw", "<cmd>TroubleToggle workspace_diagnostics<cr>", opts)
+keymap("n", "<leader>tdd", "<cmd>TroubleToggle document_diagnostics<cr>", opts)
+keymap("n", "<leader>tda", "<cmd>TodoTrouble<cr>", opts)
+keymap("n", "<leader>tdt", "<cmd>TodoTrouble keywords=TODO<cr>", opts)
+keymap("n", "<leader>tdf", "<cmd>TodoTrouble keywords=FIXME<cr>", opts)
 keymap("n", "gR", "<cmd>TroubleToggle lsp_references<cr>", opts)
 keymap("n", "gt", "<cmd>TroubleToggle lsp_type_definitions<cr>", opts)
 
+--- GIT
 -- fugitive
 keymap("n", "<leader>gg", ":Git<CR>", opts)
 keymap("n", "<leader>gf", ":Git fetch<CR>", opts)
-keymap("n", "<leader>gfp", ":Git fetch -p<CR>", opts)
 keymap("n", "<leader>gl", ":Git log<CR>", opts)
+keymap("n", "<leader>gbc", ":Telescope git_branches<CR>", opts)
 keymap("n", "<leader>gbf", ":Git blame<CR>", opts)
 -- Gitsigns
 keymap("n", "<leader>gbl", ":Gitsigns blame_line<CR>", opts)
