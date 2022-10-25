@@ -63,7 +63,7 @@ return packer.startup(function(use)
     use "lewis6991/gitsigns.nvim"
     use "tpope/vim-commentary"
     use "windwp/nvim-autopairs"
-    use { "akinsho/toggleterm.nvim", tag = 'v1.*' }
+    use "akinsho/toggleterm.nvim"
 
     -- cmp plugins
     use "hrsh7th/nvim-cmp"
