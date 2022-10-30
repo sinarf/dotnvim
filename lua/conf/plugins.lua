@@ -56,6 +56,7 @@ return packer.startup(function(use)
     use "nvim-telescope/telescope-media-files.nvim"
     use "nvim-telescope/telescope-project.nvim"
     use "nvim-telescope/telescope-file-browser.nvim"
+    use "nvim-telescope/telescope-dap.nvim"
 
     -- Development
     use "airblade/vim-rooter"
@@ -78,6 +79,7 @@ return packer.startup(function(use)
     use "hrsh7th/cmp-emoji"
     use "KadoBOT/cmp-plugins"
     use "jc-doyle/cmp-pandoc-references"
+    use "rcarriga/cmp-dap"
 
     -- snippets
     use "L3MON4D3/LuaSnip"
@@ -86,7 +88,10 @@ return packer.startup(function(use)
     -- LSP
     use "neovim/nvim-lspconfig"
     use "williamboman/nvim-lsp-installer"
-    -- use "HallerPatrick/py_lsp.nvim"
+    use 'mfussenegger/nvim-dap'
+    use 'theHamsta/nvim-dap-virtual-text'
+    use 'rcarriga/nvim-dap-ui'
+    use 'mfussenegger/nvim-dap-python'
     use "jose-elias-alvarez/null-ls.nvim"
     use "folke/trouble.nvim"
     use "folke/todo-comments.nvim"

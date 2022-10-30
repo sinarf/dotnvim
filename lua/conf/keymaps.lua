@@ -84,7 +84,16 @@ keymap("n", "<leader>ns", ":e ~/Sync/shop<CR>", opts)
 -- make hlsearch useful and not persistent
 keymap("n", "<esc>", "<esc>:nohlsearch<CR><esc>", opts)
 
-
 keymap("n", "<leader>a", ":Alpha<CR>", opts)
+
+-- dap
+keymap("n", "<leader>db", ":lua require'dap'.toggle_breakpoint()<CR>", opts)
+keymap("n", "<leader>dB", ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>", opts)
+keymap("n", "<leader>dc", ":lua require'dap'.continue()<CR>", opts)
+keymap("n", "<leader>di", ":lua require'dap'.step_into()<CR>", opts)
+keymap("n", "<leader>do", ":lua require'dap'.step_over()<CR>", opts)
+keymap("n", "<leader>dl", ":lua require'dap'.run_last()<CR>", opts)
+
+keymap("n", "<leader>dut", ":lua require'dapui'.toggle()<CR>", opts)
 
 require('which-key').setup()
