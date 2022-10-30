@@ -23,10 +23,10 @@ It is not forbidden, you are allowed, see the [licence](./LICENSE) for details, 
     - [X] Format. Working but should use black thru the null LSP plugin
   - [X] Bash
     - [X] LSP
-    - [ ] ~~Format~~ Could use `shfmt` but does stuff I don't want/like and I didn't any obvious configuration flag that I could use. 
+    - [ ] Format using `shfmt`
   - [ ] Groovy - Jenkins Pipeline
-    - [X] LSP - Easy to install but not very useful. Might want to use `npm-groovy-lint` with `null-ls`
-    - [ ] Format
+    - [X] LSP
+    - [X] Format
   - [X] Lua
     - [X] LSP
     - [X] Format
