@@ -113,6 +113,8 @@ return packer.startup(function(use)
     use "folke/which-key.nvim"
 
     -- colorscheme
+    use "sheerun/vim-polyglot"
+    use "ghifarit53/tokyonight-vim"
     use { 'dracula/vim', as = 'dracula' }
     use "morhetz/gruvbox"
 
