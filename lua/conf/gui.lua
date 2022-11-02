@@ -3,7 +3,7 @@
 vim.cmd [[
     if exists("g:neovide")
         let g:neovide_cursor_antialiasing=v:true
-        let g:neovide_transparency=0.9
+        let g:neovide_transparency=0.95
         let g:neovide_fullscreen=v:false
         let g:neovide_cursor_vfx_mode = "railgun"
         let g:neovide_cursor_vfx_particle_lifetime=2
@@ -13,7 +13,8 @@ vim.cmd [[
     endif
 ]]
 
--- Handle the zoom, sourced from: https://github.com/neovide/neovide/issues/1301#issuecomment-1119370546
+-- Handle the zoom, as if you were in a lesser editor that has those futile, yet handy, feature.
+-- sourced from: https://github.com/neovide/neovide/issues/1301#issuecomment-1119370546
 vim.g.gui_font_default_size = 16
 vim.g.gui_font_size = vim.g.gui_font_default_size
 -- vim.g.gui_font_face = "FiraCode Nerd Font"
@@ -40,3 +41,4 @@ local opts = { noremap = true, silent = true }
 vim.keymap.set({ 'n', 'i' }, "<C-=>", function() ResizeGuiFont(1) end, opts)
 vim.keymap.set({ 'n', 'i' }, "<C-->", function() ResizeGuiFont(-1) end, opts)
 vim.keymap.set({ 'n', 'i' }, "<C-BS>", function() ResetGuiFont() end, opts)
+-- End of zoom configuration
