@@ -21,6 +21,7 @@ require "conf.shell"
 require "conf.toggleterm"
 require "conf.groovy"
 require "conf.autopairs"
+require "conf.surround"
 
 require "conf.gui"
 

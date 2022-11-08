@@ -43,6 +43,7 @@ return packer.startup(function(use)
     use "nvim-lua/popup.nvim"
     use "nvim-lua/plenary.nvim"
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+    use "nvim-treesitter/nvim-treesitter-textobjects"
     use "lukas-reineke/indent-blankline.nvim"
     use { "akinsho/bufferline.nvim", tag = "v2.*" }
     use "pocco81/auto-save.nvim"
@@ -50,6 +51,7 @@ return packer.startup(function(use)
     use "fgheng/winbar.nvim"
     use "tpope/vim-eunuch"
     use "tpope/vim-vinegar"
+    use "kylechui/nvim-surround"
 
     -- It's all fuzzy and fun
     use "nvim-telescope/telescope.nvim"
