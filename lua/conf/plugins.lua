@@ -99,6 +99,14 @@ return packer.startup(function(use)
     use "folke/trouble.nvim"
     use "folke/todo-comments.nvim"
 
+    -- Poetry virtual environment
+    vim.g.venom_loaded = 1
+    use {
+        'rafi/vim-venom',
+        ft = { 'python' },
+        config = 'require("venom").setup()'
+    }
+
     -- Documentation and Notes taking
     use({
         "iamcco/markdown-preview.nvim",
