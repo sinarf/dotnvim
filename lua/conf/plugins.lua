@@ -128,6 +128,7 @@ return packer.startup(function(use)
     use "ghifarit53/tokyonight-vim"
     use { 'dracula/vim', as = 'dracula' }
     use "morhetz/gruvbox"
+    use "xiyaowong/nvim-transparent"
 
     -- learning curve
     use {
