@@ -130,6 +130,10 @@ return packer.startup(function(use)
     use "morhetz/gruvbox"
 
     -- learning curve
+    use {
+        'glacambre/firenvim',
+        run = function() vim.fn['firenvim#install'](0) end
+    }
     use "ThePrimeagen/vim-be-good"
 
     -- Automatically set up your configuration after cloning packer.nvim
