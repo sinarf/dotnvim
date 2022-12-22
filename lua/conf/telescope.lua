@@ -90,6 +90,12 @@ telescope.setup {
     extensions = {
         project = {
             theme = "dropdown",
+            -- The list of project is maintained here: ~/.local/share/nvim/telescope-projects.txt
+            base_dirs = {
+                -- Add all my git projects
+                { path = '~/git/', max_depth = 3 },
+            },
+            display_type = 'full', -- display path project too.
         },
         media_files = {
             -- filetypes whitelist
