@@ -10,6 +10,7 @@ vim.cmd [[
         let g:neovide_cursor_vfx_particle_density=7.0
         let g:neovide_cursor_vfx_particle_speed=10.0
         let g:neovide_cursor_vfx_particle_curl=1.0
+        let g:transparent_enabled = v:false
     endif
 ]]
 
@@ -44,3 +45,6 @@ vim.keymap.set({ 'n', 'i' }, "<C-BS>", function() ResetGuiFont() end, opts)
 vim.keymap.set({ 'n', 'i' }, "<C-ScrollWheelUp>", function() ResizeGuiFont(1) end, opts)
 vim.keymap.set({ 'n', 'i' }, "<C-ScrollWheelDown>", function() ResizeGuiFont(-1) end, opts)
 -- End of zoom configuration
+vim.keymap.set({ 'n', 'i' }, "<leader>nf", ":let g:neovide_fullscreen = v:true<CR>", opts)
+vim.keymap.set({ 'n', 'i' }, "<leader>nF", ":let g:neovide_fullscreen = v:false<CR>", opts)
+

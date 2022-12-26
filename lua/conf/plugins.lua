@@ -122,13 +122,14 @@ return packer.startup(function(use)
     -- use 'tribela/vim-transparent'
     use 'norcalli/nvim-colorizer.lua'
     use "folke/which-key.nvim"
+    use "xiyaowong/nvim-transparent"
 
     -- colorscheme
-    use "sheerun/vim-polyglot"
     use "ghifarit53/tokyonight-vim"
     use { 'dracula/vim', as = 'dracula' }
     use "morhetz/gruvbox"
-    use "xiyaowong/nvim-transparent"
+    use "arcticicestudio/nord-vim"
+    use 'navarasu/onedark.nvim'
 
     -- learning curve
     use {
