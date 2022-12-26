@@ -1,10 +1,9 @@
 vim.cmd [[
-  colorscheme dracula
   set laststatus=3
   highlight WinSeparator guifg=None
 ]]
 
-require("transparent").setup({
+require "transparent".setup({
   enable = true, -- boolean: enable transparent
   extra_groups = { -- table/string: additional groups that should be cleared
     -- In particular, when you set it to 'all', that means all available groups
@@ -19,3 +18,12 @@ require("transparent").setup({
   },
   exclude = {}, -- table: groups you don't want to clear
 })
+
+-- Lua
+require('onedark').setup {
+  style = 'warmer',
+  lualine = {
+    transparent = true, -- lualine center bar transparency
+  },
+}
+require('onedark').load()

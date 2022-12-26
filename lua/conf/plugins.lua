@@ -131,6 +131,8 @@ return packer.startup(function(use)
     use "arcticicestudio/nord-vim"
     use 'navarasu/onedark.nvim'
 
+    use "xiyaowong/nvim-transparent"
+
     -- learning curve
     use {
         'glacambre/firenvim',
