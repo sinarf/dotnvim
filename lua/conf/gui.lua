@@ -3,7 +3,7 @@
 vim.cmd [[
     if exists("g:neovide")
         let g:neovide_cursor_antialiasing=v:true
-        let g:neovide_transparency=0.90
+        let g:neovide_transparency=0.95
         let g:neovide_fullscreen=v:false
         let g:neovide_cursor_vfx_mode = "railgun"
         let g:neovide_cursor_vfx_particle_lifetime=2
@@ -45,6 +45,6 @@ vim.keymap.set({ 'n', 'i' }, "<C-BS>", function() ResetGuiFont() end, opts)
 vim.keymap.set({ 'n', 'i' }, "<C-ScrollWheelUp>", function() ResizeGuiFont(1) end, opts)
 vim.keymap.set({ 'n', 'i' }, "<C-ScrollWheelDown>", function() ResizeGuiFont(-1) end, opts)
 -- End of zoom configuration
-vim.keymap.set({ 'n', 'i' }, "<leader>nf", ":let g:neovide_fullscreen = v:true<CR>", opts)
-vim.keymap.set({ 'n', 'i' }, "<leader>nF", ":let g:neovide_fullscreen = v:false<CR>", opts)
+vim.keymap.set({ 'n' }, "<leader>nf", ":let g:neovide_fullscreen = v:true<CR>", opts)
+vim.keymap.set({ 'n' }, "<leader>nF", ":let g:neovide_fullscreen = v:false<CR>", opts)
 
