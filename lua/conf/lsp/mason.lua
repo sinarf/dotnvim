@@ -17,8 +17,6 @@ require("mason").setup {
 require("mason-lspconfig").setup {
     ensure_installed = {
         "sumneko_lua",
-        "pyright",
-        "bashls"
     },
 }
 
@@ -33,7 +31,5 @@ lspconfig.sumneko_lua.setup {
 }
 
 lspconfig.pyright.setup {}
-
-lspconfig.bashls.setup {}
 
 lspconfig.bashls.setup {}
