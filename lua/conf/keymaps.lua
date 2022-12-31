@@ -34,6 +34,7 @@ keymap("n", "<leader>ev", ":e $MYVIMRC<CR>", opts)
 
 -- telescope
 keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
+keymap("n", "<leader>fc", "<cmd>Telescope command_history<cr>", opts)
 keymap("n", "<leader>fd", "<cmd>Telescope diagnostics<cr>", opts)
 keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>fi", "<cmd>Telescope live_grep<cr>", opts)

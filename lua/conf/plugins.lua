@@ -67,6 +67,7 @@ return packer.startup(function(use)
     use "tpope/vim-commentary"
     use "windwp/nvim-autopairs"
     use "akinsho/toggleterm.nvim"
+    use "neomake/neomake"
 
     -- cmp plugins
     use "hrsh7th/nvim-cmp"
@@ -130,8 +131,6 @@ return packer.startup(function(use)
     use "morhetz/gruvbox"
     use "arcticicestudio/nord-vim"
     use 'navarasu/onedark.nvim'
-
-    use "xiyaowong/nvim-transparent"
 
     -- learning curve
     use {
