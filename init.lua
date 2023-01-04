@@ -27,5 +27,4 @@ require "conf.surround"
 
 require "conf.gui"
 
-vim.notify("Neovim is love ❤️", "info")
 -- TODO add the secret file

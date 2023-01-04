@@ -67,7 +67,7 @@ keymap("n", "gt", "<cmd>TroubleToggle lsp_type_definitions<cr>", opts)
 -- fugitive
 keymap("n", "<leader>gg", ":Git<CR>", opts)
 keymap("n", "<leader>gf", ":Git fetch<CR>", opts)
-keymap("n", "<leader>gll", ":Git log --oneline<CR>", opts)
+keymap("n", "<leader>gll", ":Git log --pretty='%C(yellow)%h %Cblue%aN%C(auto)%d %Creset%s'<CR>", opts)
 keymap("n", "<leader>glf", ":Git log<CR>", opts)
 keymap("n", "<leader>gbc", ":Telescope git_branches<CR>", opts)
 keymap("n", "<leader>gbf", ":Git blame<CR>", opts)
