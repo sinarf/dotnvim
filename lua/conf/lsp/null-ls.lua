@@ -11,7 +11,11 @@ local diagnostics = null_ls.builtins.diagnostics
 null_ls.setup {
     debug = false,
     sources = {
-        formatting.prettier.with { extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } },
+        formatting.prettier.with { extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
+            -- Remove markdown from the filetypes list because prettier replace thing bullets points (*) are dash (-) which makes no sense and is stupidly ugly
+            filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "css", "scss", "less",
+                "html", "json", "jsonc", "yaml", "graphql", "handlebars" },
+        },
         -- preview to split lines that are to long (will be default some day)
         formatting.black.with { extra_args = { "--experimental-string-processing" } },
         formatting.npm_groovy_lint,

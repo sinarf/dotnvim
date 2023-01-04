@@ -12,34 +12,15 @@
 
 ## Disclaimer
 
-This is my personal configuration, it is not meant be used by anybody else.
-It is not forbidden, you are allowed, see the [licence](./LICENSE) for details, anyhow it would be probably very stupid to do it.
+This is my personal configuration, it is not meant be used by anybody else. You can be sure that sooner than later it will breaks.
+
+It is not forbidden, but it would be probably very stupid to do it.
+
+Feel free, to take snippets of code you might need, or to tell me if I am doing something wrong, I probably do.
 
 ## This configuration should have the following feature
 
-- [ ] PDE (personal Development Environment)
-  - [X] Python
-    - [X] LSP
-    - [X] Format. Working but should use black thru the null LSP plugin
-  - [X] Bash
-    - [X] LSP
-    - [ ] Format using `shfmt`
-  - [ ] Groovy - Jenkins Pipeline
-    - [X] LSP
-    - [X] Format
-  - [X] Lua
-    - [X] LSP
-    - [X] Format
-- [ ] Note taking / Doc
-  - [X] Markdown
-    - [X] LSP
-    - [X] Format
-    - [X] Live Preview
-    - [X] keymap to run `mdcat` in a terminal for the current markdown file
-
-## Installation
-
-Clone the repo : 
+Clone the repo :
 
 ```shell
 git clone git@github.com:sinarf/dotnvim.git .config/nvim
