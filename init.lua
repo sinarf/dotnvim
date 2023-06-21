@@ -1,30 +1,11 @@
-require "conf.options"
-require "conf.keymaps"
-require "conf.plugins"
-require "conf.notify"
-require "conf.winbar"
-require "conf.autosave"
-require "conf.format"
-require "conf.bufferline"
-require "conf.rooter"
-require "conf.git"
-require "conf.telescope"
-require "conf.cmp"
-require "conf.lsp"
-require "conf.dap"
-require "conf.colorscheme"
-require "conf.startup_screen"
-require "conf.line"
-require "conf.notes"
-require "conf.todo"
-require "conf.neomake"
-require "conf.python"
-require "conf.shell"
-require "conf.toggleterm"
-require "conf.groovy"
-require "conf.autopairs"
-require "conf.surround"
+require("plugins")
+require("colorscheme")
+require("options")
+require("keymaps")
 
-require "conf.gui"
-
--- TODO add the secret file
+local init_group = vim.api.nvim_create_augroup("init_group", { clear = true })
+vim.api.nvim_create_autocmd("BufWritePost", {
+  group = init_group,
+  pattern = "*/.config/nvim/**/*.lua",
+  command = "source $MYVIMRC",
+})
