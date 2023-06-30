@@ -154,19 +154,11 @@ if null_ls_status_ok then
     null_ls.setup {
         debug = true,
         sources = {
-            -- formatting.npm_groovy_lint.with {
-            --     args = { '--noserver', '--config', '${HOME}/.config/groovylintrc.json', '--output',
-            --         '/tmp/npm-groovy-lint.json', '--format', '-' },
-            --     filetypes = { 'Jenkinsfile', 'groovy' },
-            -- },
             formatting.deno_fmt.with({
                 filetypes = { "javascript", "javascriptreact", "json", "jsonc", "typescript", "typescriptreact" }
             }),
             formatting.prettier,
             formatting.shfmt,
-            diagnostics.gitlint,
-            -- FIXME: error notification when opening asciidoc document.
-            -- diagnostics.vale.with({ filetypes = { "asciidoc" } }),
         },
     }
 end
@@ -186,3 +178,7 @@ local signs = {
 for _, sign in ipairs(signs) do
     vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
 end
+require'lspconfig'.sourcekit.setup{}
+require'lspconfig'.lemminx.setup{
+    filetypes= { "xml", "xsd", "xsl", "xslt", "svg", "ant" }
+}

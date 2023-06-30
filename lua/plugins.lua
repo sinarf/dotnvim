@@ -161,7 +161,6 @@ require('packer').startup(function(use)
     use "folke/which-key.nvim"
     use "xiyaowong/nvim-transparent"
     use "aileot/vim-confirm-quit" -- because it is too easy to quit vim sometimes
-    use { 'echasnovski/mini.animate', branch = 'stable' }
     -- colorscheme
     use 'navarasu/onedark.nvim' -- Theme inspired by Atom
     use { "ellisonleao/gruvbox.nvim" }
