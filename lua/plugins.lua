@@ -168,6 +168,7 @@ require('packer').startup(function(use)
     use "arcticicestudio/nord-vim"
     use { "catppuccin/nvim", as = "catppuccin" }
     use 'folke/tokyonight.nvim'
+    use 'loctvl842/monokai-pro.nvim'
 
     -- Fuzzy Finder (files, lsp, etc)
     use { 'nvim-telescope/telescope.nvim', branch = '0.1.x', requires = { 'nvim-lua/plenary.nvim' } }

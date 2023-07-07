@@ -27,7 +27,7 @@ require "transparent".setup({
 -- require('onedark').load()
 require("catppuccin").setup({
     flavour = "mocha", -- latte, frappe, macchiato, mocha
-    background = { -- :h background
+    background = {     -- :h background
         light = "latte",
         dark = "mocha",
     },
@@ -40,7 +40,7 @@ require("catppuccin").setup({
         percentage = 0.15,
     },
     no_italic = false, -- Force no italic
-    no_bold = false, -- Force no bold
+    no_bold = false,   -- Force no bold
     styles = {
         comments = { "italic" },
         conditionals = { "italic" },
@@ -66,3 +66,5 @@ require("catppuccin").setup({
     },
 })
 require('catppuccin').load()
+require("monokai-pro").setup()
+vim.cmd([[colorscheme monokai-pro]])
