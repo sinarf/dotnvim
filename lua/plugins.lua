@@ -89,7 +89,7 @@ require('packer').startup(function(use)
 
     -- Git related plugins
     use {
-        'TimUntersberger/neogit',
+        'NeogitOrg/neogit',
         requires = {
             'nvim-lua/plenary.nvim',
             'sindrets/diffview.nvim'
@@ -162,7 +162,7 @@ require('packer').startup(function(use)
     use "xiyaowong/nvim-transparent"
     use "aileot/vim-confirm-quit" -- because it is too easy to quit vim sometimes
     -- colorscheme
-    use 'navarasu/onedark.nvim' -- Theme inspired by Atom
+    use 'navarasu/onedark.nvim'   -- Theme inspired by Atom
     use { "ellisonleao/gruvbox.nvim" }
     use { 'dracula/vim', as = 'dracula' }
     use "arcticicestudio/nord-vim"
