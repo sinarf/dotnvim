@@ -135,8 +135,8 @@ require('packer').startup(function(use)
     use 'tpope/vim-sleuth'                    -- Detect tabstop and shiftwidth automatically
     use "folke/todo-comments.nvim"
     use {
-        "FeiyouG/command_center.nvim",
-        requires = { "nvim-telescope/telescope.nvim" }
+      "FeiyouG/commander.nvim",
+      requires = { "nvim-telescope/telescope.nvim" }
     }
     use 'stevearc/overseer.nvim'
     use 'stevearc/dressing.nvim'
