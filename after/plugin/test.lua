@@ -1,4 +1,3 @@
-
 local neotest = require("neotest")
 neotest.setup({
   adapters = {
@@ -143,8 +142,8 @@ neotest.setup({
 
 local test_group = vim.api.nvim_create_augroup("test", { clear = true })
 vim.api.nvim_create_autocmd({
-  "BufWritePost",
-},
+    "BufWritePost",
+  },
   {
     group = test_group,
     pattern = "*.py",
@@ -155,3 +154,12 @@ vim.api.nvim_create_autocmd({
     end,
   }
 )
+vim.cmd([[
+command! NeotestSummary lua require("neotest").summary.toggle()
+command! NeotestFile lua require("neotest").run.run(vim.fn.expand("%"))
+command! Neotest lua require("neotest").run.run(vim.fn.getcwd())
+command! NeotestNearest lua require("neotest").run.run()
+command! NeotestDebug lua require("neotest").run.run({ strategy = "dap" })
+command! NeotestAttach lua require("neotest").run.attach()
+command! NeotestOutput lua require("neotest").output.open()
+]])
