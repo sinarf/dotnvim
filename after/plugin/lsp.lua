@@ -140,45 +140,23 @@ mason_lspconfig.setup_handlers {
     end,
 }
 
-require("mason-null-ls").setup({
-    automatic_setup = true,
-})
-
-local null_ls_status_ok, null_ls = pcall(require, "null-ls")
-if null_ls_status_ok then
-    -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
-    local formatting = null_ls.builtins.formatting
-    -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
-    local diagnostics = null_ls.builtins.diagnostics
-
-    null_ls.setup {
-        debug = true,
-        sources = {
-            formatting.deno_fmt.with({
-                filetypes = { "javascript", "javascriptreact", "json", "jsonc", "typescript", "typescriptreact" }
-            }),
-            formatting.prettier,
-            formatting.shfmt,
-        },
-    }
-end
 -- Turn on lsp status information
 require('fidget').setup()
 
 local signs = {
-    { name = "DiagnosticSignError",    text = "" },
-    { name = "DiagnosticSignWarn",     text = "" },
-    { name = "DiagnosticSignHint",     text = "" },
-    { name = "DiagnosticSignInfo",     text = "" },
-    { name = "DapBreakpoint",          text = "" },
+    { name = "DiagnosticSignError", text = "" },
+    { name = "DiagnosticSignWarn", text = "" },
+    { name = "DiagnosticSignHint", text = "" },
+    { name = "DiagnosticSignInfo", text = "" },
+    { name = "DapBreakpoint", text = "" },
     { name = "DapBreakpointCondition", text = "" },
-    { name = "DapStopped",             text = "" },
+    { name = "DapStopped", text = "" },
 }
 
 for _, sign in ipairs(signs) do
     vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
 end
-require'lspconfig'.sourcekit.setup{}
-require'lspconfig'.lemminx.setup{
-    filetypes= { "xml", "xsd", "xsl", "xslt", "svg", "ant" }
+require 'lspconfig'.sourcekit.setup {}
+require 'lspconfig'.lemminx.setup {
+    filetypes = { "xml", "xsd", "xsl", "xslt", "svg", "ant" }
 }

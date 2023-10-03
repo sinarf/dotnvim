@@ -19,7 +19,6 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
 require('lazy').setup({
-
     { -- LSP Configuration & Plugins
         'neovim/nvim-lspconfig',
         dependencies = {
@@ -43,8 +42,6 @@ require('lazy').setup({
     },
     {
         "williamboman/mason.nvim",
-        "jose-elias-alvarez/null-ls.nvim",
-        "jayp0521/mason-null-ls.nvim",
         "RubixDev/mason-update-all",
         'WhoIsSethDaniel/mason-tool-installer.nvim',
     },
@@ -112,6 +109,11 @@ require('lazy').setup({
     "CRAG666/code_runner.nvim",
     "airblade/vim-rooter",
     'preservim/vimux',
+
+    {
+        'stevearc/conform.nvim',
+        event = { "BufReadPre", "BufNewFile" }
+    },
 
     -- testing
     {

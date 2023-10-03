@@ -14,3 +14,11 @@ vim.api.nvim_create_autocmd('BufEnter', {
     pattern = '*',
     command = "checktime",
 })
+
+vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+    group = global_group,
+    pattern = '*',
+    callback = function()
+        require("lint").try_lint()
+    end,
+})
