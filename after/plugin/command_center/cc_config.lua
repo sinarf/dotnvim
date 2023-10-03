@@ -26,12 +26,15 @@ commander.add({
     category = category,
   },
   {
+    desc = "Update Neovim plugins",
+    cmd = "<cmd>Lazy update<CR>",
+    category = category,
+  },
+  {
     desc = "Toggle auto save",
     cmd = "<CMD>ASToggle<CR>",
     category = category,
   },
-  -- buffers
-  --keymap.set("n", "<leader>bda", ":%bdelete<CR>", opts) -- close all buffers and open Alpha
   {
     desc = "Close all buffers",
     cmd = "<cmd>%bdelete<cr>",
