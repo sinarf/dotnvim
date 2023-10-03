@@ -66,13 +66,3 @@ commander.add({
     category = category,
   },
 })
-
--- Add a new command
-require("commander").add({
-  {
-    desc = "Open commander",
-    cmd = require("commander").show,
-    keys = { "n", "<Leader>fc" },
-  }
-})
--- Show commander and select the command by pressing "<leader>fc"
