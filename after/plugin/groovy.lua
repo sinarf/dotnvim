@@ -22,6 +22,6 @@ vim.api.nvim_create_autocmd("FileType", {
     group = groovy_augroup,
     pattern = { "Jenkinsfile", "groovy" },
     callback = function()
-        vim.keymap.set("n", "<localleader>lf", ":!npm-groovy-lint --format %<CR>", { noremap = true, silent = true })
+        vim.keymap.set("n", "<localleader>lf", ":!format_idea.sh %<CR>", { noremap = true, silent = true })
     end,
 })

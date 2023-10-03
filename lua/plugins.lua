@@ -144,19 +144,17 @@ require('lazy').setup({
     "vigoux/notifier.nvim",
     {
         'akinsho/bufferline.nvim',
-        tag = "v3.*",
+        version = "*",
         dependencies = 'kyazdani42/nvim-web-devicons'
     },
     {
         "utilyre/barbecue.nvim",
-        tag = "*",
+        name = "barbecue",
+        version = "*",
         dependencies = {
-            "neovim/nvim-lspconfig",
             "SmiteshP/nvim-navic",
             "kyazdani42/nvim-web-devicons", -- optional dependency
         },
-        config = function()
-        end,
     },
     'norcalli/nvim-colorizer.lua',
     "folke/which-key.nvim",

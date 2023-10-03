@@ -1,8 +1,8 @@
-local command_center = require("command_center")
+local commander = require("commander")
 local noremap = { noremap = true }
 local category = 'notes'
 
-command_center.add({
+commander.add({
   {
     -- You can pass in a key sequences as if you would type them in nvim
     desc = "Open Today Note",

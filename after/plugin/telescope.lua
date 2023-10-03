@@ -103,7 +103,7 @@ telescope.setup {
             filetypes = { "png", "webp", "jpg", "jpeg" },
             find_cmd = "rg" -- find command (defaults to `fd`)
         },
-        command_center = {
+        commander = {
 
         },
         -- Your extension configuration goes here:
@@ -113,7 +113,7 @@ telescope.setup {
         -- please take a look at the readme of the extension you want to configure
     },
 }
-telescope.load_extension('command_center')
+telescope.load_extension('commander')
 telescope.load_extension('dap')
 telescope.load_extension('file_browser')
 telescope.load_extension('luasnip')

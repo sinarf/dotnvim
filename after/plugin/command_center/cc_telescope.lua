@@ -1,8 +1,8 @@
-local command_center = require("command_center")
+local commander = require("commander")
 local noremap = { noremap = true }
 local category = 'telescope'
 
-command_center.add({
+commander.add({
   {
     desc = "Telescope",
     cmd = "<CMD>Telescope<CR>",

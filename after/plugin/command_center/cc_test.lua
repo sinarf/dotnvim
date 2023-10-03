@@ -1,10 +1,10 @@
 
-local command_center = require("command_center")
+local commander = require("commander")
 local noremap = { noremap = true }
 local category = 'test'
 local neotest = require('neotest')
 
-command_center.add({
+commander.add({
   {
     desc = 'Run this test file',
     cmd = function ()

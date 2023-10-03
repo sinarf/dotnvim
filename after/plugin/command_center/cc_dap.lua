@@ -1,10 +1,10 @@
-local command_center = require("command_center")
+local commander = require("commander")
 local noremap = { noremap = true }
 local category = 'debug'
 local dap = require('dap')
 local dapui = require('dapui')
 
-command_center.add({
+commander.add({
   {
     desc = "Debug: Start / Continue",
     cmd = function()
@@ -66,3 +66,13 @@ command_center.add({
     category = category,
   },
 })
+
+-- Add a new command
+require("commander").add({
+  {
+    desc = "Open commander",
+    cmd = require("commander").show,
+    keys = { "n", "<Leader>fc" },
+  }
+})
+-- Show commander and select the command by pressing "<leader>fc"

@@ -1,10 +1,10 @@
-local command_center = require("command_center")
+local commander = require("commander")
 local noremap = { noremap = true }
 local silent_noremap = { noremap = true, silent = true }
 
 local category = 'LSP'
 
-command_center.add({
+commander.add({
   {
     desc = "Format Document",
     cmd = "<cmd>lua vim.lsp.buf.format({async = true})<cr>",

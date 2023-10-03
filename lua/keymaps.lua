@@ -23,7 +23,7 @@ keymap.set("v", "p", '"_dP', opts)
 
 -- telescope
 -- Most keymap will come from the command center plugin
-keymap.set("n", "<leader>cc", "<cmd>Telescope command_center<cr>", opts)
+keymap.set("n", "<leader>cc", "<cmd>Telescope commander<cr>", opts)
 
 -- make hlsearch useful and not persistent
 keymap.set("n", "<esc>", "<esc>:nohlsearch<CR><esc>", opts)

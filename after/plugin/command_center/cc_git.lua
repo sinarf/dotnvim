@@ -1,8 +1,8 @@
-local command_center = require("command_center")
+local commander = require("commander")
 local noremap = { noremap = true }
 local category = 'git'
 
-command_center.add({
+commander.add({
   {
     desc = "neogit",
     cmd = "<cmd>Neogit<cr>",

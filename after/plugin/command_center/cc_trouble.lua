@@ -1,8 +1,8 @@
-local command_center = require("command_center")
+local commander = require("commander")
 local noremap = { noremap = true }
 local category = 'trouble'
 
-command_center.add({
+commander.add({
   {
     desc = "Trouble workspace diagnostics",
     cmd = "<cmd>TroubleToggle workspace_diagnostics<cr>",
