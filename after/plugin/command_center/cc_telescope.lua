@@ -97,29 +97,3 @@ commander.add({
     category = category,
   },
 })
--- keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
--- keymap.set("n", "<leader>fch", "<cmd>Telescope command_history<cr>", opts)
--- keymap.set("n", "<leader>fcl", "<cmd>Telescope commands<cr>", opts)
--- keymap.set("n", "<leader>fd", "<cmd>Telescope diagnostics<cr>", opts)
--- keymap.set("n", "<leader>fi", "<cmd>Telescope live_grep<cr>", opts)
--- keymap.set("n", "<leader>fj", "<cmd>Telescope jumplist<cr>", opts)
--- keymap.set("n", "<leader>fg", "<cmd>Telescope git_files<cr>", opts)
--- keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts)
--- keymap.set("n", "<leader>fl", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
--- keymap.set("n", "<leader>fm", "<cmd>Telescope file_browser<cr>", opts)
--- keymap.set("n", "<leader>fp", ":lua require'telescope'.extensions.project.project{ display_type = 'full' }<CR>", opts)
--- keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", opts)
--- keymap.set("n", "<leader>ftd", "<cmd>TodoTelescope<cr>", opts)
--- keymap.set("n", "<leader>ftl", "<cmd>Telescope<cr>", opts)
--- keymap.set("n", "<leader>fs", "<cmd>Telescope luasnip<cr>", { desc = "[F]ind [S]nippet", unpack(opts) })
--- -- search for the current word in the current project
--- keymap.set("n", "<leader>fgt", "<cmd>Telescope grep_string<cr>", opts)
---
--- keymap.set('n', '<leader>/', function()
---   -- You can pass additional configuration to telescope to change theme, layout, etc.
---   require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
---       winblend = 10,
---       previewer = false,
---   })
--- end, { desc = '[/] Fuzzily search in current buffer]' })
---

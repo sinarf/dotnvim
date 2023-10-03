@@ -1,8 +1,17 @@
 local commander = require("commander")
 local noremap = { noremap = true }
-local silent_noremap = { noremap = true, silent = true }
 
 local category = 'config'
+
+require("commander").setup({
+  integration = {
+    telescope = {
+      enable = true,
+      -- Optional, you can use any telescope supported theme
+      theme = require("telescope.themes").commander
+    }
+  }
+})
 
 commander.add({
   {
