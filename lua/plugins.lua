@@ -136,8 +136,8 @@ require('lazy').setup({
     {
         "FeiyouG/commander.nvim",
         dependencies = { "nvim-telescope/telescope.nvim" }
-    }
-    , 'stevearc/overseer.nvim',
+    },
+    'stevearc/overseer.nvim',
     'stevearc/dressing.nvim',
     'nvim-lualine/lualine.nvim',
     'kyazdani42/nvim-web-devicons',

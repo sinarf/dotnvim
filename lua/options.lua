@@ -3,7 +3,6 @@ vim.o.clipboard = "unnamedplus"
 vim.o.backup = false
 vim.o.undofile = true
 vim.o.autoread = true
-vim.o.fileencoding = "utf-8"
 -- search
 vim.o.hlsearch = true
 vim.o.smartcase = true
