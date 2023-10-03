@@ -4,11 +4,6 @@ local opts = { noremap = true, silent = true }
 -- Shorten function name
 local keymap = vim.keymap
 
---Remap space as leader key
-keymap.set("", "<Space>", "<Nop>", opts)
-vim.g.mapleader = " "
-vim.g.maplocalleader = ","
-
 -- open the file even if it does not exists, very handy in markdown.
 keymap.set("n", "gf", ":e <cfile><CR>", opts)
 

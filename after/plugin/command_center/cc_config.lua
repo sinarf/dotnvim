@@ -12,11 +12,6 @@ command_center.add({
     category = category,
   },
   {
-    desc = "Update Plugins",
-    cmd = "<cmd>PackerSync<CR>",
-    category = category,
-  },
-  {
     desc = "Edit Neovim plugins",
     cmd = "<cmd>e $HOME/.config/nvim/lua/plugins.lua<CR>",
     category = category,
