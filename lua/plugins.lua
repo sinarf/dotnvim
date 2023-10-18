@@ -86,11 +86,14 @@ require('lazy').setup({
 
     -- Git related plugins
     {
-        'NeogitOrg/neogit',
+        "NeogitOrg/neogit",
         dependencies = {
-            'nvim-lua/plenary.nvim',
-            'sindrets/diffview.nvim'
-        }
+            "nvim-lua/plenary.nvim", -- required
+            "nvim-telescope/telescope.nvim", -- optional
+            "sindrets/diffview.nvim", -- optional
+            "ibhagwan/fzf-lua",      -- optional
+        },
+        config = true
     },
     'lewis6991/gitsigns.nvim',
     'tpope/vim-fugitive',
