@@ -117,6 +117,7 @@ require('lazy').setup({
         'stevearc/conform.nvim',
         event = { "BufReadPre", "BufNewFile" }
     },
+    'mfussenegger/nvim-lint',
 
     -- testing
     {
