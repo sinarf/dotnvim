@@ -62,6 +62,7 @@ local servers = {
             },
         },
     },
+    lemminx = {},
     pylsp = {
         plugins = {
             black = { preview = true },
