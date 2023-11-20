@@ -88,10 +88,10 @@ require('lazy').setup({
     {
         "NeogitOrg/neogit",
         dependencies = {
-            "nvim-lua/plenary.nvim", -- required
+            "nvim-lua/plenary.nvim",         -- required
             "nvim-telescope/telescope.nvim", -- optional
-            "sindrets/diffview.nvim", -- optional
-            "ibhagwan/fzf-lua",      -- optional
+            "sindrets/diffview.nvim",        -- optional
+            "ibhagwan/fzf-lua",              -- optional
         },
         config = true
     },
@@ -107,6 +107,11 @@ require('lazy').setup({
     },
     'martinda/Jenkinsfile-vim-syntax',
     "tpope/vim-vinegar",
+    {
+        'stevearc/oil.nvim',
+        opts = {},
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+    },
     "pocco81/auto-save.nvim",
     "akinsho/toggleterm.nvim",
     "CRAG666/code_runner.nvim",
