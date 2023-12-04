@@ -31,6 +31,11 @@ commander.add({
     category = category,
   },
   {
+    desc = "Pull Neovim config from origin",
+    cmd = "<cmd>G pull<CR>",
+    category = category,
+  },
+  {
     desc = "Toggle auto save",
     cmd = "<CMD>ASToggle<CR>",
     category = category,
