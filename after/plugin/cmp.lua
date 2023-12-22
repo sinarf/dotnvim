@@ -43,6 +43,7 @@ cmp.setup {
         { name = "buffer",                 keyword_lenght = 5 },
         { name = "path" },
         { name = "nvim_lsp_signature_help" },
+        { name = "nerdfont" },
         { name = "emoji" },
         { name = "pandoc_references" },
         { name = "spell" },

@@ -104,6 +104,7 @@ require('mason-tool-installer').setup {
         'shellcheck',
         'shfmt',
         'stylua',
+        'vale',
     },
 
     -- if set to true this will check each tool for updates. If updates
