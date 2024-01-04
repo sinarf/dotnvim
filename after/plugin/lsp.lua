@@ -69,7 +69,6 @@ local servers = {
         },
     },
     rust_analyzer = {},
-    salt_ls = {},
     taplo = {}, -- toml files
     vimls = {},
 }
