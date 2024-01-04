@@ -98,14 +98,6 @@ require('lazy').setup({
     },
     'lewis6991/gitsigns.nvim',
     'tpope/vim-fugitive',
-    { -- github
-        'pwntester/octo.nvim',
-        dependencies = {
-            'nvim-lua/plenary.nvim',
-            'nvim-telescope/telescope.nvim',
-            'nvim-tree/nvim-web-devicons',
-        },
-    },
     'martinda/Jenkinsfile-vim-syntax',
     "tpope/vim-vinegar",
     {
