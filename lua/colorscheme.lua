@@ -6,7 +6,6 @@ vim.cmd [[
 require "transparent".setup({
     extra_groups = { -- table/string: additional groups that should be cleared
         -- In particular, when you set it to 'all', that means all available groups
-
         -- example of akinsho/nvim-bufferline.lua
         "BufferLineTabClose",
         "BufferlineBufferSelected",
@@ -31,7 +30,7 @@ require("catppuccin").setup({
         light = "latte",
         dark = "mocha",
     },
-    transparent_background = true,
+    transparent_background = false,
     show_end_of_buffer = false, -- show the '~' characters after the end of buffers
     term_colors = true,
     dim_inactive = {
@@ -66,5 +65,3 @@ require("catppuccin").setup({
     },
 })
 require('catppuccin').load()
-require("monokai-pro").setup()
-vim.cmd([[colorscheme monokai-pro]])
