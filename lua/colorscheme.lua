@@ -57,10 +57,19 @@ require("catppuccin").setup({
     color_overrides = {},
     custom_highlights = {},
     integrations = {
+        barbecue = {
+            dim_dirname = true,
+            bold_basename = true,
+            dim_context = true,
+            alt_background = false,
+        },
         cmp = true,
         gitsigns = true,
         mason = true,
+        neogit = true,
         telescope = true,
+        treesitter = true,
+        notify = true,
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     },
 })

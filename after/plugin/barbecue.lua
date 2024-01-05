@@ -3,4 +3,6 @@ if not status_ok then
     return
 end
 
-barbecue.setup()
+barbecue.setup {
+  theme = "catppuccin", -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+}
