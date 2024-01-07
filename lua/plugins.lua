@@ -111,10 +111,7 @@ require('lazy').setup({
     "airblade/vim-rooter",
     'preservim/vimux',
 
-    {
-        'stevearc/conform.nvim',
-        event = { "BufReadPre", "BufNewFile" }
-    },
+
     'mfussenegger/nvim-lint',
 
     -- testing
