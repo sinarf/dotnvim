@@ -26,7 +26,3 @@ vim.api.nvim_create_autocmd("FileType", {
     command = "setlocal spell",
 })
 
-local opts = { noremap = true, silent = true }
-local keymap = vim.api.nvim_set_keymap
-keymap("n", "<localleader>l", ":MarkdownPreview<CR>", opts)
-keymap("n", "<localleader>p", ":term mdcat %<CR>", opts)
