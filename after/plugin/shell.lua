@@ -7,16 +7,18 @@ vim.api.nvim_create_autocmd("FileType", {
     pattern = "sh",
     command = ":setlocal tabstop=2",
 })
+
 vim.api.nvim_create_autocmd("filetype", {
     group = shell_group,
     pattern = "sh",
     command = ":setlocal shiftwidth=2",
 })
 
+
 vim.api.nvim_create_autocmd("FileType", {
     group = shell_group,
-    pattern = "sh",
+    pattern = { "sh" },
     callback = function()
-        vim.keymap.set("n", "<localleader>lf", ":!clean_shell.sh %<CR>", { noremap = true, silent = true })
+        vim.keymap.set("n", "<localleader>lf", "<cmd>!shfmt -w %<cr>", { noremap = true, silent = true })
     end,
 })
