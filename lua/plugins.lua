@@ -128,6 +128,13 @@ require('lazy').setup({
 
     -- productivity tools
     'lukas-reineke/indent-blankline.nvim',
+    {
+        "shellRaining/hlchunk.nvim",
+        event = { "UIEnter" },
+        config = function()
+            require("hlchunk").setup({})
+        end
+    },
     'numToStr/Comment.nvim',
     "windwp/nvim-autopairs",
     'tpope/vim-sleuth',
