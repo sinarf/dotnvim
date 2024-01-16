@@ -2,7 +2,7 @@
 -- Details https://github.com/neovide/neovide/wiki/Configuration
 vim.cmd [[
     "From https://github.com/aileot/vim-confirm-quit/blob/main/plugin/confirm-quit.vim
-    
+
     if exists("g:neovide")
         let g:neovide_cursor_antialiasing=v:true
         let g:neovide_transparency=0.95
@@ -18,6 +18,7 @@ vim.cmd [[
           au!
           " disable confirm quit when not on neovide"
         augroup END
+        lua require('mini.animate').setup()
     endif
 ]]
 

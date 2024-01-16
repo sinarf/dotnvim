@@ -161,6 +161,7 @@ require('lazy').setup({
     "folke/which-key.nvim",
     "xiyaowong/nvim-transparent",
     "aileot/vim-confirm-quit",
+
     -- colorscheme
     'navarasu/onedark.nvim',
     "ellisonleao/gruvbox.nvim",
@@ -169,6 +170,7 @@ require('lazy').setup({
     { "catppuccin/nvim", name = "catppuccin" },
     'folke/tokyonight.nvim',
     'loctvl842/monokai-pro.nvim',
+    { 'echasnovski/mini.nvim', version = false },
 
     -- Fuzzy Finder (files, lsp, etc)
     {
