@@ -24,7 +24,12 @@ vim.cmd [[
 
 -- Handle the zoom, as if you were in a lesser editor that has those futile, yet handy, feature.
 -- sourced from: https://github.com/neovide/neovide/issues/1301#issuecomment-1119370546
-vim.g.gui_font_default_size = 10
+local font_size = 10
+if vim.loop.os_uname().sysname == "Darwin" then
+    font_size = 13
+end
+
+vim.g.gui_font_default_size = font_size
 vim.g.gui_font_size = vim.g.gui_font_default_size
 vim.g.gui_font_face = "FiraCode Nerd Font"
 -- vim.g.gui_font_face = "Cascadia Code"
