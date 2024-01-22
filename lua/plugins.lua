@@ -79,6 +79,10 @@ require('lazy').setup({
             'nvim-treesitter/nvim-treesitter-textobjects',
         }
     },
+    {
+        "heavenshell/vim-pydocstring",
+        build = "make install"
+    },
     -- dap
     'mfussenegger/nvim-dap',
     'theHamsta/nvim-dap-virtual-text',
@@ -127,7 +131,6 @@ require('lazy').setup({
     "nvim-neotest/neotest-plenary",
 
     -- productivity tools
-    'lukas-reineke/indent-blankline.nvim',
     {
         "shellRaining/hlchunk.nvim",
         event = { "UIEnter" },
