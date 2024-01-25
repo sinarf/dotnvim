@@ -115,9 +115,6 @@ require('lazy').setup({
     "airblade/vim-rooter",
     'preservim/vimux',
 
-
-    'mfussenegger/nvim-lint',
-
     -- testing
     {
         "nvim-neotest/neotest",
