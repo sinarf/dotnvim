@@ -97,10 +97,16 @@ require('lazy').setup({
             "nvim-telescope/telescope.nvim", -- optional
             "sindrets/diffview.nvim",        -- optional
         },
-        config = true
+        config = false,
     },
     'lewis6991/gitsigns.nvim',
     'tpope/vim-fugitive',
+    {
+        'akinsho/git-conflict.nvim',
+        version = "*",
+        lconfig = true
+    },
+
     'martinda/Jenkinsfile-vim-syntax',
     "tpope/vim-vinegar",
     {

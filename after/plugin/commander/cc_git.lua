@@ -51,5 +51,11 @@ commander.add({
     keys = { "n", "<leader>gdf", noremap },
     category = category,
   },
+  {
+    desc = 'Git Conflict in quicklist',
+    cmd = "<CMD>GitConflictListQf<CR>",
+    keys = { "n", "<leader>gcl", noremap },
+    category = category,
+  },
 
 })
