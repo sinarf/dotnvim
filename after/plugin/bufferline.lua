@@ -5,9 +5,9 @@ end
 
 bufferline.setup {
     options = {
-        -- numbers = "ordinal",
+        buffer_close_icon = '󰅙',
         diagnostics = "nvim_lsp",
-        -- separator_style = "slant",
+        separator_style = "thin",
         custom_filter = function(buf_number)
             if vim.bo[buf_number].filetype ~= "fugitive" then
                 return true
