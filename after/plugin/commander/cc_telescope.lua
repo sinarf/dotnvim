@@ -24,6 +24,7 @@ commander.add({
   {
     desc = "Search inside current buffer",
     cmd = "<CMD>Telescope current_buffer_fuzzy_find<CR>",
+    keys = { "n", "<leader>fg", noremap },
     category = category,
   },
   {
