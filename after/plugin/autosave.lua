@@ -8,11 +8,10 @@ autosave.setup(
         enabled = true, -- start auto-save when the plugin is loaded (i.e. when your package manager loads it)
         execution_message = {
             message = function() -- message to print on save
-                return ("")
-
+                return ("󰨣")
             end,
             dim = 0.18, -- dim the color of `message`
-            cleaning_interval = 1250, -- (milliseconds) automatically clean MsgArea after displaying `message`. See :h MsgArea
+            cleaning_interval = 500, -- (milliseconds) automatically clean MsgArea after displaying `message`. See :h MsgArea
         },
         trigger_events = {
             "InsertLeave",
@@ -31,7 +30,7 @@ autosave.setup(
                 return false
             end
             if fn.getbufvar(buf, "&modifiable") == 1 and
-                utils.not_in(fn.getbufvar(buf, "&filetype"), { 'gitcommit' }) then
+                utils.not_in(fn.getbufvar(buf, "&filetype"), { 'gitcommit', 'oil'}) then
                 return true -- met condition(s), can save
             end
             return false -- can't save
