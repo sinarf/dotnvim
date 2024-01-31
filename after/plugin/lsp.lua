@@ -54,8 +54,12 @@ local servers = {
     jsonls = {},
     lua_ls = {
         Lua = {
-            workspace = { checkThirdParty = false },
-            telemetry = { enable = false },
+            workspace = {
+                checkThirdParty = false
+            },
+            telemetry = {
+                enable = false
+            },
             diagnostics = {
                 -- Get the language server to recognize the `vim` global
                 globals = { 'vim' },
@@ -65,7 +69,33 @@ local servers = {
     lemminx = {},
     pylsp = {
         plugins = {
-            black = { preview = true },
+            autopep8 = {
+                enabled = true,
+            },
+            black = {
+                enabled = true,
+                preview = true,
+            },
+            jedi_completion = {
+                fuzzy = true
+            },
+            pycodestyle = {
+                maxLineLength = 89
+            },
+            flake8 = {
+                enabled = true,
+                extendIgnore = { 'E501' },
+                maxLineLength = 89,
+            },
+            pyls_mypy = {
+                enabled = true,
+            },
+            pyls_isort = {
+                enabled = true,
+            },
+            rope_autoimport = {
+                enabled = true
+            }
         },
     },
     rust_analyzer = {},
