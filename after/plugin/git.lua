@@ -2,7 +2,7 @@ local status_ok, neogit = pcall(require, "neogit")
 if not status_ok then
   vim.notify("Could not load module neogit!")
   return
-end
+else
 
 neogit.setup(
   {
@@ -34,12 +34,31 @@ neogit.setup(
     },
   }
 )
--- git signs
+end
+
 require('gitsigns').setup()
+require('git-conflict').setup()
 
 local git_group = vim.api.nvim_create_augroup("git", { clear = true })
 vim.api.nvim_create_autocmd("FileType", {
   group = git_group,
   pattern = "gitcommit",
   command = "setlocal spell",
+})
+
+
+vim.api.nvim_create_autocmd('User', {
+  pattern = 'GitConflictDetected',
+  callback = function()
+    vim.notify('Conflict detected in '..vim.fn.expand('<afile>'))
+    vim.cmd.GitConflictListQf()
+end
+})
+
+vim.api.nvim_create_autocmd('User', {
+  pattern = 'GitConflictResolved',
+  callback = function()
+    vim.notify('Conflict resolved in '..vim.fn.expand('<afile>'))
+    vim.cmd.GitConflictListQf()
+  end
 })

@@ -104,7 +104,7 @@ require('lazy').setup({
     {
         'akinsho/git-conflict.nvim',
         version = "*",
-        lconfig = true
+        lconfig = false,
     },
 
     'martinda/Jenkinsfile-vim-syntax',
