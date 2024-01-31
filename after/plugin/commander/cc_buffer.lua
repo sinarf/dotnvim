@@ -7,7 +7,7 @@ local category = 'buffer'
 commander.add({
   {
     desc = "Close buffer",
-    cmd = "<cmd>e $HOME/.config/nvim/lua/plugins.lua<CR>",
+    cmd = "<cmd>bdelete<CR>",
     category = category,
     keys = { "n", "<leader>bd", noremap },
   },
@@ -15,6 +15,6 @@ commander.add({
     desc = "Close all buffers",
     cmd = "<cmd>%bdelete<cr>",
     category = category,
-    keys = { "n", "<leader>bda", noremap },
+    keys = { "n", "<leader>", noremap },
   },
 })

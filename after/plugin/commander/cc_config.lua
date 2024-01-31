@@ -4,11 +4,25 @@ local noremap = { noremap = true }
 local category = 'config'
 
 require("commander").setup({
+  components = {
+    "DESC",
+    "KEYS",
+    "CAT",
+  },
+  sort_by = {
+    "DESC",
+  },
   integration = {
     telescope = {
       enable = true,
       -- Optional, you can use any telescope supported theme
       theme = require("telescope.themes").commander
+    },
+    lazy = {
+      -- Set to true to automatically add all key bindings set through lazy.nvim
+      enable = false,
+      -- Set to true to use plugin name as category for each keybinding added from lazy.nvim
+      set_plugin_name_as_cat = false
     }
   }
 })
