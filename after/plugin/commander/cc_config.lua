@@ -41,11 +41,6 @@ commander.add({
     category = category,
   },
   {
-    desc = "Close all buffers",
-    cmd = "<cmd>%bdelete<cr>",
-    category = category,
-  },
-  {
     desc = "Open Current file in vsCodium",
     cmd = "<cmd>! codium %<cr>",
     category = category,
