@@ -104,7 +104,7 @@ require('lazy').setup({
     {
         'akinsho/git-conflict.nvim',
         version = "*",
-        lconfig = false,
+        config = true,
     },
 
     'martinda/Jenkinsfile-vim-syntax',
@@ -173,6 +173,7 @@ require('lazy').setup({
     "folke/which-key.nvim",
     "xiyaowong/nvim-transparent",
     "aileot/vim-confirm-quit",
+    "yorickpeterse/nvim-pqf",
 
     -- colorscheme
     'navarasu/onedark.nvim',
