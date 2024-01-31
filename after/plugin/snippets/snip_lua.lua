@@ -1,5 +1,6 @@
 local status_ok, luasnip = pcall(require, "luasnip")
 if not status_ok then
+    vim.notify("Could not load module luasnip!")
     return
 end
 
@@ -15,9 +16,8 @@ luasnip.add_snippets("lua", {
         "req_safe", {
             t('local status_ok, '), i(1, 'mod_name'), t(' = pcall(require, "'), rep(1), t({ '")', "" }),
             t({ 'if not status_ok then', "" }),
-            t('vim.notify("Could not load module '), rep(1), t({ '!")' , ""}),
+            t('   vim.notify("Could not load module '), rep(1), t({ '!")', "" }),
             t({ '    return', 'end' }),
         }
     ),
 })
-
