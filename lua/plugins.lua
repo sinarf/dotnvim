@@ -112,7 +112,7 @@ require('lazy').setup({
     {
         'stevearc/oil.nvim',
         opts = {},
-        dependencies = { "nvim-tree/nvim-web-devicons" },
+        dependencies = { "kyazdani42/nvim-web-devicons" },
     },
     "pocco81/auto-save.nvim",
     "akinsho/toggleterm.nvim",
