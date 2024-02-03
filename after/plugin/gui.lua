@@ -5,7 +5,7 @@ vim.cmd [[
 
     if exists("g:neovide")
         let g:neovide_cursor_antialiasing=v:true
-        let g:neovide_transparency=0.95
+        let g:neovide_transparency=0.93
         let g:neovide_fullscreen=v:false
         let g:neovide_cursor_vfx_mode = "railgun"
         let g:neovide_cursor_vfx_particle_lifetime=2
@@ -14,12 +14,13 @@ vim.cmd [[
         let g:neovide_cursor_vfx_particle_curl=1.0
         let g:transparent_enabled = v:false
     else
+        let g:transparent_enabled = v:true
         augroup confirm_quit
           au!
           " disable confirm quit when not on neovide"
         augroup END
         lua require('mini.animate').setup()
-    endif
+    end
 ]]
 
 -- Handle the zoom, as if you were in a lesser editor that has those futile, yet handy, feature.

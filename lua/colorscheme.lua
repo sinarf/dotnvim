@@ -23,7 +23,7 @@ require("catppuccin").setup({
         light = "latte",
         dark = "mocha",
     },
-    transparent_background = true,
+    transparent_background = false,
     show_end_of_buffer = false, -- show the '~' characters after the end of buffers
     term_colors = true,
     dim_inactive = {
@@ -76,38 +76,23 @@ local TelescopeColor = {
     },
     TelescopeSelection = {
         fg = colors.text,
-        bg = colors.surface0,
         bold = true
     },
-    TelescopePromptPrefix = {
-        bg = colors.surface0
-    },
-    TelescopePromptNormal = {
-        bg = colors.surface0
-    },
-    TelescopeResultsNormal = {
-        bg = colors.mantle
-    },
-    TelescopePreviewNormal = {
-        bg = colors.mantle
-    },
     TelescopePromptBorder = {
-        bg = colors.surface0,
-        fg = colors.surface0
+        fg = colors.pink
     },
     TelescopeResultsBorder = {
-        bg = colors.mantle,
-        fg = colors.mantle
+        fg = colors.blue
     },
     TelescopePreviewBorder = {
-        bg = colors.mantle,
-        fg = colors.mantle
+        fg = colors.green
     },
     TelescopePromptTitle = {
         bg = colors.pink,
         fg = colors.mantle
     },
     TelescopeResultsTitle = {
+        bg = colors.blue,
         fg = colors.mantle
     },
     TelescopePreviewTitle = {
