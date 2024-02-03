@@ -17,7 +17,6 @@ vim.o.sidescrolloff = 8
 
 vim.o.termguicolors = true
 vim.o.mouse = "a"
--- vim.o.colorcolumn = '120'
 vim.o.cursorline = true
 
 -- spelling disable by default
