@@ -185,6 +185,7 @@ require('lazy').setup({
     'loctvl842/monokai-pro.nvim',
     { 'echasnovski/mini.nvim', version = false },
 
+    'Fymyte/rasi.vim', -- syntax  for rofi config files
     -- Fuzzy Finder (files, lsp, etc)
     {
         'nvim-telescope/telescope.nvim',
