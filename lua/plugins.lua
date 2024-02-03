@@ -112,8 +112,19 @@ require('lazy').setup({
     {
         'stevearc/oil.nvim',
         opts = {},
-        dependencies = { "kyazdani42/nvim-web-devicons" },
+        dependencies = {
+            "kyazdani42/nvim-web-devicons",
+        },
     },
+    {
+        'stevearc/aerial.nvim',
+        opts = {},
+        dependencies = {
+            "nvim-treesitter/nvim-treesitter",
+            "kyazdani42/nvim-web-devicons",
+        },
+    },
+
     "pocco81/auto-save.nvim",
     "akinsho/toggleterm.nvim",
     "CRAG666/code_runner.nvim",
