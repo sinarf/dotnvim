@@ -13,8 +13,8 @@ commander.add({
   },
   {
     desc = "Close all buffers",
-    cmd = "<cmd>%bdelete<cr>",
+    cmd = "<cmd>%bdelete | Alpha<cr>",
+    keys = { "n", "<leader>bda", noremap },
     category = category,
-    keys = { "n", "<leader>", noremap },
   },
 })

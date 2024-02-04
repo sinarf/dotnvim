@@ -55,12 +55,6 @@ commander.add({
     category = category,
   },
   {
-    desc = "Close all buffers",
-    cmd = "<cmd>%bdelete | Alpha<cr>",
-    keys = { "n", "<leader>bda", noremap },
-    category = category,
-  },
-  {
     desc = "Open Current file in vsCodium",
     cmd = "<cmd>! codium %<cr>",
     category = category,
