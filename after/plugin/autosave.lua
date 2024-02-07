@@ -5,12 +5,12 @@ end
 
 autosave.setup(
     {
-        enabled = true, -- start auto-save when the plugin is loaded (i.e. when your package manager loads it)
+        enabled = true,          -- start auto-save when the plugin is loaded (i.e. when your package manager loads it)
         execution_message = {
             message = function() -- message to print on save
                 return ("󰨣")
             end,
-            dim = 0.18, -- dim the color of `message`
+            dim = 0.18,              -- dim the color of `message`
             cleaning_interval = 500, -- (milliseconds) automatically clean MsgArea after displaying `message`. See :h MsgArea
         },
         trigger_events = {
@@ -23,26 +23,23 @@ autosave.setup(
         condition = function(buf)
             local fn = vim.fn
             local utils = require("auto-save.utils.data")
-            if fn.bufname(buf) == "lua/plugins.lua" then
-                return false
-            end
-            if fn.bufname(buf):find('octo://',1, true) then
+            if fn.bufname(buf):find('octo://', 1, true) then
                 return false
             end
             if fn.getbufvar(buf, "&modifiable") == 1 and
-                utils.not_in(fn.getbufvar(buf, "&filetype"), { 'gitcommit', 'oil'}) then
-                return true -- met condition(s), can save
+                utils.not_in(fn.getbufvar(buf, "&filetype"), { 'gitcommit', 'oil' }) then
+                return true              -- met condition(s), can save
             end
-            return false -- can't save
+            return false                 -- can't save
         end,
-        write_all_buffers = false, -- write all buffers when the current one meets `condition`
-        debounce_delay = 2000, -- saves the file at most every `debounce_delay` milliseconds
-        callbacks = { -- functions to be executed at different intervals
-            enabling = nil, -- ran when enabling auto-save
-            disabling = nil, -- ran when disabling auto-save
+        write_all_buffers = false,       -- write all buffers when the current one meets `condition`
+        debounce_delay = 2000,           -- saves the file at most every `debounce_delay` milliseconds
+        callbacks = {                    -- functions to be executed at different intervals
+            enabling = nil,              -- ran when enabling auto-save
+            disabling = nil,             -- ran when disabling auto-save
             before_asserting_save = nil, -- ran before checking `condition`
-            before_saving = nil, -- ran before doing the actual save
-            after_saving = nil -- ran after doing the actual save
+            before_saving = nil,         -- ran before doing the actual save
+            after_saving = nil           -- ran after doing the actual save
         }
     }
 )
