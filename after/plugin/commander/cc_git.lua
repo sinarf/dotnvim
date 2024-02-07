@@ -57,5 +57,20 @@ commander.add({
     keys = { "n", "<leader>gcl", noremap },
     category = category,
   },
-
+  {
+    desc = "Create a worktree",
+    cmd = function()
+      require('telescope').extensions.git_worktree.create_git_worktree()
+    end,
+    keys = { "n", "<leader>gtc", noremap },
+    category = category,
+  },
+  {
+    desc = "Switch to worktree",
+    cmd = function()
+      require('telescope').extensions.git_worktree.git_worktrees()
+    end,
+    keys = { "n", "<leader>gts", noremap },
+    category = category,
+  },
 })

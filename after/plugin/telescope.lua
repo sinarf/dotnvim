@@ -98,6 +98,9 @@ telescope.setup {
         -- builtin picker
     },
     extensions = {
+        commander = {
+
+        },
         project = {
             theme = "dropdown",
             -- The list of project is maintained here: ~/.local/share/nvim/telescope-projects.txt
@@ -113,14 +116,6 @@ telescope.setup {
             filetypes = { "png", "webp", "jpg", "jpeg" },
             find_cmd = "rg" -- find command (defaults to `fd`)
         },
-        commander = {
-
-        },
-        -- Your extension configuration goes here:
-        -- extension_name = {
-        --   extension_config_key = value,
-        -- }
-        -- please take a look at the readme of the extension you want to configure
     },
 }
 telescope.load_extension('commander')
@@ -129,3 +124,4 @@ telescope.load_extension('file_browser')
 telescope.load_extension('luasnip')
 telescope.load_extension('media_files')
 telescope.load_extension('project')
+telescope.load_extension("git_worktree")

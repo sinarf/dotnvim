@@ -106,6 +106,7 @@ require('lazy').setup({
         version = "*",
         config = true,
     },
+    'ThePrimeagen/git-worktree.nvim',
 
     'martinda/Jenkinsfile-vim-syntax',
     "tpope/vim-vinegar",
