@@ -97,14 +97,14 @@ require('lazy').setup({
             "nvim-telescope/telescope.nvim", -- optional
             "sindrets/diffview.nvim",        -- optional
         },
-        config = false,
     },
-    'lewis6991/gitsigns.nvim',
+    {
+        'lewis6991/gitsigns.nvim',
+    },
     'tpope/vim-fugitive',
     {
         'akinsho/git-conflict.nvim',
         version = "*",
-        config = true,
     },
     'ThePrimeagen/git-worktree.nvim',
 
@@ -186,7 +186,22 @@ require('lazy').setup({
     "xiyaowong/nvim-transparent",
     "aileot/vim-confirm-quit",
     "yorickpeterse/nvim-pqf",
-
+    -- lazy.nvim
+    {
+        "folke/noice.nvim",
+        event = "VeryLazy",
+        opts = {
+            -- add any options here
+        },
+        dependencies = {
+            -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+            "MunifTanjim/nui.nvim",
+            -- OPTIONAL:
+            --   `nvim-notify` is only needed, if you want to use the notification view.
+            --   If not available, we use `mini` as the fallback
+            "rcarriga/nvim-notify",
+        }
+    },
     -- colorscheme
     'navarasu/onedark.nvim',
     "ellisonleao/gruvbox.nvim",
