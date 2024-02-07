@@ -60,19 +60,18 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 
-vim.api.nvim_create_autocmd('User', {
-  pattern = 'GitConflictDetected',
-  callback = function()
-    vim.notify('Conflict detected in ' .. vim.fn.expand('<afile>'))
-    vim.cmd.GitConflictListQf()
-  end
-})
-
-vim.api.nvim_create_autocmd('User', {
-  pattern = 'GitConflictResolved',
-  callback = function()
-    vim.notify('Conflict resolved in ' .. vim.fn.expand('<afile>'))
-    vim.cmd.GitConflictListQf()
-  end
-})
-
+-- vim.api.nvim_create_autocmd('User', {
+--   group = git_group,
+--   pattern = 'GitConflictDetected',
+--   callback = function()
+--     vim.notify('Conflict detected in ' .. vim.fn.expand('<afile>'))
+--   end
+-- })
+--
+-- vim.api.nvim_create_autocmd('User', {
+--   group = git_group,
+--   pattern = 'GitConflictResolved',
+--   callback = function()
+--     vim.notify('Conflict resolved in ' .. vim.fn.expand('<afile>'))
+--   end
+-- })
